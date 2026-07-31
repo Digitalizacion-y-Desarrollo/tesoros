@@ -67,6 +67,8 @@ final class ParticipantDocumentUploadControllerTest extends CIUnitTestCase
         $payload = json_decode($response->getBody(), true, 512, JSON_THROW_ON_ERROR);
         $this->assertTrue($payload['ok']);
         $this->assertStringContainsString('/participante/borrador', $payload['redirect']);
+        $this->assertSame(csrf_token(), $payload['csrf']['name']);
+        $this->assertNotSame('', $payload['csrf']['hash']);
         $this->seeInDatabase('documents', [
             'application_id' => $draft['id'],
             'document_type' => 'official_id',

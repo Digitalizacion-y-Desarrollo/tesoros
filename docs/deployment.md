@@ -60,6 +60,11 @@ memory_limit = 768M
 Replica límites y tiempos en Apache y cualquier proxy. Verifica el progreso y
 los mensajes de interrupción desde un navegador móvil y de escritorio.
 
+`post_max_size` limita la solicitud completa, no cada archivo. El formulario
+acepta hasta 500 MB por carga y permite guardar el borrador varias veces para
+subir video y documentos en tandas. Si PHP descarta una solicitud por exceder
+su límite, la aplicación responde con HTTP 413 antes de validar CSRF.
+
 ## Cola de correo
 
 Programa cada minuto:

@@ -14,6 +14,7 @@ use CodeIgniter\Filters\PerformanceMetrics;
 use CodeIgniter\Filters\SecureHeaders;
 use App\Filters\AdminAuthFilter;
 use App\Filters\ParticipantSessionFilter;
+use App\Filters\RequestSizeFilter;
 
 class Filters extends BaseFilters
 {
@@ -38,6 +39,7 @@ class Filters extends BaseFilters
         'performance'   => PerformanceMetrics::class,
         'participantAuth' => ParticipantSessionFilter::class,
         'adminAuth'       => AdminAuthFilter::class,
+        'requestsize'     => RequestSizeFilter::class,
     ];
 
     /**
@@ -77,6 +79,7 @@ class Filters extends BaseFilters
     public array $globals = [
         'before' => [
             // 'honeypot',
+            'requestsize',
             'csrf',
             // 'invalidchars',
         ],

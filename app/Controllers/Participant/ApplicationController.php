@@ -70,6 +70,7 @@ class ApplicationController extends ParticipantController
                     'ok' => false,
                     'message' => 'Revisa los archivos y campos señalados. El borrador no se modificó.',
                     'errors' => $exception->errors(),
+                    'csrf' => $this->csrfPayload(),
                 ]);
             }
             return redirect()->back()
@@ -81,6 +82,7 @@ class ApplicationController extends ParticipantController
                     'ok' => false,
                     'message' => $exception->getMessage(),
                     'errors' => [],
+                    'csrf' => $this->csrfPayload(),
                 ]);
             }
             return redirect()->route('participant.application')->with('error', $exception->getMessage());
@@ -97,6 +99,7 @@ class ApplicationController extends ParticipantController
             return $this->response->setJSON([
                 'ok' => true,
                 'redirect' => url_to($nextRoute),
+                'csrf' => $this->csrfPayload(),
             ]);
         }
 
@@ -238,6 +241,15 @@ class ApplicationController extends ParticipantController
         }
 
         return $applicationId;
+    }
+
+    /** @return array{name: string, hash: string} */
+    private function csrfPayload(): array
+    {
+        return [
+            'name' => csrf_token(),
+            'hash' => csrf_hash(),
+        ];
     }
 
     private function audit(string $action, array $metadata = []): void

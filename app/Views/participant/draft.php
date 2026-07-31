@@ -46,7 +46,7 @@ $video = $context['video'];
                         </div>
                     <?php endif ?>
 
-                    <form id="draft-form" method="post" action="<?= url_to('participant.draft.save') ?>" class="mt-4" enctype="multipart/form-data">
+                    <form id="draft-form" method="post" action="<?= url_to('participant.draft.save') ?>" class="mt-4" enctype="multipart/form-data" data-max-request-bytes="524288000">
                         <?= csrf_field() ?>
                         <input type="hidden" name="MAX_FILE_SIZE" value="524288000">
                         <fieldset>
@@ -210,7 +210,7 @@ $video = $context['video'];
 
                         <fieldset class="border-top pt-4 mt-4">
                             <legend class="h4 font-display text-wine-dark">Documentos</legend>
-                            <p class="form-hint">Formatos permitidos: PDF, JPG y JPEG. Máximo 500 MB por archivo.</p>
+                            <p class="form-hint">Formatos permitidos: PDF, JPG y JPEG. Máximo 500 MB por archivo. Si el video y los documentos suman más de 500 MB, guárdalos en varias cargas.</p>
                             <?php if (isset($context['definition']['documents_notice'])): ?>
                                 <div class="alert provisional-notice" role="status"><?= esc($context['definition']['documents_notice']) ?></div>
                             <?php endif ?>

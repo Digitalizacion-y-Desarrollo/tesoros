@@ -172,7 +172,9 @@ Nunca deben trasladarse a `public/` ni entregarse directamente por URL. Los cont
 El límite de 500 MB debe mantenerse alineado en PHP, Apache y cualquier proxy.
 
 Los videos MP4 se guardan bajo `writable/private/uploads/videos/{solicitud}/`
-con nombres físicos aleatorios. La base de datos conserva la ruta privada,
+con nombres físicos aleatorios. El video y los documentos pueden guardarse en
+varias cargas de hasta 500 MB totales cada una, evitando exceder
+`post_max_size` y conservando el mismo folio. La base de datos conserva la ruta privada,
 nombre original saneado, MIME, tamaño y SHA-256. Nunca se expone la ruta física:
 la consulta utiliza una ruta protegida que comprueba la sesión y la solicitud.
 Como alternativa, se conserva una URL HTTPS externa, tratada como contenido no

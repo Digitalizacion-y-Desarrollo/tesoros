@@ -8,6 +8,7 @@
   const progressLabel = progressContainer?.querySelector('[data-progress-label]');
   const progressMessage = progressContainer?.querySelector('[data-progress-message]');
   const maxFileBytes = 500 * 1024 * 1024;
+  const maxRequestBytes = Number(form?.dataset.maxRequestBytes || maxFileBytes);
 
   if (!fileInput || !urlInput) {
     return;
@@ -67,6 +68,12 @@
       return;
     }
 
+    const totalFileBytes = selectedFiles.reduce((total, file) => total + file.size, 0);
+    if (totalFileBytes > maxRequestBytes) {
+      showError('Los archivos seleccionados suman más de 500 MB. Guarda primero algunos documentos y después carga los restantes o el video.');
+      return;
+    }
+
     const submitter = event.submitter;
     const data = new FormData(form);
     if (submitter?.name) data.set(submitter.name, submitter.value);
@@ -97,6 +104,13 @@
         response = null;
       }
 
+      if (response?.csrf?.name && response?.csrf?.hash) {
+        const csrfInput = form.elements.namedItem(response.csrf.name);
+        if (csrfInput instanceof HTMLInputElement) {
+          csrfInput.value = response.csrf.hash;
+        }
+      }
+
       if (request.status >= 200 && request.status < 300 && response?.ok && response.redirect) {
         const redirect = new URL(response.redirect, window.location.origin);
         if (redirect.origin === window.location.origin && redirect.pathname.includes('/participante/')) {
@@ -111,7 +125,7 @@
       } else if (request.status === 403) {
         showError('La sesión o el formulario expiró. Recarga la página antes de volver a intentarlo.');
       } else if (request.status === 413) {
-        showError('El tamaño total de los archivos excede el límite permitido por el servidor.');
+        showError('El tamaño total excede el límite del servidor. Guarda los documentos y el video en varias cargas de máximo 500 MB cada una.');
       } else {
         showError('No fue posible guardar los archivos. Revisa tu sesión e inténtalo nuevamente.');
       }
