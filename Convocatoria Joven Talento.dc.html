@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..800;1,400..600&amp;family=Source+Sans+3:ital,wght@0,300..700;1,400&amp;family=IBM+Plex+Mono:wght@400&amp;display=swap" rel="stylesheet">
+<style>
+  html, body { margin: 0; padding: 0; background: #F7F1E7; }
+  * { box-sizing: border-box; }
+  a { color: #75001C; text-decoration: none; }
+  a:hover { color: #B68A38; }
+  summary { list-style: none; cursor: pointer; }
+  summary::-webkit-details-marker { display: none; }
+  summary::marker { content: ''; }
+</style>
+</helmet>
+
+<div style="width: 100%; min-width: 1280px; margin: 0 auto; background: #FFFDF9; font-family: 'Source Sans 3', system-ui, sans-serif; color: #292929; overflow: hidden;">
+
+  <div style="display: flex; align-items: center; justify-content: center; gap: 10px; height: 34px; background: #4A0012; color: #F7F1E7; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase;">
+    <span style="width: 22px; height: 13px; display: inline-block; background: linear-gradient(to right, #006847 0 33.3%, #FFFDF9 33.3% 66.6%, #CE1126 66.6% 100%);"></span>
+    <span>Gobierno del Estado de México</span>
+    <span style="opacity: 0.5;">·</span>
+    <span>Secretaría de Cultura y Turismo</span>
+    <span style="width: 22px; height: 13px; display: inline-block; background: linear-gradient(to right, #0055A4 0 33.3%, #FFFDF9 33.3% 66.6%, #EF4135 66.6% 100%);"></span>
+  </div>
+
+  <header style="display: flex; align-items: center; justify-content: space-between; padding: 22px 72px; background: #FFFDF9; border-bottom: 1px solid rgba(182,138,56,0.35);">
+    <div style="display: flex; align-items: center; gap: 16px;">
+      <img src="uploads/pasted-1785349357556-0.png" alt="Tesoro Gastronómico del Estado de México" style="width: 74px; height: 66px; object-fit: cover; object-position: 52% 45%; display: block; mix-blend-mode: multiply;">
+      <div style="display: flex; flex-direction: column; gap: 3px;">
+        <span style="font-family: 'Playfair Display', serif; font-size: 19px; color: #4A0012; letter-spacing: 0.01em;">Tesoros Gastronómicos</span>
+        <span style="font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #B68A38;">Estado de México · París 2026</span>
+      </div>
+    </div>
+    <nav style="display: flex; align-items: center; gap: 30px; font-size: 15px;">
+      <a href="#etapas" style="color: #292929;">Etapas</a>
+      <a href="#requisitos" style="color: #292929;">Bases y requisitos</a>
+      <a href="#documentacion" style="color: #292929;">Documentación</a>
+      <a href="#fechas" style="color: #292929;">Fechas</a>
+      <a href="#preguntas" style="color: #292929;">Preguntas</a>
+    </nav>
+    <div style="display: flex; align-items: center; gap: 12px;">
+      <a href="#folio" style="display: inline-flex; align-items: center; height: 46px; padding: 0 22px; border: 1.5px solid #75001C; border-radius: 2px; color: #75001C; font-size: 15px; font-weight: 600; letter-spacing: 0.02em;" style-hover="background: #F7F1E7;">Consulta tu folio</a>
+      <a href="#registro" style="display: inline-flex; align-items: center; height: 46px; padding: 0 26px; border-radius: 2px; background: #75001C; color: #FFFDF9; font-size: 15px; font-weight: 600; letter-spacing: 0.02em; border: 1.5px solid #75001C;" style-hover="background: #4A0012; color: #D6B66A;">Registro</a>
+    </div>
+  </header>
+
+  <section style="position: relative; background: #4A0012; color: #F7F1E7; overflow: hidden;">
+    <div style="position: absolute; inset: 0; background-image: repeating-linear-gradient(45deg, rgba(214,182,106,0.10) 0 1px, transparent 1px 26px), repeating-linear-gradient(-45deg, rgba(214,182,106,0.10) 0 1px, transparent 1px 26px); pointer-events: none;"></div>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; align-items: stretch; position: relative;">
+      <div style="padding: 78px 72px 80px; display: flex; flex-direction: column; align-items: flex-start; gap: 22px;">
+        <div style="display: flex; align-items: center; gap: 12px; padding: 7px 16px 7px 8px; border: 1px solid rgba(214,182,106,0.55); border-radius: 999px;">
+          <span style="width: 22px; height: 22px; border-radius: 50%; background: #B68A38; display: block;"></span>
+          <span style="font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #D6B66A;">Primer Encuentro de Talento Culinario Universitario</span>
+        </div>
+        <h1 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 600; font-size: 56px; line-height: 1.06; letter-spacing: -0.01em; color: #FFFDF9; text-wrap: pretty;">Joven Talento Universitario en Gastronomía</h1>
+        <p style="margin: 0; font-family: 'Playfair Display', serif; font-style: italic; font-size: 25px; line-height: 1.3; color: #D6B66A;">México y Francia: Un Encuentro de Sabores</p>
+        <p style="margin: 0; max-width: 540px; font-size: 18px; line-height: 1.6; color: rgba(247,241,231,0.86); text-wrap: pretty;">Convocatoria estatal del Festival “Sabor a México”, dirigida a estudiantes de Licenciatura en Gastronomía inscritos entre tercer y octavo semestre en instituciones de educación superior públicas o privadas del Estado de México.</p>
+        <p style="margin: 0; max-width: 540px; font-size: 17px; line-height: 1.6; color: rgba(247,241,231,0.72); text-wrap: pretty;">Cada institución podrá registrar un equipo de dos estudiantes y un docente asesor opcional. La propuesta debe reinterpretar los sabores natos del Estado de México con técnicas de la alta cocina francesa, en el marco de los 200 años de relaciones México–Francia.</p>
+        <div style="display: flex; align-items: center; gap: 16px; margin-top: 8px;">
+          <a href="#registro" style="display: inline-flex; align-items: center; height: 56px; padding: 0 32px; border-radius: 2px; background: #B68A38; color: #2A1305; font-size: 16px; font-weight: 700; letter-spacing: 0.03em;" style-hover="background: #D6B66A;">Registrar mi equipo</a>
+          <a href="#requisitos" style="display: inline-flex; align-items: center; height: 56px; padding: 0 26px; border: 1.5px solid rgba(214,182,106,0.6); border-radius: 2px; color: #F7F1E7; font-size: 16px;" style-hover="background: rgba(214,182,106,0.14); color: #D6B66A;">Ver bases completas</a>
+        </div>
+        <div style="display: flex; gap: 44px; margin-top: 24px; padding-top: 24px; border-top: 1px solid rgba(214,182,106,0.3); width: 100%;">
+          <div style="display: flex; flex-direction: column; gap: 4px;">
+            <span style="font-family: 'Playfair Display', serif; font-size: 28px; color: #D6B66A;">13 ago</span>
+            <span style="font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(247,241,231,0.7);">Apertura</span>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 4px;">
+            <span style="font-family: 'Playfair Display', serif; font-size: 28px; color: #D6B66A;">4 sep</span>
+            <span style="font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(247,241,231,0.7);">Cierre de registro</span>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 4px;">
+            <span style="font-family: 'Playfair Display', serif; font-size: 28px; color: #D6B66A;">2</span>
+            <span style="font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(247,241,231,0.7);">Integrantes por equipo</span>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 4px;">
+            <span style="font-family: 'Playfair Display', serif; font-size: 28px; color: #D6B66A;">3.º a 8.º</span>
+            <span style="font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(247,241,231,0.7);">Semestres elegibles</span>
+          </div>
+        </div>
+      </div>
+      <div style="position: relative; min-height: 620px; background: #5C0016; overflow: hidden;">
+        <img src="uploads/ChatGPT%20Image%2029%20jul%202026%2C%2012_33_09%20p.m..png" alt="Equipo de estudiantes emplatando una quiché con ingredientes mexiquenses" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 58% center;">
+        <div style="position: absolute; inset: 0; background: linear-gradient(90deg, #4A0012 0%, rgba(74,0,18,0.35) 20%, transparent 52%); pointer-events: none;"></div>
+      </div>
+    </div>
+  </section>
+
+  <div style="height: 8px; background: linear-gradient(90deg, #75001C 0 25%, #B68A38 25% 50%, #123F35 50% 75%, #D6B66A 75% 100%);"></div>
+
+  <section style="padding: 76px 72px 20px; background: #FFFDF9; display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start;">
+    <div style="display: flex; flex-direction: column; gap: 16px;">
+      <span style="font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: #B68A38;">El propósito</span>
+      <h2 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 500; font-size: 38px; line-height: 1.14; color: #4A0012;">Talento joven, cocina mexiquense y técnica francesa</h2>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 18px;">
+      <p style="margin: 0; font-size: 18px; line-height: 1.7; color: #5A5A5A; text-wrap: pretty;">Reconocer e impulsar el talento de las y los estudiantes universitarios de gastronomía del Estado de México, promoviendo la excelencia culinaria mediante la reinterpretación de los sabores natos mexiquenses con técnicas de la alta cocina francesa, y resaltando el patrimonio gastronómico del Estado como un atractivo turístico y cultural de talla internacional.</p>
+      <ul style="margin: 0; padding-left: 20px; font-size: 17px; line-height: 1.75; color: #5A5A5A;">
+        <li>La preservación y difusión de los sabores natos del Estado de México.</li>
+        <li>La innovación culinaria basada en el respeto a la tradición.</li>
+        <li>El intercambio gastronómico entre México y Francia.</li>
+        <li>El desarrollo de habilidades técnicas de nivel profesional.</li>
+        <li>La promoción de la gastronomía mexiquense como elemento de identidad, cultura y turismo.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="etapas" style="padding: 62px 72px 84px; background: #FFFDF9;">
+    <div style="display: flex; align-items: center; gap: 18px; margin-bottom: 40px;">
+      <span style="font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: #B68A38; white-space: nowrap;">La convocatoria se desarrolla en dos etapas</span>
+      <span style="flex: 1; height: 1px; background: rgba(182,138,56,0.35); display: block;"></span>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 28px; align-items: start;">
+
+      <article style="background: #FFFDF9; border: 1px solid rgba(117,0,28,0.28); border-radius: 3px; box-shadow: 0 2px 0 rgba(117,0,28,0.18); overflow: hidden;">
+        <div style="height: 5px; background: #75001C;"></div>
+        <div style="padding: 34px 34px 36px; display: flex; flex-direction: column; gap: 18px;">
+          <span style="font-family: 'Playfair Display', serif; font-size: 13px; color: #75001C; letter-spacing: 0.06em;">Etapa 1</span>
+          <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 600; font-size: 28px; line-height: 1.2; color: #4A0012;">Registro y selección</h3>
+          <p style="margin: 0; font-size: 16px; line-height: 1.65; color: #5A5A5A;">Las y los estudiantes completan su registro en línea, integran su expediente y presentan la documentación solicitada dentro del periodo establecido.</p>
+          <span style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #B68A38; margin-top: 6px;">El comité organizador revisará</span>
+          <ul style="margin: 0; padding-left: 20px; font-size: 16px; line-height: 1.7; color: #5A5A5A;">
+            <li>El cumplimiento de las bases y requisitos.</li>
+            <li>La situación académica de ambos integrantes.</li>
+            <li>La carta de motivos.</li>
+            <li>El video de presentación.</li>
+            <li>La ficha técnica de la propuesta.</li>
+            <li>La integración de ingredientes del Estado de México.</li>
+            <li>La aplicación de técnicas francesas.</li>
+            <li>La creatividad y claridad del concepto gastronómico.</li>
+          </ul>
+          <div style="display: flex; gap: 14px; padding: 18px 20px; background: #F7F1E7; border-left: 3px solid #B68A38;">
+            <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #4A0012;">El envío de la solicitud no garantiza la participación en los retos culinarios. Únicamente los equipos con las mejores evaluaciones avanzarán a la segunda etapa.</p>
+          </div>
+        </div>
+      </article>
+
+      <article style="background: #FFFDF9; border: 1px solid rgba(74,0,18,0.25); border-radius: 3px; box-shadow: 0 2px 0 rgba(74,0,18,0.18); overflow: hidden;">
+        <div style="height: 5px; background: #4A0012;"></div>
+        <div style="padding: 34px 34px 36px; display: flex; flex-direction: column; gap: 18px;">
+          <span style="font-family: 'Playfair Display', serif; font-size: 13px; color: #4A0012; letter-spacing: 0.06em;">Etapa 2</span>
+          <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 600; font-size: 28px; line-height: 1.2; color: #4A0012;">Retos culinarios</h3>
+          <p style="margin: 0; font-size: 16px; line-height: 1.65; color: #5A5A5A;">Los equipos seleccionados participan en dos retos diseñados para evaluar creatividad, técnica, organización e identidad culinaria.</p>
+
+          <div style="display: flex; flex-direction: column; gap: 10px; padding: 22px 24px; background: #F7F1E7; border: 1px solid rgba(182,138,56,0.3);">
+            <span style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #B68A38;">Reto 1</span>
+            <h4 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 600; font-size: 21px; line-height: 1.25; color: #75001C;">Francia y el Estado de México en una Quiché</h4>
+            <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #5A5A5A;">Elaborar una quiché con técnicas clásicas francesas e incorporar al menos dos ingredientes representativos del Estado de México, mostrando dominio técnico, equilibrio de sabores y presentación contemporánea.</p>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 10px; padding: 22px 24px; background: #F7F1E7; border: 1px solid rgba(182,138,56,0.3);">
+            <span style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #B68A38;">Reto 2</span>
+            <h4 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 600; font-size: 21px; line-height: 1.25; color: #75001C;">Canasta Sorpresa: Sabores Mexiquenses</h4>
+            <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #5A5A5A;">Cada equipo recibe una canasta con una proteína, vegetales e ingredientes complementarios, y elabora un plato fuerte, una guarnición y una salsa original que armonice con la preparación.</p>
+            <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #8A7654;">El objetivo: transformar los ingredientes sorpresa en una propuesta contemporánea que destaque la riqueza gastronómica y cultural del Estado de México.</p>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="requisitos" style="padding: 78px 72px 84px; background: #F7F1E7; border-top: 1px solid rgba(182,138,56,0.35);">
+    <div style="display: flex; flex-direction: column; gap: 14px; margin-bottom: 44px; max-width: 720px;">
+      <span style="font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: #B68A38;">Bases y requisitos</span>
+      <h2 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 500; font-size: 38px; line-height: 1.14; color: #4A0012;">Quiénes pueden participar</h2>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 26px; align-items: start;">
+      <div style="display: flex; flex-direction: column; gap: 16px; padding: 30px 30px 32px; background: #FFFDF9; border: 1px solid rgba(182,138,56,0.35);">
+        <span style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #75001C;">Perfil</span>
+        <ul style="margin: 0; padding-left: 20px; font-size: 16px; line-height: 1.7; color: #5A5A5A;">
+          <li>Estudiantes de Licenciatura en Gastronomía.</li>
+          <li>Inscritos en instituciones de educación superior públicas o privadas ubicadas en el Estado de México.</li>
+          <li>Cursando actualmente la licenciatura, entre tercer y octavo semestre al momento de la inscripción.</li>
+          <li>Equipos conformados por dos estudiantes.</li>
+          <li>Cada institución podrá registrar un equipo y un docente asesor, de carácter opcional.</li>
+        </ul>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 16px; padding: 30px 30px 32px; background: #FFFDF9; border: 1px solid rgba(182,138,56,0.35);">
+        <span style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #75001C;">Condiciones generales</span>
+        <ul style="margin: 0; padding-left: 20px; font-size: 16px; line-height: 1.7; color: #5A5A5A;">
+          <li>El registro deberá ser realizado directamente por las y los estudiantes.</li>
+          <li>Ambos integrantes deberán proporcionar información completa y verídica.</li>
+          <li>Toda la documentación se entrega en formato digital dentro del periodo señalado.</li>
+          <li>Cada participante deberá contar con pasaporte vigente o realizar el tramite en el periodo de la convocatoría.</li>
+          <li>La participación debe estar avalada por carta oficial de la institución educativa.</li>
+          <li>Solamente los equipos seleccionados en la primera etapa participan en los retos.</li>
+          <li>Participar implica la aceptación de las bases, términos y condiciones.</li>
+        </ul>
+      </div>
+
+      
+    </div>
+  </section>
+
+  <section id="documentacion" style="padding: 78px 72px 84px; background: #FFFDF9;">
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start;">
+      <div style="display: flex; flex-direction: column; gap: 22px;">
+        <span style="font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: #B68A38;">Documentación</span>
+        <h2 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 500; font-size: 38px; line-height: 1.14; color: #4A0012;">Expediente digital del equipo</h2>
+        <ul style="margin: 0; padding-left: 20px; font-size: 16px; line-height: 1.8; color: #5A5A5A;">
+          
+          <li>Identificación oficial vigente (INE) de cada participante.</li>
+          <li>Pasaporte vigente de cada participante (si el pasaporte esta en tramite puedes continuar).</li>
+          <li>Carta oficial de la institución educativa en hoja membretada, firmada por Dirección, Coordinación o Jefatura de la Licenciatura en Gastronomía, que avale la participación y acredite que ambos cursan entre 3.º y 8.º semestre.</li>
+          <li>Carta de motivos de máximo una cuartilla.</li>
+          <li>Video de hasta tres minutos con la elaboración de la quiché.</li>
+          <li>Ficha técnica de la quiché.</li>
+        </ul>
+        <div style="display: flex; gap: 14px; padding: 20px 22px; background: #F7F1E7; border-left: 3px solid #75001C;">
+          <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #4A0012;">Verifica que cada archivo sea correcto, legible y corresponda al requisito solicitado. Una vez cargados y confirmados, los documentos no podrán sustituirse ni modificarse. La información básica del registro sí podrá actualizarse dentro del periodo habilitado.</p>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 22px;">
+        <div style="display: flex; flex-direction: column; gap: 12px; padding: 28px 30px; background: #FFFDF9; border: 1px solid rgba(182,138,56,0.35);">
+          <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 600; font-size: 22px; color: #75001C;">Carta de motivos</h3>
+          <ul style="margin: 0; padding-left: 20px; font-size: 16px; line-height: 1.7; color: #5A5A5A;">
+            <li>Por qué desean representar al Estado de México.</li>
+            <li>Cómo su propuesta promueve los sabores natos mexiquenses.</li>
+            <li>Qué significa participar en un encuentro gastronómico México–Francia.</li>
+            <li>De qué manera su formación académica se refleja en la propuesta.</li>
+          </ul>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 12px; padding: 28px 30px; background: #FFFDF9; border: 1px solid rgba(182,138,56,0.35);">
+          <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 600; font-size: 22px; color: #75001C;">Video de presentación</h3>
+          <ul style="margin: 0; padding-left: 20px; font-size: 16px; line-height: 1.7; color: #5A5A5A;">
+            <li>Presentación de ambos integrantes y de la institución educativa.</li>
+            <li>Elaboración de la quiché con la que competirán.</li>
+            <li>Ingredientes natos del Estado de México utilizados.</li>
+            <li>Técnicas francesas aplicadas.</li>
+            <li>Inspiración y concepto gastronómico del platillo.</li>
+          </ul>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 12px; padding: 28px 30px; background: #FFFDF9; border: 1px solid rgba(182,138,56,0.35);">
+          <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 600; font-size: 22px; color: #75001C;">Ficha técnica de la quiché</h3>
+          <ul style="margin: 0; padding-left: 20px; font-size: 16px; line-height: 1.7; color: #5A5A5A;">
+            <li>Nombre del platillo, ingredientes y gramajes.</li>
+            <li>Procedimiento y técnicas utilizadas.</li>
+            <li>Ingredientes natos del Estado de México incorporados.</li>
+            <li>Justificación culinaria y fotografía de referencia, si se solicita.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding: 78px 72px 84px; background: #4A0012; color: #F7F1E7; position: relative; overflow: hidden;">
+    <div style="position: absolute; inset: 0; background-image: repeating-linear-gradient(45deg, rgba(214,182,106,0.09) 0 1px, transparent 1px 24px), repeating-linear-gradient(-45deg, rgba(214,182,106,0.09) 0 1px, transparent 1px 24px); pointer-events: none;"></div>
+    <div style="position: relative; display: flex; flex-direction: column; gap: 14px; margin-bottom: 44px; max-width: 760px;">
+      <span style="font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: #D6B66A;">Criterios de evaluación</span>
+      <h2 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 500; font-size: 38px; line-height: 1.14; color: #FFFDF9;">Cómo se evalúa cada etapa</h2>
+    </div>
+    <div style="position: relative; display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 40px; align-items: start;">
+      <div style="display: flex; flex-direction: column; gap: 16px;">
+        <span style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #D6B66A;">Etapa 1 · Selección</span>
+        <ul style="margin: 0; padding-left: 20px; font-size: 16px; line-height: 1.75; color: rgba(247,241,231,0.85);">
+          <li>Cumplimiento de los requisitos.</li>
+          <li>Integración completa del expediente.</li>
+          <li>Claridad y calidad de la carta de motivos.</li>
+          <li>Presentación de ambos integrantes.</li>
+          <li>Creatividad de la propuesta.</li>
+          <li>Uso e integración de ingredientes mexiquenses.</li>
+          <li>Aplicación de técnicas francesas.</li>
+          <li>Coherencia del concepto gastronómico.</li>
+          <li>Claridad y calidad del video.</li>
+          <li>Viabilidad técnica de la preparación.</li>
+          <li>Calidad de la ficha técnica.</li>
+        </ul>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 16px;">
+        <span style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #D6B66A;">Reto 1 · Quiché</span>
+        <ul style="margin: 0; padding-left: 20px; font-size: 16px; line-height: 1.75; color: rgba(247,241,231,0.85);">
+          <li>Dominio de técnicas francesas.</li>
+          <li>Correcta elaboración de la masa y cocción.</li>
+          <li>Integración de dos ingredientes natos del Estado de México.</li>
+          <li>Creatividad.</li>
+          <li>Sabor y balance.</li>
+          <li>Presentación.</li>
+          <li>Organización y limpieza.</li>
+        </ul>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 16px;">
+        <span style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #D6B66A;">Reto 2 · Canasta sorpresa</span>
+        <ul style="margin: 0; padding-left: 20px; font-size: 16px; line-height: 1.75; color: rgba(247,241,231,0.85);">
+          <li>Técnica culinaria.</li>
+          <li>Manejo y aprovechamiento de la proteína.</li>
+          <li>Elaboración de la guarnición.</li>
+          <li>Calidad técnica y sabor de la salsa.</li>
+          <li>Creatividad.</li>
+          <li>Identidad gastronómica mexiquense.</li>
+          <li>Balance de sabores.</li>
+          <li>Presentación final.</li>
+          <li>Organización y limpieza.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+  <section style="padding: 78px 72px 84px; background: #F7F1E7; border-top: 1px solid rgba(182,138,56,0.35);">
+    <div style="display: grid; grid-template-columns: 1fr 1.1fr; gap: 64px; align-items: start;">
+      <div style="display: flex; flex-direction: column; gap: 18px;">
+        <span style="font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: #B68A38;">Beneficios</span>
+        <h2 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 500; font-size: 38px; line-height: 1.14; color: #4A0012;">Lo que obtienen los equipos seleccionados</h2>
+        <p style="margin: 0; font-size: 16px; line-height: 1.65; color: #5A5A5A;">Los proyectos destacados también se difundirán dentro del Festival “Sabor a México”. Las condiciones para representar al Estado de México en Francia, los apoyos de viaje y el número de personas beneficiadas se anunciarán posteriormente.</p>
+      </div>
+      <ul style="margin: 0; padding-left: 20px; font-size: 17px; line-height: 1.8; color: #5A5A5A;">
+        <li>Participar en los retos culinarios de “México y Francia: Un Encuentro de Sabores”.</li>
+        <li>Presentar su propuesta ante especialistas del sector gastronómico.</li>
+        <li>Fortalecer su experiencia académica y profesional.</li>
+        <li>Dar visibilidad a su institución educativa.</li>
+        <li>Recibir reconocimiento como talento gastronómico estudiantil.</li>
+        <li>Participar en actividades de difusión relacionadas con el programa.</li>
+        <li>Vincularse con chefs, instituciones académicas y representantes del sector.</li>
+        <li>Aspirar a reconocimientos, medallas, experiencias gastronómicas y premios patrocinados.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="preguntas" style="padding: 78px 72px 88px; border-top: 1px solid rgba(182,138,56,0.35); background-color: #FFFFFF">
+    <div style="display: flex; flex-direction: column; gap: 14px; margin-bottom: 40px; max-width: 720px;">
+      <span style="font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: #B68A38;">Preguntas frecuentes</span>
+      <h2 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 500; font-size: 38px; line-height: 1.14; color: #4A0012;">Dudas sobre el registro</h2>
+    </div>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0 48px;">
+      <details style="border-bottom: 1px solid rgba(182,138,56,0.35); padding: 20px 0;">
+        <summary style="display: flex; align-items: center; justify-content: space-between; gap: 20px; font-family: 'Playfair Display', serif; font-size: 20px; color: #4A0012;">¿Quiénes pueden participar?<span style="color: #B68A38; font-family: 'Source Sans 3', sans-serif; font-size: 22px;">+</span></summary>
+        <p style="margin: 14px 0 0; font-size: 16px; line-height: 1.65; color: #5A5A5A;">Estudiantes que cursan la Licenciatura en Gastronomía, entre tercer y octavo semestre, en instituciones de educación superior públicas o privadas del Estado de México.</p>
+      </details>
+      <details style="border-bottom: 1px solid rgba(182,138,56,0.35); padding: 20px 0;">
+        <summary style="display: flex; align-items: center; justify-content: space-between; gap: 20px; font-family: 'Playfair Display', serif; font-size: 20px; color: #4A0012;">¿Cuántas personas integran cada equipo?<span style="color: #B68A38; font-family: 'Source Sans 3', sans-serif; font-size: 22px;">+</span></summary>
+        <p style="margin: 14px 0 0; font-size: 16px; line-height: 1.65; color: #5A5A5A;">Cada equipo deberá estar conformado por dos estudiantes.</p>
+      </details>
+      <details style="border-bottom: 1px solid rgba(182,138,56,0.35); padding: 20px 0;">
+        <summary style="display: flex; align-items: center; justify-content: space-between; gap: 20px; font-family: 'Playfair Display', serif; font-size: 20px; color: #4A0012;">¿Quién debe realizar el registro?<span style="color: #B68A38; font-family: 'Source Sans 3', sans-serif; font-size: 22px;">+</span></summary>
+        <p style="margin: 14px 0 0; font-size: 16px; line-height: 1.65; color: #5A5A5A;">El registro deberá ser realizado directamente por las y los integrantes del equipo.</p>
+      </details>
+      <details style="border-bottom: 1px solid rgba(182,138,56,0.35); padding: 20px 0;">
+        <summary style="display: flex; align-items: center; justify-content: space-between; gap: 20px; font-family: 'Playfair Display', serif; font-size: 20px; color: #4A0012;">¿Cuántos equipos puede registrar cada institución?<span style="color: #B68A38; font-family: 'Source Sans 3', sans-serif; font-size: 22px;">+</span></summary>
+        <p style="margin: 14px 0 0; font-size: 16px; line-height: 1.65; color: #5A5A5A;">Cada institución podrá registrar un equipo participante y, de manera opcional, un docente asesor.</p>
+      </details>
+      <details style="border-bottom: 1px solid rgba(182,138,56,0.35); padding: 20px 0;">
+        <summary style="display: flex; align-items: center; justify-content: space-between; gap: 20px; font-family: 'Playfair Display', serif; font-size: 20px; color: #4A0012;">¿Registrarse garantiza participar en los retos?<span style="color: #B68A38; font-family: 'Source Sans 3', sans-serif; font-size: 22px;">+</span></summary>
+        <p style="margin: 14px 0 0; font-size: 16px; line-height: 1.65; color: #5A5A5A;">No. Primero se realizará una etapa de selección; solamente los equipos elegidos participarán en los retos culinarios.</p>
+      </details>
+      <details style="border-bottom: 1px solid rgba(182,138,56,0.35); padding: 20px 0;">
+        <summary style="display: flex; align-items: center; justify-content: space-between; gap: 20px; font-family: 'Playfair Display', serif; font-size: 20px; color: #4A0012;">¿Debemos pertenecer a la misma institución?<span style="color: #B68A38; font-family: 'Source Sans 3', sans-serif; font-size: 22px;">+</span></summary>
+        <p style="margin: 14px 0 0; font-size: 16px; line-height: 1.65; color: #5A5A5A;">Sí. El equipo se registra a través de su institución educativa, que avala la participación mediante carta oficial.</p>
+      </details>
+      <details style="border-bottom: 1px solid rgba(182,138,56,0.35); padding: 20px 0;">
+        <summary style="display: flex; align-items: center; justify-content: space-between; gap: 20px; font-family: 'Playfair Display', serif; font-size: 20px; color: #4A0012;">¿Qué semestres pueden participar?<span style="color: #B68A38; font-family: 'Source Sans 3', sans-serif; font-size: 22px;">+</span></summary>
+        <p style="margin: 14px 0 0; font-size: 16px; line-height: 1.65; color: #5A5A5A;">Del tercer al octavo semestre de la Licenciatura en Gastronomía al momento de la inscripción.</p>
+      </details>
+      <details style="border-bottom: 1px solid rgba(182,138,56,0.35); padding: 20px 0;">
+        <summary style="display: flex; align-items: center; justify-content: space-between; gap: 20px; font-family: 'Playfair Display', serif; font-size: 20px; color: #4A0012;">¿Es obligatorio el pasaporte?<span style="color: #B68A38; font-family: 'Source Sans 3', sans-serif; font-size: 22px;">+</span></summary>
+        <p style="margin: 14px 0 0; font-size: 16px; line-height: 1.65; color: #5A5A5A;">Sí. Cada participante deberá entregar copia digital de su pasaporte vigente como parte de la documentación obligatoria.</p>
+      </details>
+      <details style="border-bottom: 1px solid rgba(182,138,56,0.35); padding: 20px 0;">
+        <summary style="display: flex; align-items: center; justify-content: space-between; gap: 20px; font-family: 'Playfair Display', serif; font-size: 20px; color: #4A0012;">¿Podemos participar con docente asesor?<span style="color: #B68A38; font-family: 'Source Sans 3', sans-serif; font-size: 22px;">+</span></summary>
+        <p style="margin: 14px 0 0; font-size: 16px; line-height: 1.65; color: #5A5A5A;">Sí, es opcional. El docente asesor firma la ficha de inscripción junto con las y los integrantes del equipo.</p>
+      </details>
+      <details style="border-bottom: 1px solid rgba(182,138,56,0.35); padding: 20px 0;">
+        <summary style="display: flex; align-items: center; justify-content: space-between; gap: 20px; font-family: 'Playfair Display', serif; font-size: 20px; color: #4A0012;">¿Puedo modificar mi información después de registrarme?<span style="color: #B68A38; font-family: 'Source Sans 3', sans-serif; font-size: 22px;">+</span></summary>
+        <p style="margin: 14px 0 0; font-size: 16px; line-height: 1.65; color: #5A5A5A;">La información básica podrá modificarse dentro del periodo habilitado. Los archivos cargados no podrán reemplazarse.</p>
+      </details>
+      <details style="border-bottom: 1px solid rgba(182,138,56,0.35); padding: 20px 0;">
+        <summary style="display: flex; align-items: center; justify-content: space-between; gap: 20px; font-family: 'Playfair Display', serif; font-size: 20px; color: #4A0012;">¿Qué sucede si subo un archivo equivocado?<span style="color: #B68A38; font-family: 'Source Sans 3', sans-serif; font-size: 22px;">+</span></summary>
+        <p style="margin: 14px 0 0; font-size: 16px; line-height: 1.65; color: #5A5A5A;">Los archivos no podrán sustituirse desde la cuenta del participante; por eso el sistema mostrará una advertencia antes de confirmar cada carga.</p>
+      </details>
+      <details style="border-bottom: 1px solid rgba(182,138,56,0.35); padding: 20px 0;">
+        <summary style="display: flex; align-items: center; justify-content: space-between; gap: 20px; font-family: 'Playfair Display', serif; font-size: 20px; color: #4A0012;">¿Cómo conoceré el estado de mi solicitud?<span style="color: #B68A38; font-family: 'Source Sans 3', sans-serif; font-size: 22px;">+</span></summary>
+        <p style="margin: 14px 0 0; font-size: 16px; line-height: 1.65; color: #5A5A5A;">El sistema enviará correos de seguimiento y proporcionará un folio de registro.</p>
+      </details>
+      <details style="border-bottom: 1px solid rgba(182,138,56,0.35); padding: 20px 0;">
+        <summary style="display: flex; align-items: center; justify-content: space-between; gap: 20px; font-family: 'Playfair Display', serif; font-size: 20px; color: #4A0012;">¿Cuándo se anunciarán los equipos seleccionados?<span style="color: #B68A38; font-family: 'Source Sans 3', sans-serif; font-size: 22px;">+</span></summary>
+        <p style="margin: 14px 0 0; font-size: 16px; line-height: 1.65; color: #5A5A5A;">La fecha será publicada próximamente.</p>
+      </details>
+      <details style="border-bottom: 1px solid rgba(182,138,56,0.35); padding: 20px 0;">
+        <summary style="display: flex; align-items: center; justify-content: space-between; gap: 20px; font-family: 'Playfair Display', serif; font-size: 20px; color: #4A0012;">¿Todos los equipos seleccionados viajarán a Francia?<span style="color: #B68A38; font-family: 'Source Sans 3', sans-serif; font-size: 22px;">+</span></summary>
+        <p style="margin: 14px 0 0; font-size: 16px; line-height: 1.65; color: #5A5A5A;">Las condiciones de selección final y viaje todavía deben confirmarse.</p>
+      </details>
+    </div>
+  </section>
+
+  <section id="registro" style="padding: 78px 72px 90px; background: #F7F1E7; border-top: 1px solid rgba(182,138,56,0.35);">
+    <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 48px; margin-bottom: 40px;">
+      <div style="display: flex; flex-direction: column; gap: 14px; max-width: 760px;">
+        <span style="font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: #B68A38;">Formulario de registro</span>
+        <h2 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 500; font-size: 40px; line-height: 1.14; color: #4A0012;">Registra a tu equipo</h2>
+        <p style="margin: 0; font-size: 17px; line-height: 1.65; color: #5A5A5A;">Completa los seis pasos de la ficha de inscripción y carga la documentación obligatoria en formato digital.</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 6px; padding: 20px 26px; background: #FFFDF9; border: 1px solid rgba(182,138,56,0.4); text-align: right;">
+        <span style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #8A7654;">Cierre de registro</span>
+        <span style="font-family: 'Playfair Display', serif; font-size: 24px; color: #75001C;">4 de septiembre de 2026</span>
+      </div>
+    </div>
+
+    <form style="display: flex; flex-direction: column; gap: 24px;">
+
+    <div style="display: flex; flex-direction: column; gap: 22px; padding: 34px 34px 36px; background: #FFFDF9; border: 1px solid rgba(182,138,56,0.35);">
+      <div style="display: flex; align-items: baseline; gap: 16px; padding-bottom: 16px; border-bottom: 1px solid rgba(182,138,56,0.3);">
+        <span style="font-family: 'Playfair Display', serif; font-size: 26px; color: #D6B66A; line-height: 1;">01</span>
+        <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 600; font-size: 24px; color: #4A0012;">Datos de la institución</h3>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px;">
+        <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Universidad<input type="text" placeholder="Nombre completo de la institución" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+        <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Municipio<input type="text" placeholder="" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+        <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Nombre del coordinador o docente asesor<input type="text" placeholder="Opcional" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+        <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Correo electrónico<input type="email" placeholder="" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+        <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Teléfono<input type="tel" placeholder="" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+      </div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 22px; padding: 34px 34px 36px; background: #FFFDF9; border: 1px solid rgba(182,138,56,0.35);">
+      <div style="display: flex; align-items: baseline; gap: 16px; padding-bottom: 16px; border-bottom: 1px solid rgba(182,138,56,0.3);">
+        <span style="font-family: 'Playfair Display', serif; font-size: 26px; color: #D6B66A; line-height: 1;">02</span>
+        <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 600; font-size: 24px; color: #4A0012;">Datos del integrante 1</h3>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px;">
+        <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Nombre completo<input type="text" placeholder="Nombre y apellidos" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+        <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Edad<input type="text" placeholder="" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+        <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Semestre que cursa<input type="text" placeholder="3.º a 8.º semestre" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+        <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Matrícula<input type="text" placeholder="" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+        <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Teléfono<input type="tel" placeholder="10 dígitos" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+        <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Correo electrónico<input type="email" placeholder="nombre@correo.com" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+      </div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 22px; padding: 34px 34px 36px; background: #FFFDF9; border: 1px solid rgba(182,138,56,0.35);">
+      <div style="display: flex; align-items: baseline; gap: 16px; padding-bottom: 16px; border-bottom: 1px solid rgba(182,138,56,0.3);">
+        <span style="font-family: 'Playfair Display', serif; font-size: 26px; color: #D6B66A; line-height: 1;">03</span>
+        <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 600; font-size: 24px; color: #4A0012;">Datos del integrante 2</h3>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px;">
+        <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Nombre completo<input type="text" placeholder="Nombre y apellidos" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+        <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Edad<input type="text" placeholder="" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+        <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Semestre que cursa<input type="text" placeholder="3.º a 8.º semestre" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+        <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Matrícula<input type="text" placeholder="" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+        <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Teléfono<input type="tel" placeholder="10 dígitos" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+        <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Correo electrónico<input type="email" placeholder="nombre@correo.com" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+      </div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 22px; padding: 34px 34px 36px; background: #FFFDF9; border: 1px solid rgba(182,138,56,0.35);">
+      <div style="display: flex; align-items: baseline; gap: 16px; padding-bottom: 16px; border-bottom: 1px solid rgba(182,138,56,0.3);">
+        <span style="font-family: 'Playfair Display', serif; font-size: 26px; color: #D6B66A; line-height: 1;">04</span>
+        <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 600; font-size: 24px; color: #4A0012;">Propuesta para el Reto 1</h3>
+        <span style="margin-left: auto; font-size: 13px; color: #8A7654;">Ficha técnica de la quiché</span>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px;">
+        <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Nombre del platillo<input type="text" placeholder="" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+        <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Ingredientes natos del Estado de México<input type="text" placeholder="Mínimo dos" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+        <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Técnicas francesas aplicadas<input type="text" placeholder="" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+      <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Ingredientes y gramajes<textarea style="width: 100%; min-height: 96px; padding: 12px 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929; resize: vertical;"></textarea></label>
+      <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Procedimiento<textarea style="width: 100%; min-height: 96px; padding: 12px 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929; resize: vertical;"></textarea></label>
+      <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Concepto e inspiración gastronómica<textarea style="width: 100%; min-height: 96px; padding: 12px 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929; resize: vertical;"></textarea></label>
+      <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Justificación culinaria<textarea style="width: 100%; min-height: 96px; padding: 12px 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929; resize: vertical;"></textarea></label>
+      </div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 22px; padding: 34px 34px 36px; background: #FFFDF9; border: 1px solid rgba(182,138,56,0.35);">
+      <div style="display: flex; align-items: baseline; gap: 16px; padding-bottom: 16px; border-bottom: 1px solid rgba(182,138,56,0.3);">
+        <span style="font-family: 'Playfair Display', serif; font-size: 26px; color: #D6B66A; line-height: 1;">05</span>
+        <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 600; font-size: 24px; color: #4A0012;">Documentación obligatoria</h3>
+        <span style="margin-left: auto; font-size: 13px; color: #8A7654;">PDF o JPG · máx. 10 MB · video MP4 o enlace</span>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px;">
+        <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Ficha de inscripción requisitada<input type="file" style="width: 100%; padding: 12px 14px; border: 1px dashed rgba(182,138,56,0.6); border-radius: 2px; background: #F7F1E7; font-family: inherit; font-size: 14px; color: #5A5A5A;"><span style="font-size: 12px; color: #8A7654;">PDF firmado</span></label>
+        <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">INE del integrante 1<input type="file" style="width: 100%; padding: 12px 14px; border: 1px dashed rgba(182,138,56,0.6); border-radius: 2px; background: #F7F1E7; font-family: inherit; font-size: 14px; color: #5A5A5A;"><span style="font-size: 12px; color: #8A7654;">PDF o JPG</span></label>
+        <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">INE del integrante 2<input type="file" style="width: 100%; padding: 12px 14px; border: 1px dashed rgba(182,138,56,0.6); border-radius: 2px; background: #F7F1E7; font-family: inherit; font-size: 14px; color: #5A5A5A;"><span style="font-size: 12px; color: #8A7654;">PDF o JPG</span></label>
+        <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Pasaporte vigente del integrante 1<input type="file" style="width: 100%; padding: 12px 14px; border: 1px dashed rgba(182,138,56,0.6); border-radius: 2px; background: #F7F1E7; font-family: inherit; font-size: 14px; color: #5A5A5A;"><span style="font-size: 12px; color: #8A7654;">PDF o JPG</span></label>
+        <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Pasaporte vigente del integrante 2<input type="file" style="width: 100%; padding: 12px 14px; border: 1px dashed rgba(182,138,56,0.6); border-radius: 2px; background: #F7F1E7; font-family: inherit; font-size: 14px; color: #5A5A5A;"><span style="font-size: 12px; color: #8A7654;">PDF o JPG</span></label>
+        <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Carta oficial de la institución<input type="file" style="width: 100%; padding: 12px 14px; border: 1px dashed rgba(182,138,56,0.6); border-radius: 2px; background: #F7F1E7; font-family: inherit; font-size: 14px; color: #5A5A5A;"><span style="font-size: 12px; color: #8A7654;">PDF · hoja membretada y firmada</span></label>
+        <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Carta de motivos<input type="file" style="width: 100%; padding: 12px 14px; border: 1px dashed rgba(182,138,56,0.6); border-radius: 2px; background: #F7F1E7; font-family: inherit; font-size: 14px; color: #5A5A5A;"><span style="font-size: 12px; color: #8A7654;">PDF · máximo una cuartilla</span></label>
+        <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Video de la quiché<input type="file" style="width: 100%; padding: 12px 14px; border: 1px dashed rgba(182,138,56,0.6); border-radius: 2px; background: #F7F1E7; font-family: inherit; font-size: 14px; color: #5A5A5A;"><span style="font-size: 12px; color: #8A7654;">MP4 o enlace · máximo 3 minutos</span></label>
+        <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Ficha técnica de la quiché<input type="file" style="width: 100%; padding: 12px 14px; border: 1px dashed rgba(182,138,56,0.6); border-radius: 2px; background: #F7F1E7; font-family: inherit; font-size: 14px; color: #5A5A5A;"><span style="font-size: 12px; color: #8A7654;">PDF</span></label>
+      </div>
+      <p style="margin: 0; padding: 18px 20px; background: #F7F1E7; border-left: 3px solid #75001C; font-size: 15px; line-height: 1.6; color: #4A0012;">Verifica que cada archivo sea correcto, legible y corresponda al requisito solicitado. Una vez cargados y confirmados, los documentos no podrán sustituirse ni modificarse.</p>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 22px; padding: 34px 34px 36px; background: #FFFDF9; border: 1px solid rgba(182,138,56,0.35);">
+      <div style="display: flex; align-items: baseline; gap: 16px; padding-bottom: 16px; border-bottom: 1px solid rgba(182,138,56,0.3);">
+        <span style="font-family: 'Playfair Display', serif; font-size: 26px; color: #D6B66A; line-height: 1;">06</span>
+        <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 600; font-size: 24px; color: #4A0012;">Declaración y envío</h3>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px;">
+        <div style="display: flex; flex-direction: column; gap: 18px;">
+          <span style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #B68A38;">Firmas de la ficha de inscripción</span>
+          <div style="display: flex; flex-direction: column; gap: 20px;">
+        <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Nombre del integrante 1<input type="text" placeholder="Firma en el documento cargado" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+        <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Nombre del integrante 2<input type="text" placeholder="Firma en el documento cargado" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+        <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Nombre del docente asesor<input type="text" placeholder="Opcional" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+        <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Lugar y fecha<input type="text" placeholder="" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+          </div>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 14px;">
+          <span style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #B68A38;">Declaraciones obligatorias</span>
+        <label style="display: flex; align-items: flex-start; gap: 12px; font-size: 15px; line-height: 1.55; color: #5A5A5A;"><input type="checkbox" style="width: 18px; height: 18px; margin: 2px 0 0; accent-color: #75001C; flex: none;"><span>Manifestamos que la información proporcionada es verídica.</span></label>
+        <label style="display: flex; align-items: flex-start; gap: 12px; font-size: 15px; line-height: 1.55; color: #5A5A5A;"><input type="checkbox" style="width: 18px; height: 18px; margin: 2px 0 0; accent-color: #75001C; flex: none;"><span>Aceptamos las bases, términos y condiciones de la convocatoria.</span></label>
+        <label style="display: flex; align-items: flex-start; gap: 12px; font-size: 15px; line-height: 1.55; color: #5A5A5A;"><input type="checkbox" style="width: 18px; height: 18px; margin: 2px 0 0; accent-color: #75001C; flex: none;"><span>Acepto el aviso de privacidad.</span></label>
+        <label style="display: flex; align-items: flex-start; gap: 12px; font-size: 15px; line-height: 1.55; color: #5A5A5A;"><input type="checkbox" style="width: 18px; height: 18px; margin: 2px 0 0; accent-color: #75001C; flex: none;"><span>Autorizo el uso de imagen para fines de difusión del programa.</span></label>
+        <label style="display: flex; align-items: flex-start; gap: 12px; font-size: 15px; line-height: 1.55; color: #5A5A5A;"><input type="checkbox" style="width: 18px; height: 18px; margin: 2px 0 0; accent-color: #75001C; flex: none;"><span>Entiendo que los documentos cargados no podrán sustituirse.</span></label>
+        <label style="display: flex; align-items: flex-start; gap: 12px; font-size: 15px; line-height: 1.55; color: #5A5A5A;"><input type="checkbox" style="width: 18px; height: 18px; margin: 2px 0 0; accent-color: #75001C; flex: none;"><span>Reconozco que registrarme no garantiza avanzar a los retos culinarios.</span></label>
+        </div>
+      </div>
+      <div style="display: flex; align-items: center; justify-content: space-between; gap: 32px; padding-top: 24px; border-top: 1px solid rgba(182,138,56,0.3);">
+        <p style="margin: 0; max-width: 620px; font-size: 15px; line-height: 1.6; color: #8A7654;">Revisa cuidadosamente tu información y documentos. Una vez enviada la solicitud podrás modificar únicamente los datos básicos permitidos; los archivos cargados no podrán reemplazarse.</p>
+        <div style="display: flex; align-items: center; gap: 14px; flex: none;">
+          <button type="button" style="height: 56px; padding: 0 24px; border: 1.5px solid #75001C; border-radius: 2px; background: transparent; color: #75001C; font-family: inherit; font-size: 16px; font-weight: 600; cursor: pointer;" style-hover="background: #F7F1E7;">Guardar borrador</button>
+          <button type="submit" style="height: 56px; padding: 0 32px; border: none; border-radius: 2px; background: #75001C; color: #FFFDF9; font-family: inherit; font-size: 16px; font-weight: 700; letter-spacing: 0.02em; cursor: pointer;" style-hover="background: #4A0012; color: #D6B66A;">Enviar solicitud de participación</button>
+        </div>
+      </div>
+    </div>
+
+    </form>
+
+    <div style="margin-top: 26px; display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: stretch;">
+      
+      
+    </div>
+  </section>
+
+  <section style="background: #FFFDF9; border-top: 1px solid rgba(182,138,56,0.35); padding: 38px 72px 42px;">
+    <div style="display: flex; align-items: center; gap: 18px; margin-bottom: 28px;">
+      <span style="flex: 1; height: 1px; background: rgba(182,138,56,0.35); display: block;"></span>
+    </div>
+    <div style="display: flex; align-items: center; justify-content: center; gap: 40px;">
+      <img src="uploads/SRE_FRANCIA%20-%20Edited.png" alt="Secretaría de Relaciones Exteriores · Embajada de México en Francia" style="width: 100%; max-height: 52px; object-fit: contain;">
+      <img src="uploads/b6edfa05-a916-402c-9901-afc0968eee32.png" alt="México–Francia 2026 · 200 años de amistad" style="width: 100%; max-height: 74px; object-fit: contain;">
+      <img src="./logo-nezahualcoyotl-ms6enfs3-col6.png" alt="Gobierno del Estado de México" style="width: 124px; height: 61px; max-height: 74px; object-fit: contain;">
+      <img src="uploads/Logo%20Camara%20Economica.pdf.png" alt="Chambre Économique du Mexique en France" style="width: 100%; max-height: 78px; object-fit: contain;">
+      <img src="uploads/Logo%20Festival%20Sabor%20a%20M%C3%A9xico.pdf.png" alt="Festival Gastronomique Sabor a México Paris" style="width: 100%; max-height: 82px; object-fit: contain;">
+      <img src="uploads/Logo-redondo-PM-2025.pdf.png" alt="Paris México Association depuis 1990" style="width: 100%; max-height: 82px; object-fit: contain;">
+    </div>
+  </section>
+
+  <footer style="position: relative; background: #4A0012; color: rgba(247,241,231,0.78); padding: 56px 72px 40px; overflow: hidden;">
+    <div style="position: absolute; inset: 0; background-image: repeating-linear-gradient(45deg, rgba(214,182,106,0.09) 0 1px, transparent 1px 22px), repeating-linear-gradient(-45deg, rgba(214,182,106,0.09) 0 1px, transparent 1px 22px); pointer-events: none;"></div>
+    <div style="position: relative; display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 48px;">
+      <div style="display: flex; flex-direction: column; gap: 14px;">
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <span style="width: 62px; height: 62px; border-radius: 50%; background: #FFFDF9; display: flex; align-items: center; justify-content: center; overflow: hidden; flex: none;"><img src="uploads/pasted-1785349357556-0.png" alt="Tesoro Gastronómico del Estado de México" style="width: 74px; height: 66px; object-fit: cover; object-position: 52% 45%; mix-blend-mode: multiply;"></span>
+          <span style="font-family: 'Playfair Display', serif; font-size: 17px; color: #F7F1E7;">Tesoros Gastronómicos</span>
+        </div>
+        <p style="margin: 0; font-size: 14px; line-height: 1.65; max-width: 320px;">Programa de convocatorias gastronómicas del Estado de México rumbo a París 2026.</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 10px; font-size: 14px;">
+        <span style="font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: #D6B66A; margin-bottom: 4px;">Convocatorias</span>
+        <a href="#c1" style="color: rgba(247,241,231,0.78);">Cocineras tradicionales</a>
+        <a href="#c2" style="color: rgba(247,241,231,0.78);">Restaurantes</a>
+        <a href="#c3" style="color: rgba(247,241,231,0.78);">Joven talento</a>
+        <a href="#c4" style="color: rgba(247,241,231,0.78);">Bebidas ancestrales</a>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 10px; font-size: 14px;">
+        <span style="font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: #D6B66A; margin-bottom: 4px;">Participantes</span>
+        <a href="#registro" style="color: rgba(247,241,231,0.78);">Registro</a>
+        <a href="#folio" style="color: rgba(247,241,231,0.78);">Consulta tu folio</a>
+        <a href="#requisitos" style="color: rgba(247,241,231,0.78);">Requisitos</a>
+        <a href="#preguntas" style="color: rgba(247,241,231,0.78);">Preguntas frecuentes</a>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 10px; font-size: 14px;">
+        <span style="font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: #D6B66A; margin-bottom: 4px;">Contacto</span>
+        <span>tesoros@edomex.gob.mx</span>
+        <span>722 000 0000 ext. 1826</span>
+        <span>Toluca de Lerdo, Estado de México</span>
+      </div>
+    </div>
+    <div style="position: relative; margin-top: 40px; padding-top: 22px; border-top: 1px solid rgba(214,182,106,0.3); display: flex; align-items: center; justify-content: space-between; font-size: 13px;">
+      <span>© 2026 Gobierno del Estado de México · Todos los derechos reservados</span>
+      <span style="color: #D6B66A; letter-spacing: 0.06em;">México–Francia · 200 años de historia y amistad</span>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+</body>
+</html>

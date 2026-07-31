@@ -1,0 +1,10 @@
+{
+  "name": "tesoros-gastronomicos-frontend",
+  "private": true,
+  "scripts": {
+    "build:assets": "php scripts/publish-bootstrap-assets.php"
+  },
+  "dependencies": {
+    "bootstrap": "5.3.8"
+  }
+}

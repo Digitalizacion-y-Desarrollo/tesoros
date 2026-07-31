@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..800;1,400..600&amp;family=Source+Sans+3:ital,wght@0,300..700;1,400&amp;family=IBM+Plex+Mono:wght@400&amp;display=swap" rel="stylesheet">
+<style>
+  html, body { margin: 0; padding: 0; background: #F7F1E7; }
+  * { box-sizing: border-box; }
+  a { color: #123F35; text-decoration: none; }
+  a:hover { color: #B68A38; }
+  summary { list-style: none; cursor: pointer; }
+  summary::-webkit-details-marker { display: none; }
+  summary::marker { content: ''; }
+</style>
+</helmet>
+
+<div style="width: 100%; min-width: 1280px; margin: 0 auto; background: #FFFDF9; font-family: 'Source Sans 3', system-ui, sans-serif; color: #292929; overflow: hidden;">
+
+  <div style="display: flex; align-items: center; justify-content: center; gap: 10px; height: 34px; background: #4A0012; color: #F7F1E7; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase;">
+    <span style="width: 22px; height: 13px; display: inline-block; background: linear-gradient(to right, #006847 0 33.3%, #FFFDF9 33.3% 66.6%, #CE1126 66.6% 100%);"></span>
+    <span>Gobierno del Estado de México</span>
+    <span style="opacity: 0.5;">·</span>
+    <span>Secretaría de Cultura y Turismo</span>
+    <span style="width: 22px; height: 13px; display: inline-block; background: linear-gradient(to right, #0055A4 0 33.3%, #FFFDF9 33.3% 66.6%, #EF4135 66.6% 100%);"></span>
+  </div>
+
+  <header style="display: flex; align-items: center; justify-content: space-between; padding: 22px 72px; background: #FFFDF9; border-bottom: 1px solid rgba(182,138,56,0.35);">
+    <div style="display: flex; align-items: center; gap: 16px;">
+      <img src="uploads/pasted-1785349357556-0.png" alt="Tesoro Gastronómico del Estado de México" style="width: 74px; height: 66px; object-fit: cover; object-position: 52% 45%; display: block; mix-blend-mode: multiply;">
+      <div style="display: flex; flex-direction: column; gap: 3px;">
+        <span style="font-family: 'Playfair Display', serif; font-size: 19px; color: #4A0012; letter-spacing: 0.01em;">Tesoros Gastronómicos</span>
+        <span style="font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #B68A38;">Estado de México · París 2026</span>
+      </div>
+    </div>
+    <nav style="display: flex; align-items: center; gap: 30px; font-size: 15px;">
+      <a href="#propuesta" style="color: #292929;">La bebida</a>
+      <a href="#requisitos" style="color: #292929;">Bases y requisitos</a>
+      <a href="#documentacion" style="color: #292929;">Documentación</a>
+      <a href="#evaluacion" style="color: #292929;">Evaluación</a>
+      <a href="#preguntas" style="color: #292929;">Preguntas</a>
+    </nav>
+    <div style="display: flex; align-items: center; gap: 12px;">
+      <a href="#folio" style="display: inline-flex; align-items: center; height: 46px; padding: 0 22px; border: 1.5px solid #123F35; border-radius: 2px; color: #123F35; font-size: 15px; font-weight: 600; letter-spacing: 0.02em;" style-hover="background: #F7F1E7;">Consulta tu folio</a>
+      <a href="#registro" style="display: inline-flex; align-items: center; height: 46px; padding: 0 26px; border-radius: 2px; background: #123F35; color: #FFFDF9; font-size: 15px; font-weight: 600; letter-spacing: 0.02em; border: 1.5px solid #123F35;" style-hover="background: #0C2D26; color: #D6B66A;">Registro</a>
+    </div>
+  </header>
+
+  <section style="position: relative; background: #123F35; color: #F7F1E7; overflow: hidden;">
+    <div style="position: absolute; inset: 0; background-image: repeating-linear-gradient(45deg, rgba(214,182,106,0.10) 0 1px, transparent 1px 26px), repeating-linear-gradient(-45deg, rgba(214,182,106,0.10) 0 1px, transparent 1px 26px); pointer-events: none;"></div>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; align-items: stretch; position: relative;">
+      <div style="padding: 78px 72px 80px; display: flex; flex-direction: column; align-items: flex-start; gap: 22px;">
+        <div style="display: flex; align-items: center; gap: 12px; padding: 7px 16px 7px 8px; border: 1px solid rgba(214,182,106,0.55); border-radius: 999px;">
+          <span style="width: 22px; height: 22px; border-radius: 50%; background: #B68A38; display: block;"></span>
+          <span style="font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #D6B66A;">Bebidas fermentadas y destiladas</span>
+        </div>
+        <h1 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 600; font-size: 54px; line-height: 1.07; letter-spacing: -0.01em; color: #FFFDF9; text-wrap: pretty;">Productoras y Productores de Bebidas Tradicionales y Ancestrales</h1>
+        <p style="margin: 0; font-family: 'Playfair Display', serif; font-style: italic; font-size: 25px; line-height: 1.3; color: #D6B66A; max-width: 540px;">Sabores, saberes y tradiciones del Estado de México rumbo a París</p>
+        <p style="margin: 0; max-width: 540px; font-size: 18px; line-height: 1.6; color: rgba(247,241,231,0.86); text-wrap: pretty;">Cada fermentado y destilado refleja el conocimiento, la identidad y el trabajo de generaciones que han preservado técnicas ancestrales y procesos artesanales. Esta convocatoria está dirigida a quienes elaboran bebidas dentro del territorio mexiquense.</p>
+        <p style="margin: 0; max-width: 540px; font-size: 17px; line-height: 1.6; color: rgba(247,241,231,0.72); text-wrap: pretty;">Las personas seleccionadas representarán al Estado de México y a México durante un encuentro gastronómico y cultural en París, Francia, en 2026, ante especialistas y público internacional.</p>
+        <div style="display: flex; align-items: center; gap: 16px; margin-top: 8px;">
+          <a href="#registro" style="display: inline-flex; align-items: center; height: 56px; padding: 0 32px; border-radius: 2px; background: #B68A38; color: #2A1305; font-size: 16px; font-weight: 700; letter-spacing: 0.03em;" style-hover="background: #D6B66A;">Iniciar registro</a>
+          <a href="#requisitos" style="display: inline-flex; align-items: center; height: 56px; padding: 0 26px; border: 1.5px solid rgba(214,182,106,0.6); border-radius: 2px; color: #F7F1E7; font-size: 16px;" style-hover="background: rgba(214,182,106,0.14); color: #D6B66A;">Ver bases completas</a>
+        </div>
+        <div style="display: flex; gap: 44px; margin-top: 24px; padding-top: 24px; border-top: 1px solid rgba(214,182,106,0.3); width: 100%;">
+          <div style="display: flex; flex-direction: column; gap: 4px;">
+            <span style="font-family: 'Playfair Display', serif; font-size: 26px; color: #D6B66A;">13 Agosto 2026</span>
+            <span style="font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(247,241,231,0.7);">Apertura de registro</span>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 4px;">
+            <span style="font-family: 'Playfair Display', serif; font-size: 26px; color: #D6B66A;">3 años</span>
+            <span style="font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(247,241,231,0.7);">Producción continua mínima</span>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 4px;">
+            <span style="font-family: 'Playfair Display', serif; font-size: 26px; color: #D6B66A;">3 min</span>
+            <span style="font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(247,241,231,0.7);">Video de presentación</span>
+          </div>
+        </div>
+      </div>
+      <div style="position: relative; min-height: 660px; background: #16493D; overflow: hidden;">
+        <img src="uploads/ChatGPT%20Image%2029%20jul%202026%2C%2001_15_05%20p.m..png" alt="Productor mexiquense con destilado de maguey y pulque en su taller artesanal" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 62% center;">
+        <div style="position: absolute; inset: 0; background: linear-gradient(90deg, #123F35 0%, rgba(18,63,53,0.35) 20%, transparent 52%); pointer-events: none;"></div>
+      </div>
+    </div>
+  </section>
+
+  <div style="height: 8px; background: linear-gradient(90deg, #123F35 0 25%, #B68A38 25% 50%, #75001C 50% 75%, #D6B66A 75% 100%);"></div>
+
+  <section style="padding: 58px 72px; background: #F7F1E7; display: flex; justify-content: center;">
+    <p style="margin: 0; max-width: 1000px; text-align: center; font-family: 'Playfair Display', serif; font-style: italic; font-size: 30px; line-height: 1.4; color: #123F35;">“Comparte la historia, el proceso y la identidad de una bebida nacida en nuestra tierra.”</p>
+  </section>
+
+  <section style="padding: 74px 72px 80px; background: #FFFDF9;">
+    <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px;">
+      <div style="display: flex; flex-direction: column; gap: 12px; padding: 28px 24px 30px; background: #FFFDF9; border: 1px solid rgba(18,63,53,0.28); border-top: 5px solid #123F35;">
+        <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 600; font-size: 20px; color: #123F35;">¿Quiénes participan?</h3>
+        <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #5A5A5A;">Productoras y productores originarios o residentes del Estado de México con una trayectoria comprobable.</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 12px; padding: 28px 24px 30px; background: #FFFDF9; border: 1px solid rgba(182,138,56,0.45); border-top: 5px solid #B68A38;">
+        <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 600; font-size: 20px; color: #6B4A12;">¿Qué puedes registrar?</h3>
+        <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #5A5A5A;">Una bebida fermentada o destilada elaborada dentro del territorio mexiquense.</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 12px; padding: 28px 24px 30px; background: #FFFDF9; border: 1px solid rgba(18,63,53,0.28); border-top: 5px solid #123F35;">
+        <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 600; font-size: 20px; color: #123F35;">Experiencia comprobable</h3>
+        <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #5A5A5A;">La bebida deberá haberse producido de manera continua durante al menos tres años.</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 12px; padding: 28px 24px 30px; background: #FFFDF9; border: 1px solid rgba(74,0,18,0.25); border-top: 5px solid #75001C;">
+        <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 600; font-size: 20px; color: #4A0012;">¿Qué se evaluará?</h3>
+        <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #5A5A5A;">Tradición, autenticidad, proceso artesanal, trayectoria, identidad cultural y proyección internacional.</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 12px; padding: 28px 24px 30px; background: #123F35;">
+        <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 600; font-size: 20px; color: #FFFDF9;">Representa al Estado de México</h3>
+        <p style="margin: 0; font-size: 15px; line-height: 1.6; color: rgba(247,241,231,0.85);">Comparte la historia de tu bebida en un encuentro gastronómico y cultural en París, Francia 2026.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="propuesta" style="padding: 20px 72px 84px; background: #FFFDF9;">
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 28px; align-items: start;">
+
+      <article style="background: #FFFDF9; border: 1px solid rgba(18,63,53,0.28); border-radius: 3px; box-shadow: 0 2px 0 rgba(18,63,53,0.18); overflow: hidden;">
+        <div style="height: 5px; background: #123F35;"></div>
+        <div style="padding: 34px 34px 36px; display: flex; flex-direction: column; gap: 18px;">
+          <span style="font-family: 'Playfair Display', serif; font-size: 13px; color: #123F35; letter-spacing: 0.06em;">La propuesta</span>
+          <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 600; font-size: 28px; line-height: 1.2; color: #123F35;">Bebidas que cuentan la historia de nuestra tierra</h3>
+          <p style="margin: 0; font-size: 16px; line-height: 1.65; color: #5A5A5A;">Las personas participantes deberán registrar una bebida tradicional o ancestral elaborada en el Estado de México. La propuesta deberá mostrar:</p>
+          <ul style="margin: 0; padding-left: 20px; font-size: 16px; line-height: 1.7; color: #5A5A5A;">
+            <li>El municipio y la comunidad de origen.</li>
+            <li>La historia de la bebida.</li>
+            <li>Los ingredientes principales.</li>
+            <li>El proceso de elaboración.</li>
+            <li>Las técnicas artesanales o ancestrales utilizadas.</li>
+            <li>La trayectoria de la persona productora.</li>
+            <li>El valor cultural de la bebida y su relación con la identidad de la comunidad.</li>
+            <li>Las razones por las que merece representar al Estado de México en París.</li>
+          </ul>
+          <div style="display: flex; gap: 20px; padding: 18px 20px; background: #F7F1E7; border-left: 3px solid #B68A38;">
+            <div style="display: flex; flex-direction: column; gap: 4px;">
+              <span style="font-family: 'Playfair Display', serif; font-size: 19px; color: #123F35;">Fermentadas</span>
+              <span style="font-size: 13px; color: #8A7654;">Tipo aceptado</span>
+            </div>
+            <span style="width: 1px; background: rgba(182,138,56,0.4); display: block;"></span>
+            <div style="display: flex; flex-direction: column; gap: 4px;">
+              <span style="font-family: 'Playfair Display', serif; font-size: 19px; color: #123F35;">Destiladas</span>
+              <span style="font-size: 13px; color: #8A7654;">Tipo aceptado</span>
+            </div>
+            <span style="width: 1px; background: rgba(182,138,56,0.4); display: block;"></span>
+            <p style="margin: 0; font-size: 14px; line-height: 1.55; color: #8A7654;">Las subcategorías por tipo de bebida se definirán próximamente.</p>
+          </div>
+        </div>
+      </article>
+
+      <article style="background: #FFFDF9; border: 1px solid rgba(74,0,18,0.25); border-radius: 3px; box-shadow: 0 2px 0 rgba(74,0,18,0.18); overflow: hidden;">
+        <div style="height: 5px; background: #75001C;"></div>
+        <div style="padding: 34px 34px 36px; display: flex; flex-direction: column; gap: 18px;">
+          <span style="font-family: 'Playfair Display', serif; font-size: 13px; color: #75001C; letter-spacing: 0.06em;">Proceso</span>
+          <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 600; font-size: 28px; line-height: 1.2; color: #4A0012;">Proceso de selección</h3>
+          <p style="margin: 0; font-size: 16px; line-height: 1.65; color: #5A5A5A;">Las solicitudes serán revisadas a partir de:</p>
+          <ul style="margin: 0; padding-left: 20px; font-size: 16px; line-height: 1.7; color: #5A5A5A;">
+            <li>La documentación entregada.</li>
+            <li>La trayectoria de la persona productora.</li>
+            <li>La historia de la bebida.</li>
+            <li>Su proceso de elaboración.</li>
+            <li>La autenticidad del producto.</li>
+            <li>Su representatividad cultural.</li>
+            <li>La calidad de la presentación y del video.</li>
+            <li>Su potencial de promoción internacional.</li>
+          </ul>
+          <p style="margin: 0; font-size: 16px; line-height: 1.65; color: #5A5A5A;">Quienes obtengan las mejores evaluaciones serán seleccionados para representar al Estado de México durante el encuentro gastronómico y cultural en París, Francia 2026.</p>
+          <div style="display: flex; gap: 14px; padding: 18px 20px; background: #F7F1E7; border-left: 3px solid #75001C;">
+            <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #4A0012;">El envío de la solicitud no garantiza la selección. Todos los expedientes serán evaluados conforme a las bases y criterios establecidos.</p>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="requisitos" style="padding: 78px 72px 84px; background: #F7F1E7; border-top: 1px solid rgba(182,138,56,0.35);">
+    <div style="display: flex; flex-direction: column; gap: 14px; margin-bottom: 44px; max-width: 720px;">
+      <span style="font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: #B68A38;">Bases y requisitos</span>
+      <h2 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 500; font-size: 38px; line-height: 1.14; color: #123F35;">Podrán participar quienes</h2>
+    </div>
+    <div style="display: grid; grid-template-columns: 1.15fr 1fr; gap: 26px; align-items: start;">
+      <div style="display: flex; flex-direction: column; gap: 16px; padding: 32px 32px 34px; background: #FFFDF9; border: 1px solid rgba(18,63,53,0.28);">
+        <ul style="margin: 0; padding-left: 20px; font-size: 16px; line-height: 1.8; color: #5A5A5A;">
+          <li>Sean productoras o productores originarios o residentes de algún municipio del Estado de México.</li>
+          <li>Elaboren bebidas fermentadas o destiladas dentro del territorio mexiquense.</li>
+          <li>Sean responsables directos de la elaboración de la bebida registrada.</li>
+          <li>Promuevan las tradiciones, la cultura y la identidad de su comunidad.</li>
+          <li>Cuenten con una trayectoria comprobable en la elaboración de su bebida.</li>
+          <li>Acrediten que la bebida ha sido producida de manera continua durante al menos tres años.</li>
+          <li>Completen el formulario de inscripción.</li>
+          <li>Entreguen la documentación solicitada.</li>
+          <li>Proporcionen información verídica.</li>
+          <li>Declaren que la bebida registrada es de su autoría o producción.</li>
+          <li>Autoricen el uso de fotografías y materiales audiovisuales para fines relacionados con la convocatoria y el evento.</li>
+        </ul>
+      </div>
+      
+    </div>
+  </section>
+
+  <section id="documentacion" style="padding: 78px 72px 84px; background: #FFFDF9;">
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start;">
+      <div style="display: flex; flex-direction: column; gap: 22px;">
+        <span style="font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: #B68A38;">Documentación</span>
+        <h2 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 500; font-size: 38px; line-height: 1.14; color: #123F35;">Expediente digital</h2>
+        <ul style="margin: 0; padding-left: 20px; font-size: 16px; line-height: 1.8; color: #5A5A5A;">
+          
+          <li>Copia de identificación oficial vigente.</li>
+          <li>Comprobante de domicilio.</li>
+          <li>Fotografía reciente de la persona productora.</li>
+          <li>Fotografía de la bebida.</li>
+          <li>Evidencia de que la bebida ha sido elaborada de manera continua durante al menos tres años.</li>
+          <li>Documento que acredite el registro de la bebida ante el SAT, conforme a la normatividad aplicable.</li>
+          <li>RFC de la persona productora o empresa.</li>
+          <li>Video de presentación con duración máxima de tres minutos.</li>
+          <li>Declaración de veracidad y de autoría o producción.</li>
+          <li>Autorización para el uso de material fotográfico y audiovisual.</li>
+        </ul>
+        <div style="display: flex; gap: 14px; padding: 20px 22px; background: #F7F1E7; border-left: 3px solid #123F35;">
+          <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #123F35;">Verifica que cada archivo sea correcto, legible y corresponda al requisito solicitado antes de confirmar su carga. La política para sustituir archivos se definirá antes de publicar el registro.</p>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 22px;">
+        <div style="display: flex; flex-direction: column; gap: 12px; padding: 28px 30px; background: #FFFDF9; border: 1px solid rgba(182,138,56,0.35);">
+          <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 600; font-size: 22px; color: #123F35;">Evidencia de trayectoria</h3>
+          <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #8A7654;">Deberá acreditarse que la bebida se ha elaborado de forma continua durante al menos tres años. Está por confirmarse si podrán presentarse:</p>
+          <ul style="margin: 0; padding-left: 20px; font-size: 16px; line-height: 1.7; color: #5A5A5A;">
+            <li>Fotografías con fecha.</li>
+            <li>Facturas o comprobantes de venta.</li>
+            <li>Constancias de participación en ferias.</li>
+            <li>Reconocimientos y publicaciones.</li>
+            <li>Registros de producción.</li>
+            <li>Cartas emitidas por autoridades comunitarias.</li>
+          </ul>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 12px; padding: 28px 30px; background: #FFFDF9; border: 1px solid rgba(182,138,56,0.35);">
+          <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 600; font-size: 22px; color: #123F35;">Documento fiscal</h3>
+          <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #8A7654;">Se solicita el registro de la bebida ante el SAT y el RFC de la persona productora o empresa. Antes de publicar el formulario se definirá si el comprobante válido será:</p>
+          <ul style="margin: 0; padding-left: 20px; font-size: 16px; line-height: 1.7; color: #5A5A5A;">
+            <li>Constancia de situación fiscal.</li>
+            <li>RFC.</li>
+            <li>Opinión de cumplimiento.</li>
+            <li>Otro documento específico.</li>
+          </ul>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 12px; padding: 28px 30px; background: #FFFDF9; border: 1px solid rgba(182,138,56,0.35);">
+          <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 600; font-size: 22px; color: #123F35;">Video de presentación</h3>
+          <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #8A7654;">Duración máxima de tres minutos. Deberá incluir:</p>
+          <ul style="margin: 0; padding-left: 20px; font-size: 16px; line-height: 1.7; color: #5A5A5A;">
+            <li>Nombre de la persona productora y de la bebida.</li>
+            <li>Municipio y comunidad de origen.</li>
+            <li>Historia de la bebida y su valor cultural.</li>
+            <li>Descripción del proceso de elaboración e ingredientes principales.</li>
+            <li>Técnicas artesanales utilizadas.</li>
+          </ul>
+          <p style="margin: 0; padding: 16px 18px; background: #F7F1E7; border-left: 3px solid #B68A38; font-family: 'Playfair Display', serif; font-size: 17px; line-height: 1.5; color: #123F35;">¿Por qué considera que su bebida merece representar al Estado de México y a México en París?</p>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 12px; padding: 28px 30px; background: #FFFDF9; border: 1px solid rgba(182,138,56,0.35);">
+          <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 600; font-size: 22px; color: #123F35;">Fotografías</h3>
+          <ul style="margin: 0; padding-left: 20px; font-size: 16px; line-height: 1.7; color: #5A5A5A;">
+            <li>Una fotografía reciente de la persona productora.</li>
+            <li>Una fotografía clara de la bebida.</li>
+          </ul>
+          <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #8A7654;">Los formatos permitidos, el peso máximo, la resolución mínima y si la imagen debe mostrar envase, etiqueta o presentación completa se indicarán próximamente.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="evaluacion" style="padding: 78px 72px 84px; background: #123F35; color: #F7F1E7; position: relative; overflow: hidden;">
+    <div style="position: absolute; inset: 0; background-image: repeating-linear-gradient(45deg, rgba(214,182,106,0.09) 0 1px, transparent 1px 24px), repeating-linear-gradient(-45deg, rgba(214,182,106,0.09) 0 1px, transparent 1px 24px); pointer-events: none;"></div>
+    <div style="position: relative; display: flex; flex-direction: column; gap: 14px; margin-bottom: 44px; max-width: 760px;">
+      <span style="font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: #D6B66A;">Criterios de evaluación</span>
+      <h2 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 500; font-size: 38px; line-height: 1.14; color: #FFFDF9;">Siete criterios de valoración</h2>
+    </div>
+    <div style="position: relative; display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px;">
+      <div style="display: flex; flex-direction: column; gap: 12px; padding: 26px 26px 28px; border: 1px solid rgba(214,182,106,0.35);">
+        <span style="font-family: 'Playfair Display', serif; font-size: 24px; color: #D6B66A; line-height: 1;">01</span>
+        <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 600; font-size: 21px; color: #FFFDF9;">Tradición y autenticidad</h3>
+        <p style="margin: 0; font-size: 15px; line-height: 1.6; color: rgba(247,241,231,0.82);">La bebida conserva una relación clara con la historia, las costumbres y los conocimientos de la comunidad.</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 12px; padding: 26px 26px 28px; border: 1px solid rgba(214,182,106,0.35);">
+        <span style="font-family: 'Playfair Display', serif; font-size: 24px; color: #D6B66A; line-height: 1;">02</span>
+        <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 600; font-size: 21px; color: #FFFDF9;">Proceso artesanal</h3>
+        <p style="margin: 0; font-size: 15px; line-height: 1.6; color: rgba(247,241,231,0.82);">Claridad, consistencia y cuidado del proceso productivo descrito por la persona participante.</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 12px; padding: 26px 26px 28px; border: 1px solid rgba(214,182,106,0.35);">
+        <span style="font-family: 'Playfair Display', serif; font-size: 24px; color: #D6B66A; line-height: 1;">03</span>
+        <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 600; font-size: 21px; color: #FFFDF9;">Trayectoria</h3>
+        <p style="margin: 0; font-size: 15px; line-height: 1.6; color: rgba(247,241,231,0.82);">Experiencia comprobable y continuidad en la elaboración de la bebida.</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 12px; padding: 26px 26px 28px; border: 1px solid rgba(214,182,106,0.35);">
+        <span style="font-family: 'Playfair Display', serif; font-size: 24px; color: #D6B66A; line-height: 1;">04</span>
+        <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 600; font-size: 21px; color: #FFFDF9;">Representatividad cultural</h3>
+        <p style="margin: 0; font-size: 15px; line-height: 1.6; color: rgba(247,241,231,0.82);">Elementos vinculados con la identidad gastronómica, agrícola o comunitaria del Estado de México.</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 12px; padding: 26px 26px 28px; border: 1px solid rgba(214,182,106,0.35);">
+        <span style="font-family: 'Playfair Display', serif; font-size: 24px; color: #D6B66A; line-height: 1;">05</span>
+        <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 600; font-size: 21px; color: #FFFDF9;">Originalidad e identidad</h3>
+        <p style="margin: 0; font-size: 15px; line-height: 1.6; color: rgba(247,241,231,0.82);">Características que distinguen a la bebida y la hacen representativa de su territorio.</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 12px; padding: 26px 26px 28px; border: 1px solid rgba(214,182,106,0.35);">
+        <span style="font-family: 'Playfair Display', serif; font-size: 24px; color: #D6B66A; line-height: 1;">06</span>
+        <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 600; font-size: 21px; color: #FFFDF9;">Presentación y video</h3>
+        <p style="margin: 0; font-size: 15px; line-height: 1.6; color: rgba(247,241,231,0.82);">Claridad con la que se comunica la historia, el proceso y el valor cultural del producto.</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 12px; padding: 26px 26px 28px; border: 1px solid rgba(214,182,106,0.35);">
+        <span style="font-family: 'Playfair Display', serif; font-size: 24px; color: #D6B66A; line-height: 1;">07</span>
+        <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 600; font-size: 21px; color: #FFFDF9;">Proyección internacional</h3>
+        <p style="margin: 0; font-size: 15px; line-height: 1.6; color: rgba(247,241,231,0.82);">Capacidad de la bebida y de su historia para representar al Estado de México ante públicos internacionales.</p>
+      </div>
+      <div style="display: flex; flex-direction: column; justify-content: center; gap: 10px; padding: 26px 26px 28px; border: 1px dashed rgba(214,182,106,0.45);">
+        <span style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #D6B66A;">Por confirmar</span>
+        <p style="margin: 0; font-size: 15px; line-height: 1.6; color: rgba(247,241,231,0.72);">La evaluación de sabor o degustación no forma parte de los criterios oficiales hasta que se confirme si habrá entrega de muestras o evaluación sensorial.</p>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding: 78px 72px 84px; background: #FFFDF9;">
+    <div style="display: flex; flex-direction: column; gap: 14px; margin-bottom: 44px; max-width: 720px;">
+      <span style="font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: #B68A38;">Fechas importantes</span>
+      <h2 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 500; font-size: 38px; line-height: 1.14; color: #123F35;">Calendario de la convocatoria</h2>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px;">
+      <div style="display: flex; flex-direction: column; gap: 10px; padding: 26px 24px 28px; background: #F7F1E7; border: 1px solid rgba(41,41,41,0.12); border-top: 5px solid rgba(41,41,41,0.2);">
+        <span style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #8A7654;">Apertura de registros</span>
+        <span style="font-family: 'Playfair Display', serif; font-size: 24px; line-height: 1.2; color: #6B6255;">Próximamente</span>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 10px; padding: 26px 24px 28px; background: #F7F1E7; border: 1px solid rgba(41,41,41,0.12); border-top: 5px solid rgba(41,41,41,0.2);">
+        <span style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #8A7654;">Cierre de registros</span>
+        <span style="font-family: 'Playfair Display', serif; font-size: 24px; line-height: 1.2; color: #6B6255;">Próximamente</span>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 10px; padding: 26px 24px 28px; background: #F7F1E7; border: 1px solid rgba(41,41,41,0.12); border-top: 5px solid rgba(41,41,41,0.2);">
+        <span style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #8A7654;">Revisión documental</span>
+        <span style="font-family: 'Playfair Display', serif; font-size: 24px; line-height: 1.2; color: #6B6255;">Próximamente</span>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 10px; padding: 26px 24px 28px; background: #F7F1E7; border: 1px solid rgba(41,41,41,0.12); border-top: 5px solid rgba(41,41,41,0.2);">
+        <span style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #8A7654;">Evaluación de expedientes y videos</span>
+        <span style="font-family: 'Playfair Display', serif; font-size: 24px; line-height: 1.2; color: #6B6255;">Próximamente</span>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 10px; padding: 26px 24px 28px; background: #FFFDF9; border: 1px dashed rgba(182,138,56,0.5);">
+        <span style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #8A7654;">Recepción de muestras</span>
+        <span style="font-family: 'Playfair Display', serif; font-size: 24px; line-height: 1.2; color: #8A7654;">Por confirmar</span>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 10px; padding: 26px 24px 28px; background: #FFFDF9; border: 1px dashed rgba(182,138,56,0.5);">
+        <span style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #8A7654;">Evaluación sensorial</span>
+        <span style="font-family: 'Playfair Display', serif; font-size: 24px; line-height: 1.2; color: #8A7654;">Por confirmar</span>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 10px; padding: 26px 24px 28px; background: #F7F1E7; border: 1px solid rgba(41,41,41,0.12); border-top: 5px solid rgba(41,41,41,0.2);">
+        <span style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #8A7654;">Publicación de personas seleccionadas</span>
+        <span style="font-family: 'Playfair Display', serif; font-size: 24px; line-height: 1.2; color: #6B6255;">Próximamente</span>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 10px; padding: 26px 24px 28px; background: #F7F1E7; border: 1px solid rgba(18,63,53,0.3); border-top: 5px solid #123F35;">
+        <span style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #8A7654;">Encuentro gastronómico en París, Francia</span>
+        <span style="font-family: 'Playfair Display', serif; font-size: 24px; line-height: 1.2; color: #123F35;">2026 · fecha por confirmar</span>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding: 78px 72px 84px; background: #F7F1E7; border-top: 1px solid rgba(182,138,56,0.35);">
+    <div style="display: grid; grid-template-columns: 1fr 1.1fr; gap: 64px; align-items: start;">
+      <div style="display: flex; flex-direction: column; gap: 18px;">
+        <span style="font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: #B68A38;">Beneficios</span>
+        <h2 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 500; font-size: 38px; line-height: 1.14; color: #123F35;">Lo que obtienen las personas seleccionadas</h2>
+        <div style="display: flex; flex-direction: column; gap: 12px; padding: 24px 26px; background: #FFFDF9; border: 1px solid rgba(41,41,41,0.14);">
+          <span style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #8A7654;">Pendiente de definir</span>
+          <p style="margin: 0; font-size: 15px; line-height: 1.65; color: #6B6255;">Todavía debe confirmarse si la organización cubrirá vuelos, hospedaje, alimentación, transporte local, seguro de viaje, pasaporte, viáticos, traslado de producto, permisos aduanales, exportación de muestras, material de exhibición y acompañantes.</p>
+        </div>
+      </div>
+      <ul style="margin: 0; padding-left: 20px; font-size: 17px; line-height: 1.8; color: #5A5A5A;">
+        <li>Representar al Estado de México y a México en un encuentro gastronómico y cultural en París.</li>
+        <li>Presentar su bebida ante chefs, especialistas, medios de comunicación y público internacional.</li>
+        <li>Compartir la historia y las tradiciones de su comunidad.</li>
+        <li>Difundir el proceso artesanal de su bebida.</li>
+        <li>Promover la identidad cultural y gastronómica del Estado de México.</li>
+        <li>Dar visibilidad a su marca, empresa o proyecto, cuando corresponda.</li>
+        <li>Recibir reconocimiento como representantes de las bebidas tradicionales mexiquenses.</li>
+        <li>Participar en actividades de promoción y difusión relacionadas con la convocatoria.</li>
+        <li>Contribuir a la preservación de conocimientos, técnicas y procesos ancestrales.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="preguntas" style="padding: 78px 72px 88px; background: #FFFDF9;">
+    <div style="display: flex; flex-direction: column; gap: 14px; margin-bottom: 40px; max-width: 720px;">
+      <span style="font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: #B68A38;">Preguntas frecuentes</span>
+      <h2 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 500; font-size: 38px; line-height: 1.14; color: #123F35;">Dudas sobre el registro</h2>
+    </div>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0 48px;">
+      <details style="border-bottom: 1px solid rgba(182,138,56,0.35); padding: 20px 0;">
+        <summary style="display: flex; align-items: center; justify-content: space-between; gap: 20px; font-family: 'Playfair Display', serif; font-size: 20px; color: #123F35;">¿Quiénes pueden participar?<span style="color: #B68A38; font-family: 'Source Sans 3', sans-serif; font-size: 22px;">+</span></summary>
+        <p style="margin: 14px 0 0; font-size: 16px; line-height: 1.65; color: #5A5A5A;">Productoras y productores originarios o residentes de algún municipio del Estado de México que elaboren bebidas fermentadas o destiladas dentro del territorio mexiquense.</p>
+      </details>
+      <details style="border-bottom: 1px solid rgba(182,138,56,0.35); padding: 20px 0;">
+        <summary style="display: flex; align-items: center; justify-content: space-between; gap: 20px; font-family: 'Playfair Display', serif; font-size: 20px; color: #123F35;">¿Qué tipos de bebidas se aceptan?<span style="color: #B68A38; font-family: 'Source Sans 3', sans-serif; font-size: 22px;">+</span></summary>
+        <p style="margin: 14px 0 0; font-size: 16px; line-height: 1.65; color: #5A5A5A;">Bebidas fermentadas y destiladas.</p>
+      </details>
+      <details style="border-bottom: 1px solid rgba(182,138,56,0.35); padding: 20px 0;">
+        <summary style="display: flex; align-items: center; justify-content: space-between; gap: 20px; font-family: 'Playfair Display', serif; font-size: 20px; color: #123F35;">¿La bebida debe producirse en el Estado de México?<span style="color: #B68A38; font-family: 'Source Sans 3', sans-serif; font-size: 22px;">+</span></summary>
+        <p style="margin: 14px 0 0; font-size: 16px; line-height: 1.65; color: #5A5A5A;">Sí. La elaboración deberá realizarse dentro del territorio mexiquense.</p>
+      </details>
+      <details style="border-bottom: 1px solid rgba(182,138,56,0.35); padding: 20px 0;">
+        <summary style="display: flex; align-items: center; justify-content: space-between; gap: 20px; font-family: 'Playfair Display', serif; font-size: 20px; color: #123F35;">¿Cuántos años de trayectoria se requieren?<span style="color: #B68A38; font-family: 'Source Sans 3', sans-serif; font-size: 22px;">+</span></summary>
+        <p style="margin: 14px 0 0; font-size: 16px; line-height: 1.65; color: #5A5A5A;">La bebida deberá haberse elaborado de forma continua durante al menos tres años.</p>
+      </details>
+      <details style="border-bottom: 1px solid rgba(182,138,56,0.35); padding: 20px 0;">
+        <summary style="display: flex; align-items: center; justify-content: space-between; gap: 20px; font-family: 'Playfair Display', serif; font-size: 20px; color: #123F35;">¿Cómo puedo demostrar los tres años de producción?<span style="color: #B68A38; font-family: 'Source Sans 3', sans-serif; font-size: 22px;">+</span></summary>
+        <p style="margin: 14px 0 0; font-size: 16px; line-height: 1.65; color: #5A5A5A;">La documentación aceptada se definirá en las bases finales.</p>
+      </details>
+      <details style="border-bottom: 1px solid rgba(182,138,56,0.35); padding: 20px 0;">
+        <summary style="display: flex; align-items: center; justify-content: space-between; gap: 20px; font-family: 'Playfair Display', serif; font-size: 20px; color: #123F35;">¿Puedo participar si tengo una marca o empresa?<span style="color: #B68A38; font-family: 'Source Sans 3', sans-serif; font-size: 22px;">+</span></summary>
+        <p style="margin: 14px 0 0; font-size: 16px; line-height: 1.65; color: #5A5A5A;">El formulario contempla el nombre de la empresa, marca o proyecto si aplica. Deberá confirmarse si podrán registrarse empresas y cooperativas o solamente personas productoras.</p>
+      </details>
+      <details style="border-bottom: 1px solid rgba(182,138,56,0.35); padding: 20px 0;">
+        <summary style="display: flex; align-items: center; justify-content: space-between; gap: 20px; font-family: 'Playfair Display', serif; font-size: 20px; color: #123F35;">¿Es obligatorio contar con RFC?<span style="color: #B68A38; font-family: 'Source Sans 3', sans-serif; font-size: 22px;">+</span></summary>
+        <p style="margin: 14px 0 0; font-size: 16px; line-height: 1.65; color: #5A5A5A;">El formulario solicita el RFC de la persona productora o empresa.</p>
+      </details>
+      <details style="border-bottom: 1px solid rgba(182,138,56,0.35); padding: 20px 0;">
+        <summary style="display: flex; align-items: center; justify-content: space-between; gap: 20px; font-family: 'Playfair Display', serif; font-size: 20px; color: #123F35;">¿Qué documento del SAT debo presentar?<span style="color: #B68A38; font-family: 'Source Sans 3', sans-serif; font-size: 22px;">+</span></summary>
+        <p style="margin: 14px 0 0; font-size: 16px; line-height: 1.65; color: #5A5A5A;">Se solicita un documento que acredite el registro de la bebida ante el SAT; el comprobante específico está por precisarse.</p>
+      </details>
+      <details style="border-bottom: 1px solid rgba(182,138,56,0.35); padding: 20px 0;">
+        <summary style="display: flex; align-items: center; justify-content: space-between; gap: 20px; font-family: 'Playfair Display', serif; font-size: 20px; color: #123F35;">¿Debo enviar una muestra de la bebida?<span style="color: #B68A38; font-family: 'Source Sans 3', sans-serif; font-size: 22px;">+</span></summary>
+        <p style="margin: 14px 0 0; font-size: 16px; line-height: 1.65; color: #5A5A5A;">La entrega de muestras no está establecida; este punto está pendiente de confirmación.</p>
+      </details>
+      <details style="border-bottom: 1px solid rgba(182,138,56,0.35); padding: 20px 0;">
+        <summary style="display: flex; align-items: center; justify-content: space-between; gap: 20px; font-family: 'Playfair Display', serif; font-size: 20px; color: #123F35;">¿Habrá degustación?<span style="color: #B68A38; font-family: 'Source Sans 3', sans-serif; font-size: 22px;">+</span></summary>
+        <p style="margin: 14px 0 0; font-size: 16px; line-height: 1.65; color: #5A5A5A;">No está establecida en la documentación proporcionada.</p>
+      </details>
+      <details style="border-bottom: 1px solid rgba(182,138,56,0.35); padding: 20px 0;">
+        <summary style="display: flex; align-items: center; justify-content: space-between; gap: 20px; font-family: 'Playfair Display', serif; font-size: 20px; color: #123F35;">¿Puedo registrar más de una bebida?<span style="color: #B68A38; font-family: 'Source Sans 3', sans-serif; font-size: 22px;">+</span></summary>
+        <p style="margin: 14px 0 0; font-size: 16px; line-height: 1.65; color: #5A5A5A;">Este punto no está definido y deberá confirmarse.</p>
+      </details>
+      <details style="border-bottom: 1px solid rgba(182,138,56,0.35); padding: 20px 0;">
+        <summary style="display: flex; align-items: center; justify-content: space-between; gap: 20px; font-family: 'Playfair Display', serif; font-size: 20px; color: #123F35;">¿Se aceptarán bebidas sin alcohol?<span style="color: #B68A38; font-family: 'Source Sans 3', sans-serif; font-size: 22px;">+</span></summary>
+        <p style="margin: 14px 0 0; font-size: 16px; line-height: 1.65; color: #5A5A5A;">La documentación únicamente menciona bebidas fermentadas y destiladas; esta posibilidad deberá aclararse.</p>
+      </details>
+      <details style="border-bottom: 1px solid rgba(182,138,56,0.35); padding: 20px 0;">
+        <summary style="display: flex; align-items: center; justify-content: space-between; gap: 20px; font-family: 'Playfair Display', serif; font-size: 20px; color: #123F35;">¿Cómo debe ser el video?<span style="color: #B68A38; font-family: 'Source Sans 3', sans-serif; font-size: 22px;">+</span></summary>
+        <p style="margin: 14px 0 0; font-size: 16px; line-height: 1.65; color: #5A5A5A;">Máximo tres minutos, incluyendo el municipio, la historia de la bebida, el proceso de elaboración, su valor cultural y las razones por las que merece representar al Estado de México en París.</p>
+      </details>
+      <details style="border-bottom: 1px solid rgba(182,138,56,0.35); padding: 20px 0;">
+        <summary style="display: flex; align-items: center; justify-content: space-between; gap: 20px; font-family: 'Playfair Display', serif; font-size: 20px; color: #123F35;">¿Cómo conoceré el estado de mi solicitud?<span style="color: #B68A38; font-family: 'Source Sans 3', sans-serif; font-size: 22px;">+</span></summary>
+        <p style="margin: 14px 0 0; font-size: 16px; line-height: 1.65; color: #5A5A5A;">El sistema generará un folio de registro y enviará correos de seguimiento durante el proceso.</p>
+      </details>
+      <details style="border-bottom: 1px solid rgba(182,138,56,0.35); padding: 20px 0;">
+        <summary style="display: flex; align-items: center; justify-content: space-between; gap: 20px; font-family: 'Playfair Display', serif; font-size: 20px; color: #123F35;">¿Cuándo será el evento en París?<span style="color: #B68A38; font-family: 'Source Sans 3', sans-serif; font-size: 22px;">+</span></summary>
+        <p style="margin: 14px 0 0; font-size: 16px; line-height: 1.65; color: #5A5A5A;">Se realizará durante 2026. La fecha exacta se publicará próximamente.</p>
+      </details>
+      <details style="border-bottom: 1px solid rgba(182,138,56,0.35); padding: 20px 0;">
+        <summary style="display: flex; align-items: center; justify-content: space-between; gap: 20px; font-family: 'Playfair Display', serif; font-size: 20px; color: #123F35;">¿Quién cubrirá el traslado de las bebidas?<span style="color: #B68A38; font-family: 'Source Sans 3', sans-serif; font-size: 22px;">+</span></summary>
+        <p style="margin: 14px 0 0; font-size: 16px; line-height: 1.65; color: #5A5A5A;">Las condiciones de logística, transporte y exportación todavía no están definidas.</p>
+      </details>
+    </div>
+  </section>
+
+  <section style="padding: 70px 72px 74px; background: #123F35; color: #F7F1E7; position: relative; overflow: hidden;">
+    <div style="position: absolute; inset: 0; background-image: repeating-linear-gradient(45deg, rgba(214,182,106,0.09) 0 1px, transparent 1px 22px), repeating-linear-gradient(-45deg, rgba(214,182,106,0.09) 0 1px, transparent 1px 22px); pointer-events: none;"></div>
+    <div style="position: relative; display: flex; align-items: center; justify-content: space-between; gap: 60px;">
+      <div style="display: flex; flex-direction: column; gap: 14px; max-width: 760px;">
+        <h2 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 500; font-size: 40px; line-height: 1.14; color: #FFFDF9;">Cada bebida cuenta la historia de nuestra tierra</h2>
+        <p style="margin: 0; font-size: 18px; line-height: 1.65; color: rgba(247,241,231,0.85);">Comparte tus saberes, preserva tu tradición y lleva el espíritu del Estado de México al mundo.</p>
+      </div>
+      <a href="#registro" style="display: inline-flex; align-items: center; height: 58px; padding: 0 34px; border-radius: 2px; background: #B68A38; color: #2A1305; font-size: 16px; font-weight: 700; letter-spacing: 0.03em; flex: none;" style-hover="background: #D6B66A;">Iniciar registro</a>
+    </div>
+  </section>
+
+  <section id="registro" style="padding: 78px 72px 90px; background: #F7F1E7; border-top: 1px solid rgba(182,138,56,0.35);">
+    <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 48px; margin-bottom: 40px;">
+      <div style="display: flex; flex-direction: column; gap: 14px; max-width: 760px;">
+        <span style="font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: #B68A38;">Formulario de registro</span>
+        <h2 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 500; font-size: 40px; line-height: 1.14; color: #123F35;">Registra tu bebida</h2>
+        <p style="margin: 0; font-size: 17px; line-height: 1.65; color: #5A5A5A;">Completa los siete pasos y carga tu expediente en formato digital. Podrás guardar un borrador y continuar más tarde.</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 6px; padding: 20px 26px; background: #FFFDF9; border: 1px solid rgba(182,138,56,0.4); text-align: right;">
+        <span style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #8A7654;">Cierre de registro</span>
+        <span style="font-family: 'Playfair Display', serif; font-size: 24px; color: #123F35;">Próximamente</span>
+      </div>
+    </div>
+
+    <form style="display: flex; flex-direction: column; gap: 24px;">
+
+      <div style="display: flex; flex-direction: column; gap: 22px; padding: 34px 34px 36px; background: #FFFDF9; border: 1px solid rgba(182,138,56,0.35);">
+        <div style="display: flex; align-items: baseline; gap: 16px; padding-bottom: 16px; border-bottom: 1px solid rgba(182,138,56,0.3);">
+          <span style="font-family: 'Playfair Display', serif; font-size: 26px; color: #D6B66A; line-height: 1;">01</span>
+          <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 600; font-size: 24px; color: #123F35;">Datos generales de la persona productora</h3>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px;">
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Nombre completo<input type="text" placeholder="Nombre y apellidos" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Fecha de nacimiento<input type="date" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Edad<input type="text" placeholder="Se calcula automáticamente" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">CURP<input type="text" placeholder="18 caracteres" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">RFC<input type="text" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Municipio de origen<input type="text" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Municipio de residencia<input type="text" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Comunidad<input type="text" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Teléfono<input type="tel" placeholder="10 dígitos" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Correo electrónico<input type="email" placeholder="nombre@correo.com" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Medio de contacto preferido<select style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"><option>Teléfono</option><option>WhatsApp</option><option>Correo electrónico</option></select></label>
+        </div>
+        <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Domicilio completo<input type="text" placeholder="Calle, número, colonia, código postal" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 22px; padding: 34px 34px 36px; background: #FFFDF9; border: 1px solid rgba(182,138,56,0.35);">
+        <div style="display: flex; align-items: baseline; gap: 16px; padding-bottom: 16px; border-bottom: 1px solid rgba(182,138,56,0.3);">
+          <span style="font-family: 'Playfair Display', serif; font-size: 26px; color: #D6B66A; line-height: 1;">02</span>
+          <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 600; font-size: 24px; color: #123F35;">Empresa, marca o proyecto</h3>
+          <span style="margin-left: auto; font-size: 13px; color: #8A7654;">Si aplica</span>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px;">
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Nombre de la empresa, marca o proyecto<input type="text" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Tipo de participante<select style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"><option>Persona productora independiente</option><option>Empresa</option><option>Cooperativa</option><option>Proyecto comunitario</option></select></label>
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Año de inicio del proyecto<input type="text" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Municipio donde opera<input type="text" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Número de personas involucradas<input type="text" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Sitio web<input type="url" placeholder="https://" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Redes sociales<input type="text" placeholder="@usuario" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+        </div>
+        <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Breve descripción del proyecto<textarea style="width: 100%; min-height: 96px; padding: 12px 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929; resize: vertical;"></textarea></label>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 22px; padding: 34px 34px 36px; background: #FFFDF9; border: 1px solid rgba(182,138,56,0.35);">
+        <div style="display: flex; align-items: baseline; gap: 16px; padding-bottom: 16px; border-bottom: 1px solid rgba(182,138,56,0.3);">
+          <span style="font-family: 'Playfair Display', serif; font-size: 26px; color: #D6B66A; line-height: 1;">03</span>
+          <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 600; font-size: 24px; color: #123F35;">Información de la bebida</h3>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px;">
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Nombre de la bebida<input type="text" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Tipo<select style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"><option>Fermentada</option><option>Destilada</option></select></label>
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Año en que comenzó a elaborarla<input type="text" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Años de producción<input type="text" placeholder="Mínimo 3 años" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Municipio de elaboración<input type="text" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Comunidad de elaboración<input type="text" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Presentación comercial<input type="text" placeholder="Si aplica" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Graduación alcohólica<input type="text" placeholder="Si corresponde" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Condiciones de conservación<input type="text" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Ingredientes principales<textarea style="width: 100%; min-height: 96px; padding: 12px 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929; resize: vertical;"></textarea></label>
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Origen de los ingredientes<textarea style="width: 100%; min-height: 96px; padding: 12px 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929; resize: vertical;"></textarea></label>
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Descripción del proceso de elaboración<textarea style="width: 100%; min-height: 96px; padding: 12px 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929; resize: vertical;"></textarea></label>
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Técnicas tradicionales o ancestrales utilizadas<textarea style="width: 100%; min-height: 96px; padding: 12px 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929; resize: vertical;"></textarea></label>
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Breve historia de la bebida<textarea style="width: 100%; min-height: 96px; padding: 12px 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929; resize: vertical;"></textarea></label>
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Valor cultural<textarea style="width: 100%; min-height: 96px; padding: 12px 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929; resize: vertical;"></textarea></label>
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Elementos que la hacen única<textarea style="width: 100%; min-height: 96px; padding: 12px 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929; resize: vertical;"></textarea></label>
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Razones por las que representa al Estado de México<textarea style="width: 100%; min-height: 96px; padding: 12px 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929; resize: vertical;"></textarea></label>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 22px; padding: 34px 34px 36px; background: #FFFDF9; border: 1px solid rgba(182,138,56,0.35);">
+        <div style="display: flex; align-items: baseline; gap: 16px; padding-bottom: 16px; border-bottom: 1px solid rgba(182,138,56,0.3);">
+          <span style="font-family: 'Playfair Display', serif; font-size: 26px; color: #D6B66A; line-height: 1;">04</span>
+          <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 600; font-size: 24px; color: #123F35;">Trayectoria</h3>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Descripción de su trayectoria<textarea style="width: 100%; min-height: 96px; padding: 12px 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929; resize: vertical;"></textarea></label>
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">¿Cómo aprendió a elaborar la bebida?<textarea style="width: 100%; min-height: 96px; padding: 12px 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929; resize: vertical;"></textarea></label>
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Participación en ferias, festivales o exposiciones<textarea style="width: 100%; min-height: 96px; padding: 12px 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929; resize: vertical;"></textarea></label>
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Actividades para preservar o difundir la tradición<textarea style="width: 100%; min-height: 96px; padding: 12px 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929; resize: vertical;"></textarea></label>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Persona o generación que transmitió el conocimiento<input type="text" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Premios o reconocimientos<input type="text" placeholder="Si aplica" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 22px; padding: 34px 34px 36px; background: #FFFDF9; border: 1px solid rgba(182,138,56,0.35);">
+        <div style="display: flex; align-items: baseline; gap: 16px; padding-bottom: 16px; border-bottom: 1px solid rgba(182,138,56,0.3);">
+          <span style="font-family: 'Playfair Display', serif; font-size: 26px; color: #D6B66A; line-height: 1;">05</span>
+          <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 600; font-size: 24px; color: #123F35;">Video y fotografías</h3>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 26px;">
+          <div style="display: flex; flex-direction: column; gap: 16px;">
+            <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Video de presentación<input type="file" style="width: 100%; padding: 12px 14px; border: 1px dashed rgba(182,138,56,0.6); border-radius: 2px; background: #F7F1E7; font-family: inherit; font-size: 14px; color: #5A5A5A;"><span style="font-size: 12px; color: #8A7654;">MP4 · carga directa</span></label>
+            <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">O enlace del video<input type="url" placeholder="https://" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+            <label style="display: flex; align-items: flex-start; gap: 12px; font-size: 15px; line-height: 1.55; color: #5A5A5A;"><input type="checkbox" style="width: 18px; height: 18px; margin: 2px 0 0; accent-color: #123F35; flex: none;"><span>Confirmo que el video dura tres minutos o menos e incluye municipio y comunidad, historia de la bebida, proceso de elaboración, valor cultural y la razón para representar al Estado de México.</span></label>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 16px;">
+            <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Fotografía reciente de la persona productora<input type="file" style="width: 100%; padding: 12px 14px; border: 1px dashed rgba(182,138,56,0.6); border-radius: 2px; background: #F7F1E7; font-family: inherit; font-size: 14px; color: #5A5A5A;"><span style="font-size: 12px; color: #8A7654;">JPG o PNG</span></label>
+            <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Fotografía de la bebida<input type="file" style="width: 100%; padding: 12px 14px; border: 1px dashed rgba(182,138,56,0.6); border-radius: 2px; background: #F7F1E7; font-family: inherit; font-size: 14px; color: #5A5A5A;"><span style="font-size: 12px; color: #8A7654;">JPG o PNG · imagen clara del producto</span></label>
+            <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Fotografía del proceso o de los ingredientes<input type="file" style="width: 100%; padding: 12px 14px; border: 1px dashed rgba(182,138,56,0.6); border-radius: 2px; background: #F7F1E7; font-family: inherit; font-size: 14px; color: #5A5A5A;"><span style="font-size: 12px; color: #8A7654;">Opcional</span></label>
+          </div>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 22px; padding: 34px 34px 36px; background: #FFFDF9; border: 1px solid rgba(182,138,56,0.35);">
+        <div style="display: flex; align-items: baseline; gap: 16px; padding-bottom: 16px; border-bottom: 1px solid rgba(182,138,56,0.3);">
+          <span style="font-family: 'Playfair Display', serif; font-size: 26px; color: #D6B66A; line-height: 1;">06</span>
+          <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 600; font-size: 24px; color: #123F35;">Documentación</h3>
+          <span style="margin-left: auto; font-size: 13px; color: #8A7654;">PDF, JPG o PNG · máx. 10 MB por archivo</span>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px;">
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Identificación oficial vigente<input type="file" style="width: 100%; padding: 12px 14px; border: 1px dashed rgba(182,138,56,0.6); border-radius: 2px; background: #F7F1E7; font-family: inherit; font-size: 14px; color: #5A5A5A;"><span style="font-size: 12px; color: #8A7654;">INE o pasaporte</span></label>
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Comprobante de domicilio<input type="file" style="width: 100%; padding: 12px 14px; border: 1px dashed rgba(182,138,56,0.6); border-radius: 2px; background: #F7F1E7; font-family: inherit; font-size: 14px; color: #5A5A5A;"><span style="font-size: 12px; color: #8A7654;">No mayor a tres meses</span></label>
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Evidencia de producción continua<input type="file" style="width: 100%; padding: 12px 14px; border: 1px dashed rgba(182,138,56,0.6); border-radius: 2px; background: #F7F1E7; font-family: inherit; font-size: 14px; color: #5A5A5A;"><span style="font-size: 12px; color: #8A7654;">Al menos tres años · documentación por confirmar</span></label>
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Documento fiscal de registro ante el SAT<input type="file" style="width: 100%; padding: 12px 14px; border: 1px dashed rgba(182,138,56,0.6); border-radius: 2px; background: #F7F1E7; font-family: inherit; font-size: 14px; color: #5A5A5A;"><span style="font-size: 12px; color: #8A7654;">Comprobante específico por confirmar</span></label>
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">RFC de la persona productora o empresa<input type="file" style="width: 100%; padding: 12px 14px; border: 1px dashed rgba(182,138,56,0.6); border-radius: 2px; background: #F7F1E7; font-family: inherit; font-size: 14px; color: #5A5A5A;"><span style="font-size: 12px; color: #8A7654;">PDF</span></label>
+          
+          
+        </div>
+        <p style="margin: 0; padding: 18px 20px; background: #F7F1E7; border-left: 3px solid #123F35; font-size: 15px; line-height: 1.6; color: #123F35;">Verifica que cada archivo sea correcto, legible y corresponda al requisito solicitado antes de confirmar su carga. La organización podrá solicitar documentos adicionales.</p>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 22px; padding: 34px 34px 36px; background: #FFFDF9; border: 1px solid rgba(182,138,56,0.35);">
+        <div style="display: flex; align-items: baseline; gap: 16px; padding-bottom: 16px; border-bottom: 1px solid rgba(182,138,56,0.3);">
+          <span style="font-family: 'Playfair Display', serif; font-size: 26px; color: #D6B66A; line-height: 1;">07</span>
+          <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 600; font-size: 24px; color: #123F35;">Revisión y envío</h3>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px;">
+          <div style="display: flex; flex-direction: column; gap: 14px;">
+            <span style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #B68A38;">El sistema mostrará</span>
+            <ul style="margin: 0; padding-left: 20px; font-size: 15px; line-height: 1.75; color: #5A5A5A;">
+              <li>Resumen de datos personales.</li>
+              <li>Información de la marca o proyecto.</li>
+              <li>Información de la bebida.</li>
+              <li>Trayectoria.</li>
+              <li>Fotografías y video.</li>
+              <li>Documentos cargados.</li>
+            </ul>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 14px;">
+            <span style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #B68A38;">Declaraciones obligatorias</span>
+            <label style="display: flex; align-items: flex-start; gap: 12px; font-size: 15px; line-height: 1.55; color: #5A5A5A;"><input type="checkbox" style="width: 18px; height: 18px; margin: 2px 0 0; accent-color: #123F35; flex: none;"><span>Acepto las bases de la convocatoria.</span></label>
+            <label style="display: flex; align-items: flex-start; gap: 12px; font-size: 15px; line-height: 1.55; color: #5A5A5A;"><input type="checkbox" style="width: 18px; height: 18px; margin: 2px 0 0; accent-color: #123F35; flex: none;"><span>Acepto el aviso de privacidad.</span></label>
+            <label style="display: flex; align-items: flex-start; gap: 12px; font-size: 15px; line-height: 1.55; color: #5A5A5A;"><input type="checkbox" style="width: 18px; height: 18px; margin: 2px 0 0; accent-color: #123F35; flex: none;"><span>Declaro que la información proporcionada es verdadera.</span></label>
+            <label style="display: flex; align-items: flex-start; gap: 12px; font-size: 15px; line-height: 1.55; color: #5A5A5A;"><input type="checkbox" style="width: 18px; height: 18px; margin: 2px 0 0; accent-color: #123F35; flex: none;"><span>Declaro que la bebida registrada es de mi autoría o producción.</span></label>
+            <label style="display: flex; align-items: flex-start; gap: 12px; font-size: 15px; line-height: 1.55; color: #5A5A5A;"><input type="checkbox" style="width: 18px; height: 18px; margin: 2px 0 0; accent-color: #123F35; flex: none;"><span>Autorizo el uso de fotografías y videos para la convocatoria y el evento.</span></label>
+            <label style="display: flex; align-items: flex-start; gap: 12px; font-size: 15px; line-height: 1.55; color: #5A5A5A;"><input type="checkbox" style="width: 18px; height: 18px; margin: 2px 0 0; accent-color: #123F35; flex: none;"><span>Acepto las condiciones del proceso de selección.</span></label>
+          </div>
+        </div>
+        <div style="display: flex; align-items: center; justify-content: space-between; gap: 32px; padding-top: 24px; border-top: 1px solid rgba(182,138,56,0.3);">
+          <p style="margin: 0; max-width: 640px; font-size: 15px; line-height: 1.6; color: #8A7654;">Revisa cuidadosamente la información y los documentos de tu solicitud. Al enviarla declaras que los datos proporcionados son verdaderos y que la bebida registrada es de tu autoría o producción.</p>
+          <div style="display: flex; align-items: center; gap: 14px; flex: none;">
+            <button type="button" style="height: 56px; padding: 0 24px; border: 1.5px solid #123F35; border-radius: 2px; background: transparent; color: #123F35; font-family: inherit; font-size: 16px; font-weight: 600; cursor: pointer;" style-hover="background: #F7F1E7;">Guardar borrador</button>
+            <button type="submit" style="height: 56px; padding: 0 32px; border: none; border-radius: 2px; background: #123F35; color: #FFFDF9; font-family: inherit; font-size: 16px; font-weight: 700; letter-spacing: 0.02em; cursor: pointer;" style-hover="background: #0C2D26; color: #D6B66A;">Enviar solicitud de participación</button>
+          </div>
+        </div>
+      </div>
+
+    </form>
+
+    
+  </section>
+
+  <section style="background: #FFFDF9; border-top: 1px solid rgba(182,138,56,0.35); padding: 38px 72px 42px;">
+    <div style="display: flex; align-items: center; gap: 18px; margin-bottom: 28px;">
+      <span style="flex: 1; height: 1px; background: rgba(182,138,56,0.35); display: block;"></span>
+    </div>
+    <div style="display: flex; align-items: center; justify-content: center; gap: 40px;">
+      <img src="uploads/SRE_FRANCIA%20-%20Edited.png" alt="Secretaría de Relaciones Exteriores · Embajada de México en Francia" style="width: 100%; max-height: 52px; object-fit: contain;">
+      <img src="uploads/b6edfa05-a916-402c-9901-afc0968eee32.png" alt="México–Francia 2026 · 200 años de amistad" style="width: 100%; max-height: 74px; object-fit: contain;">
+      <img src="./logo-nezahualcoyotl-ms6enfs3-col6.png" alt="Gobierno del Estado de México" style="width: 124px; height: 61px; max-height: 74px; object-fit: contain;">
+      <img src="uploads/Logo%20Camara%20Economica.pdf.png" alt="Chambre Économique du Mexique en France" style="width: 100%; max-height: 78px; object-fit: contain;">
+      <img src="uploads/Logo%20Festival%20Sabor%20a%20M%C3%A9xico.pdf.png" alt="Festival Gastronomique Sabor a México Paris" style="width: 100%; max-height: 82px; object-fit: contain;">
+      <img src="uploads/Logo-redondo-PM-2025.pdf.png" alt="Paris México Association depuis 1990" style="width: 100%; max-height: 82px; object-fit: contain;">
+    </div>
+  </section>
+
+  <footer style="position: relative; background: #4A0012; color: rgba(247,241,231,0.78); padding: 56px 72px 40px; overflow: hidden;">
+    <div style="position: absolute; inset: 0; background-image: repeating-linear-gradient(45deg, rgba(214,182,106,0.09) 0 1px, transparent 1px 22px), repeating-linear-gradient(-45deg, rgba(214,182,106,0.09) 0 1px, transparent 1px 22px); pointer-events: none;"></div>
+    <div style="position: relative; display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 48px;">
+      <div style="display: flex; flex-direction: column; gap: 14px;">
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <span style="width: 62px; height: 62px; border-radius: 50%; background: #FFFDF9; display: flex; align-items: center; justify-content: center; overflow: hidden; flex: none;"><img src="uploads/pasted-1785349357556-0.png" alt="Tesoro Gastronómico del Estado de México" style="width: 74px; height: 66px; object-fit: cover; object-position: 52% 45%; mix-blend-mode: multiply;"></span>
+          <span style="font-family: 'Playfair Display', serif; font-size: 17px; color: #F7F1E7;">Tesoros Gastronómicos</span>
+        </div>
+        <p style="margin: 0; font-size: 14px; line-height: 1.65; max-width: 320px;">Programa de convocatorias gastronómicas del Estado de México rumbo a París 2026.</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 10px; font-size: 14px;">
+        <span style="font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: #D6B66A; margin-bottom: 4px;">Convocatorias</span>
+        <a href="#c1" style="color: rgba(247,241,231,0.78);">Cocineras tradicionales</a>
+        <a href="#c2" style="color: rgba(247,241,231,0.78);">Restaurantes</a>
+        <a href="#c3" style="color: rgba(247,241,231,0.78);">Joven talento</a>
+        <a href="#c4" style="color: rgba(247,241,231,0.78);">Bebidas ancestrales</a>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 10px; font-size: 14px;">
+        <span style="font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: #D6B66A; margin-bottom: 4px;">Participantes</span>
+        <a href="#registro" style="color: rgba(247,241,231,0.78);">Registro</a>
+        <a href="#folio" style="color: rgba(247,241,231,0.78);">Consulta tu folio</a>
+        <a href="#requisitos" style="color: rgba(247,241,231,0.78);">Requisitos</a>
+        <a href="#preguntas" style="color: rgba(247,241,231,0.78);">Preguntas frecuentes</a>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 10px; font-size: 14px;">
+        <span style="font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: #D6B66A; margin-bottom: 4px;">Contacto</span>
+        <span>tesoros@edomex.gob.mx</span>
+        <span>722 000 0000 ext. 1826</span>
+        <span>Toluca de Lerdo, Estado de México</span>
+      </div>
+    </div>
+    <div style="position: relative; margin-top: 40px; padding-top: 22px; border-top: 1px solid rgba(214,182,106,0.3); display: flex; align-items: center; justify-content: space-between; font-size: 13px;">
+      <span>© 2026 Gobierno del Estado de México · Todos los derechos reservados</span>
+      <span style="color: #D6B66A; letter-spacing: 0.06em;">México–Francia · 200 años de historia y amistad</span>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+</body>
+</html>

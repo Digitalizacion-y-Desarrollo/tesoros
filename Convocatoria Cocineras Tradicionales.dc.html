@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..800;1,400..600&amp;family=Source+Sans+3:ital,wght@0,300..700;1,400&amp;family=IBM+Plex+Mono:wght@400&amp;display=swap" rel="stylesheet">
+<style>
+  html, body { margin: 0; padding: 0; background: #F7F1E7; }
+  * { box-sizing: border-box; }
+  a { color: #75001C; text-decoration: none; }
+  a:hover { color: #B68A38; }
+  summary { list-style: none; cursor: pointer; }
+  summary::-webkit-details-marker { display: none; }
+  summary::marker { content: ''; }
+</style>
+</helmet>
+
+<div style="width: 100%; min-width: 1280px; margin: 0 auto; background: #FFFDF9; font-family: 'Source Sans 3', system-ui, sans-serif; color: #292929; overflow: hidden;">
+
+  <div style="display: flex; align-items: center; justify-content: center; gap: 10px; height: 34px; background: #4A0012; color: #F7F1E7; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase;">
+    <span style="width: 22px; height: 13px; display: inline-block; background: linear-gradient(to right, #006847 0 33.3%, #FFFDF9 33.3% 66.6%, #CE1126 66.6% 100%);"></span>
+    <span>Gobierno del Estado de México</span>
+    <span style="opacity: 0.5;">·</span>
+    <span>Secretaría de Cultura y Turismo</span>
+    <span style="width: 22px; height: 13px; display: inline-block; background: linear-gradient(to right, #0055A4 0 33.3%, #FFFDF9 33.3% 66.6%, #EF4135 66.6% 100%);"></span>
+  </div>
+
+  <header style="display: flex; align-items: center; justify-content: space-between; padding: 22px 72px; background: #FFFDF9; border-bottom: 1px solid rgba(182,138,56,0.35);">
+    <div style="display: flex; align-items: center; gap: 16px;">
+      <img src="uploads/pasted-1785349357556-0.png" alt="Tesoro Gastronómico del Estado de México" style="width: 74px; height: 66px; object-fit: cover; object-position: 52% 45%; display: block; mix-blend-mode: multiply;">
+      <div style="display: flex; flex-direction: column; gap: 3px;">
+        <span style="font-family: 'Playfair Display', serif; font-size: 19px; color: #4A0012; letter-spacing: 0.01em;">Tesoros Gastronómicos</span>
+        <span style="font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #B68A38;">Estado de México · París 2026</span>
+      </div>
+    </div>
+    <nav style="display: flex; align-items: center; gap: 30px; font-size: 15px;">
+      <a href="#propuesta" style="color: #292929;">La propuesta</a>
+      <a href="#requisitos" style="color: #292929;">Bases y requisitos</a>
+      <a href="#documentacion" style="color: #292929;">Documentación</a>
+      <a href="#evaluacion" style="color: #292929;">Evaluación</a>
+      <a href="#preguntas" style="color: #292929;">Preguntas</a>
+    </nav>
+    <div style="display: flex; align-items: center; gap: 12px;">
+      <a href="#folio" style="display: inline-flex; align-items: center; height: 46px; padding: 0 22px; border: 1.5px solid #75001C; border-radius: 2px; color: #75001C; font-size: 15px; font-weight: 600; letter-spacing: 0.02em;" style-hover="background: #F7F1E7;">Consulta tu folio</a>
+      <a href="#registro" style="display: inline-flex; align-items: center; height: 46px; padding: 0 26px; border-radius: 2px; background: #75001C; color: #FFFDF9; font-size: 15px; font-weight: 600; letter-spacing: 0.02em; border: 1.5px solid #75001C;" style-hover="background: #4A0012; color: #D6B66A;">Registro</a>
+    </div>
+  </header>
+
+  <section style="position: relative; background: #4A0012; color: #F7F1E7; overflow: hidden;">
+    <div style="position: absolute; inset: 0; background-image: repeating-linear-gradient(45deg, rgba(214,182,106,0.10) 0 1px, transparent 1px 26px), repeating-linear-gradient(-45deg, rgba(214,182,106,0.10) 0 1px, transparent 1px 26px); pointer-events: none;"></div>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; align-items: stretch; position: relative;">
+      <div style="padding: 78px 72px 80px; display: flex; flex-direction: column; align-items: flex-start; gap: 22px;">
+        <div style="display: flex; align-items: center; gap: 12px; padding: 7px 16px 7px 8px; border: 1px solid rgba(214,182,106,0.55); border-radius: 999px;">
+          <span style="width: 22px; height: 22px; border-radius: 50%; background: #B68A38; display: block;"></span>
+          <span style="font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #D6B66A;">Embajadoras de la Cocina Tradicional · Convocatoria estatal</span>
+        </div>
+        <h1 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 600; font-size: 58px; line-height: 1.06; letter-spacing: -0.01em; color: #FFFDF9; text-wrap: pretty;">Cocineras y Cocineros Tradicionales</h1>
+        <p style="margin: 0; font-family: 'Playfair Display', serif; font-style: italic; font-size: 25px; line-height: 1.3; color: #D6B66A; max-width: 540px;">Saberes que preservan la identidad gastronómica del Estado de México</p>
+        <p style="margin: 0; max-width: 540px; font-size: 18px; line-height: 1.6; color: rgba(247,241,231,0.86); text-wrap: pretty;">Cada receta, ingrediente y técnica culinaria conserva la historia de una familia, una comunidad y un territorio. Esta convocatoria está dirigida a cocineras y cocineros tradicionales originarios o residentes de los municipios del Estado de México.</p>
+        <p style="margin: 0; max-width: 540px; font-size: 17px; line-height: 1.6; color: rgba(247,241,231,0.72); text-wrap: pretty;">Las cocineras seleccionadas representarán al Estado de México en el Festival Gastronómico en París, Francia, en noviembre de 2026, compartiendo su cocina con chefs, medios de comunicación, instituciones y público internacional.</p>
+        <div style="display: flex; align-items: center; gap: 16px; margin-top: 8px;">
+          <a href="#registro" style="display: inline-flex; align-items: center; height: 56px; padding: 0 32px; border-radius: 2px; background: #B68A38; color: #2A1305; font-size: 16px; font-weight: 700; letter-spacing: 0.03em;" style-hover="background: #D6B66A;">Iniciar registro</a>
+          <a href="#requisitos" style="display: inline-flex; align-items: center; height: 56px; padding: 0 26px; border: 1.5px solid rgba(214,182,106,0.6); border-radius: 2px; color: #F7F1E7; font-size: 16px;" style-hover="background: rgba(214,182,106,0.14); color: #D6B66A;">Ver bases completas</a>
+        </div>
+        <div style="display: flex; gap: 44px; margin-top: 24px; padding-top: 24px; border-top: 1px solid rgba(214,182,106,0.3); width: 100%;">
+          <div style="display: flex; flex-direction: column; gap: 4px;">
+            <span style="font-family: 'Playfair Display', serif; font-size: 26px; color: #D6B66A;">13 de Agosto</span>
+            <span style="font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(247,241,231,0.7);">Apertura de registro</span>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 4px;">
+            <span style="font-family: 'Playfair Display', serif; font-size: 26px; color: #D6B66A;">3 min</span>
+            <span style="font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(247,241,231,0.7);">Video de presentación</span>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 4px;">
+            
+            
+          </div>
+        </div>
+      </div>
+      <div style="position: relative; min-height: 640px; background: #5C0016; overflow: hidden;">
+        <img src="uploads/ChatGPT%20Image%2029%20jul%202026%2C%2001_01_03%20p.m..png" alt="Cocinera tradicional mexiquense cocinando en fogón rodeada de asistentes" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 60% center;">
+        <div style="position: absolute; inset: 0; background: linear-gradient(90deg, #4A0012 0%, rgba(74,0,18,0.35) 20%, transparent 52%); pointer-events: none;"></div>
+      </div>
+    </div>
+  </section>
+
+  <div style="height: 8px; background: linear-gradient(90deg, #75001C 0 25%, #B68A38 25% 50%, #123F35 50% 75%, #D6B66A 75% 100%);"></div>
+
+  <section style="padding: 58px 72px; background: #F7F1E7; display: flex; justify-content: center;">
+    <p style="margin: 0; max-width: 1000px; text-align: center; font-family: 'Playfair Display', serif; font-style: italic; font-size: 30px; line-height: 1.4; color: #4A0012;">“Comparte la receta, la historia y los conocimientos que dan identidad a tu comunidad.”</p>
+  </section>
+
+  <section style="padding: 74px 72px 80px; background: #FFFDF9;">
+    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px;">
+      <div style="display: flex; flex-direction: column; gap: 14px; padding: 30px 28px 32px; background: #FFFDF9; border: 1px solid rgba(117,0,28,0.28); border-top: 5px solid #75001C;">
+        <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 600; font-size: 22px; color: #4A0012;">¿Quiénes participan?</h3>
+        <p style="margin: 0; font-size: 16px; line-height: 1.65; color: #5A5A5A;">Cocineras y cocineros tradicionales originarios o residentes del Estado de México.</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 14px; padding: 30px 28px 32px; background: #FFFDF9; border: 1px solid rgba(182,138,56,0.45); border-top: 5px solid #B68A38;">
+        <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 600; font-size: 22px; color: #6B4A12;">¿Qué debes presentar?</h3>
+        <p style="margin: 0; font-size: 16px; line-height: 1.65; color: #5A5A5A;">Una receta o platillo insignia transmitido entre generaciones y representativo de tu municipio o comunidad.</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 14px; padding: 30px 28px 32px; background: #FFFDF9; border: 1px solid rgba(74,0,18,0.25); border-top: 5px solid #4A0012;">
+        <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 600; font-size: 22px; color: #4A0012;">¿Qué se evaluará?</h3>
+        <p style="margin: 0; font-size: 16px; line-height: 1.65; color: #5A5A5A;">Autenticidad, legado familiar, preservación de la tradición, identidad municipal e impacto cultural.</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 14px; padding: 30px 28px 32px; background: #4A0012;">
+        <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 600; font-size: 22px; color: #FFFDF9;">Representa al Estado de México</h3>
+        <p style="margin: 0; font-size: 16px; line-height: 1.65; color: rgba(247,241,231,0.85);">Comparte tu cocina tradicional en el Festival Gastronómico en París, Francia, en noviembre de 2026.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="propuesta" style="padding: 20px 72px 84px; background: #FFFDF9;">
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 28px; align-items: start;">
+
+      <article style="background: #FFFDF9; border: 1px solid rgba(117,0,28,0.28); border-radius: 3px; box-shadow: 0 2px 0 rgba(117,0,28,0.18); overflow: hidden;">
+        <div style="height: 5px; background: #75001C;"></div>
+        <div style="padding: 34px 34px 36px; display: flex; flex-direction: column; gap: 18px;">
+          <span style="font-family: 'Playfair Display', serif; font-size: 13px; color: #75001C; letter-spacing: 0.06em;">La propuesta</span>
+          <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 600; font-size: 28px; line-height: 1.2; color: #4A0012;">Una cocina que cuenta nuestra historia</h3>
+          <p style="margin: 0; font-size: 16px; line-height: 1.65; color: #5A5A5A;">Las personas participantes deberán presentar una receta o platillo insignia que represente la identidad gastronómica de su municipio o comunidad. La propuesta deberá reflejar:</p>
+          <ul style="margin: 0; padding-left: 20px; font-size: 16px; line-height: 1.7; color: #5A5A5A;">
+            <li>La historia de la receta.</li>
+            <li>Su transmisión entre generaciones.</li>
+            <li>El vínculo con la familia o comunidad.</li>
+            <li>El uso de ingredientes tradicionales.</li>
+            <li>Las técnicas culinarias empleadas.</li>
+            <li>Su significado cultural.</li>
+            <li>La relación del platillo con el territorio mexiquense.</li>
+          </ul>
+          <div style="display: flex; gap: 14px; padding: 18px 20px; background: #F7F1E7; border-left: 3px solid #B68A38;">
+            <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #4A0012;">A través del expediente y del video de presentación, las y los participantes compartirán quiénes son, de dónde proviene su receta y por qué su cocina representa al Estado de México.</p>
+          </div>
+        </div>
+      </article>
+
+      <article style="background: #FFFDF9; border: 1px solid rgba(74,0,18,0.25); border-radius: 3px; box-shadow: 0 2px 0 rgba(74,0,18,0.18); overflow: hidden;">
+        <div style="height: 5px; background: #4A0012;"></div>
+        <div style="padding: 34px 34px 36px; display: flex; flex-direction: column; gap: 18px;">
+          <span style="font-family: 'Playfair Display', serif; font-size: 13px; color: #4A0012; letter-spacing: 0.06em;">Proceso</span>
+          <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 600; font-size: 28px; line-height: 1.2; color: #4A0012;">Proceso de selección</h3>
+          <p style="margin: 0; font-size: 16px; line-height: 1.65; color: #5A5A5A;">El proceso contemplará la revisión de:</p>
+          <ul style="margin: 0; padding-left: 20px; font-size: 16px; line-height: 1.7; color: #5A5A5A;">
+            <li>Formulario de inscripción.</li>
+            <li>Documentación personal.</li>
+            <li>Carta de motivos.</li>
+            <li>Video de presentación.</li>
+            <li>Historia de la receta.</li>
+            <li>Ingredientes y técnicas tradicionales.</li>
+            <li>Representatividad cultural del platillo.</li>
+          </ul>
+          <p style="margin: 0; font-size: 16px; line-height: 1.65; color: #5A5A5A;">Las personas que obtengan las mejores evaluaciones serán seleccionadas para representar al Estado de México durante el Festival Gastronómico en París, Francia 2026.</p>
+          <div style="display: flex; gap: 14px; padding: 18px 20px; background: #F7F1E7; border-left: 3px solid #75001C;">
+            <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #4A0012;">El envío de la solicitud no garantiza la selección. Todos los expedientes serán evaluados conforme a los criterios establecidos en la convocatoria.</p>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="requisitos" style="padding: 78px 72px 84px; background: #F7F1E7; border-top: 1px solid rgba(182,138,56,0.35);">
+    <div style="display: flex; flex-direction: column; gap: 14px; margin-bottom: 44px; max-width: 720px;">
+      <span style="font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: #B68A38;">Bases y requisitos</span>
+      <h2 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 500; font-size: 38px; line-height: 1.14; color: #4A0012;">Podrán participar quienes</h2>
+    </div>
+    <div style="display: grid; grid-template-columns: 1.15fr 1fr; gap: 26px; align-items: start;">
+      <div style="display: flex; flex-direction: column; gap: 16px; padding: 32px 32px 34px; background: #FFFDF9; border: 1px solid rgba(182,138,56,0.35);">
+        <ul style="margin: 0; padding-left: 20px; font-size: 16px; line-height: 1.8; color: #5A5A5A;">
+          <li>Sean cocineras o cocineros tradicionales.</li>
+          <li>Sean originarios o residentes de algún municipio del Estado de México.</li>
+          <li>Elaboren recetas tradicionales transmitidas de generación en generación.</li>
+          <li>Sean portadores y promotores del patrimonio gastronómico de su comunidad.</li>
+          <li>Presenten una receta o platillo insignia.</li>
+          <li>Expliquen la historia y el significado cultural de su preparación.</li>
+          <li>Entreguen la documentación solicitada dentro del periodo establecido.</li>
+          <li>Proporcionen información completa y verídica.</li>
+          <li>Acepten las bases, términos y condiciones de la convocatoria.</li>
+          <li>Autoricen el uso de los materiales fotográficos y audiovisuales para fines relacionados con la selección y promoción del festival.</li>
+        </ul>
+      </div>
+      
+    </div>
+  </section>
+
+  <section id="documentacion" style="padding: 78px 72px 84px; background: #FFFDF9;">
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start;">
+      <div style="display: flex; flex-direction: column; gap: 22px;">
+        <span style="font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: #B68A38;">Documentación</span>
+        <h2 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 500; font-size: 38px; line-height: 1.14; color: #4A0012;">Expediente digital</h2>
+        <p style="margin: 0; font-size: 16px; line-height: 1.65; color: #8A7654;">La información gastronómica —receta insignia, generaciones, ingredientes principales e historia— y la declaración de veracidad se capturan dentro del formato de inscripción.</p>
+        <ul style="margin: 0; padding-left: 20px; font-size: 16px; line-height: 1.8; color: #5A5A5A;">
+          
+          <li>Copia de identificación oficial vigente (INE).</li>
+          <li>Comprobante de domicilio.</li>
+          <li>Una fotografía reciente en formato digital.</li>
+          <li>Carta de motivos de máximo una cuartilla.</li>
+          <li>Video de presentación con duración máxima de tres minutos.</li>
+        </ul>
+        <div style="display: flex; gap: 14px; padding: 20px 22px; background: #F7F1E7; border-left: 3px solid #75001C;">
+          <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #4A0012;">Verifica que cada documento sea correcto, legible y corresponda al requisito indicado antes de confirmar su carga. La política sobre sustitución de archivos se definirá antes de publicar el formulario.</p>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 22px;">
+        <div style="display: flex; flex-direction: column; gap: 12px; padding: 28px 30px; background: #FFFDF9; border: 1px solid rgba(182,138,56,0.35);">
+          <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 600; font-size: 22px; color: #75001C;">Carta de motivos</h3>
+          <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #8A7654;">Extensión máxima de una cuartilla. Deberá responder:</p>
+          <ul style="margin: 0; padding-left: 20px; font-size: 16px; line-height: 1.7; color: #5A5A5A;">
+            <li>¿Por qué desea representar al Estado de México?</li>
+            <li>¿Por qué considera que su cocina y su platillo representan la identidad de su municipio?</li>
+            <li>¿Qué significado cultural tiene su receta?</li>
+          </ul>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 12px; padding: 28px 30px; background: #FFFDF9; border: 1px solid rgba(182,138,56,0.35);">
+          <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 600; font-size: 22px; color: #75001C;">Video de presentación</h3>
+          <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #8A7654;">Duración máxima de tres minutos. Deberá incluir:</p>
+          <ul style="margin: 0; padding-left: 20px; font-size: 16px; line-height: 1.7; color: #5A5A5A;">
+            <li>Presentación personal.</li>
+            <li>Mención de su municipio.</li>
+            <li>Historia de su receta insignia.</li>
+            <li>Descripción de los ingredientes tradicionales y su importancia cultural.</li>
+          </ul>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 12px; padding: 28px 30px; background: #FFFDF9; border: 1px solid rgba(182,138,56,0.35);">
+          <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 600; font-size: 22px; color: #75001C;">Información de la receta</h3>
+          <ul style="margin: 0; padding-left: 20px; font-size: 16px; line-height: 1.7; color: #5A5A5A;">
+            <li>Nombre de la receta o platillo insignia.</li>
+            <li>Municipio o comunidad que representa.</li>
+            <li>Número de generaciones que la han preparado.</li>
+            <li>Ingredientes principales y técnicas tradicionales.</li>
+            <li>Breve historia de la preparación y su significado cultural.</li>
+            <li>Relación con fiestas, costumbres o prácticas comunitarias, cuando corresponda.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="evaluacion" style="padding: 78px 72px 84px; background: #4A0012; color: #F7F1E7; position: relative; overflow: hidden;">
+    <div style="position: absolute; inset: 0; background-image: repeating-linear-gradient(45deg, rgba(214,182,106,0.09) 0 1px, transparent 1px 24px), repeating-linear-gradient(-45deg, rgba(214,182,106,0.09) 0 1px, transparent 1px 24px); pointer-events: none;"></div>
+    <div style="position: relative; display: flex; flex-direction: column; gap: 14px; margin-bottom: 44px; max-width: 760px;">
+      <span style="font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: #D6B66A;">Criterios de evaluación</span>
+      <h2 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 500; font-size: 38px; line-height: 1.14; color: #FFFDF9;">Seis criterios de valoración</h2>
+    </div>
+    <div style="position: relative; display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px;">
+      <div style="display: flex; flex-direction: column; gap: 12px; padding: 28px 28px 30px; border: 1px solid rgba(214,182,106,0.35);">
+        <span style="font-family: 'Playfair Display', serif; font-size: 26px; color: #D6B66A; line-height: 1;">01</span>
+        <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 600; font-size: 22px; color: #FFFDF9;">Autenticidad</h3>
+        <p style="margin: 0; font-size: 16px; line-height: 1.65; color: rgba(247,241,231,0.82);">La preparación conserva una relación clara con la historia, las costumbres y la identidad de la comunidad.</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 12px; padding: 28px 28px 30px; border: 1px solid rgba(214,182,106,0.35);">
+        <span style="font-family: 'Playfair Display', serif; font-size: 26px; color: #D6B66A; line-height: 1;">02</span>
+        <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 600; font-size: 22px; color: #FFFDF9;">Preservación</h3>
+        <p style="margin: 0; font-size: 16px; line-height: 1.65; color: rgba(247,241,231,0.82);">Contribución de la persona participante a la conservación y transmisión de recetas, técnicas y conocimientos tradicionales.</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 12px; padding: 28px 28px 30px; border: 1px solid rgba(214,182,106,0.35);">
+        <span style="font-family: 'Playfair Display', serif; font-size: 26px; color: #D6B66A; line-height: 1;">03</span>
+        <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 600; font-size: 22px; color: #FFFDF9;">Legado familiar</h3>
+        <p style="margin: 0; font-size: 16px; line-height: 1.65; color: rgba(247,241,231,0.82);">Historia de la receta y forma en que ha sido transmitida entre generaciones.</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 12px; padding: 28px 28px 30px; border: 1px solid rgba(214,182,106,0.35);">
+        <span style="font-family: 'Playfair Display', serif; font-size: 26px; color: #D6B66A; line-height: 1;">04</span>
+        <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 600; font-size: 22px; color: #FFFDF9;">Identidad municipal</h3>
+        <p style="margin: 0; font-size: 16px; line-height: 1.65; color: rgba(247,241,231,0.82);">El platillo refleja ingredientes, prácticas, costumbres o elementos culturales vinculados con el municipio o comunidad.</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 12px; padding: 28px 28px 30px; border: 1px solid rgba(214,182,106,0.35);">
+        <span style="font-family: 'Playfair Display', serif; font-size: 26px; color: #D6B66A; line-height: 1;">05</span>
+        <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 600; font-size: 22px; color: #FFFDF9;">Presentación</h3>
+        <p style="margin: 0; font-size: 16px; line-height: 1.65; color: rgba(247,241,231,0.82);">Claridad con la que la persona participante comunica su historia, trayectoria y propuesta.</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 12px; padding: 28px 28px 30px; border: 1px solid rgba(214,182,106,0.35);">
+        <span style="font-family: 'Playfair Display', serif; font-size: 26px; color: #D6B66A; line-height: 1;">06</span>
+        <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 600; font-size: 22px; color: #FFFDF9;">Impacto cultural y turístico</h3>
+        <p style="margin: 0; font-size: 16px; line-height: 1.65; color: rgba(247,241,231,0.82);">Potencial de la receta para difundir la identidad gastronómica y promover el patrimonio del Estado de México.</p>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <section style="padding: 78px 72px 84px; background: #F7F1E7; border-top: 1px solid rgba(182,138,56,0.35);">
+    <div style="display: grid; grid-template-columns: 1fr 1.1fr; gap: 64px; align-items: start;">
+      <div style="display: flex; flex-direction: column; gap: 18px;">
+        <span style="font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: #B68A38;">Beneficios</span>
+        <h2 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 500; font-size: 38px; line-height: 1.14; color: #4A0012;">Lo que obtienen las personas seleccionadas</h2>
+        <div style="display: flex; flex-direction: column; gap: 12px; padding: 24px 26px; background: #FFFDF9; border: 1px solid rgba(41,41,41,0.14);">
+          <span style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #8A7654;">Pendiente de definir</span>
+          <p style="margin: 0; font-size: 15px; line-height: 1.65; color: #6B6255;">Todavía debe confirmarse si la organización cubrirá vuelo, hospedaje, alimentación, transporte local, seguro de viaje, pasaporte, viáticos, traslado de ingredientes o utensilios y la participación de ayudantes o acompañantes.</p>
+        </div>
+      </div>
+      <ul style="margin: 0; padding-left: 20px; font-size: 17px; line-height: 1.8; color: #5A5A5A;">
+        <li>Representar al Estado de México en el Festival Gastronómico en París.</li>
+        <li>Compartir su cocina con chefs, medios de comunicación, instituciones y público internacional.</li>
+        <li>Difundir la historia de su receta.</li>
+        <li>Promover la identidad de su municipio y comunidad.</li>
+        <li>Dar visibilidad a los ingredientes y técnicas tradicionales.</li>
+        <li>Contribuir a la preservación del patrimonio gastronómico mexiquense.</li>
+        <li>Participar en actividades culturales y gastronómicas.</li>
+        <li>Recibir reconocimiento como representantes de la cocina tradicional del Estado de México.</li>
+        <li>Formar parte de acciones de difusión relacionadas con el festival.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="preguntas" style="padding: 78px 72px 88px; background: #FFFDF9;">
+    <div style="display: flex; flex-direction: column; gap: 14px; margin-bottom: 40px; max-width: 720px;">
+      <span style="font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: #B68A38;">Preguntas frecuentes</span>
+      <h2 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 500; font-size: 38px; line-height: 1.14; color: #4A0012;">Dudas sobre el registro</h2>
+    </div>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0 48px;">
+      <details style="border-bottom: 1px solid rgba(182,138,56,0.35); padding: 20px 0;">
+        <summary style="display: flex; align-items: center; justify-content: space-between; gap: 20px; font-family: 'Playfair Display', serif; font-size: 20px; color: #4A0012;">¿Quiénes pueden participar?<span style="color: #B68A38; font-family: 'Source Sans 3', sans-serif; font-size: 22px;">+</span></summary>
+        <p style="margin: 14px 0 0; font-size: 16px; line-height: 1.65; color: #5A5A5A;">Cocineras y cocineros tradicionales originarios o residentes de algún municipio del Estado de México.</p>
+      </details>
+      <details style="border-bottom: 1px solid rgba(182,138,56,0.35); padding: 20px 0;">
+        <summary style="display: flex; align-items: center; justify-content: space-between; gap: 20px; font-family: 'Playfair Display', serif; font-size: 20px; color: #4A0012;">¿Es necesario tener un restaurante?<span style="color: #B68A38; font-family: 'Source Sans 3', sans-serif; font-size: 22px;">+</span></summary>
+        <p style="margin: 14px 0 0; font-size: 16px; line-height: 1.65; color: #5A5A5A;">No. La convocatoria está dirigida a personas portadoras de recetas, técnicas y conocimientos tradicionales; no se requiere contar con un restaurante.</p>
+      </details>
+      <details style="border-bottom: 1px solid rgba(182,138,56,0.35); padding: 20px 0;">
+        <summary style="display: flex; align-items: center; justify-content: space-between; gap: 20px; font-family: 'Playfair Display', serif; font-size: 20px; color: #4A0012;">¿Qué receta puedo registrar?<span style="color: #B68A38; font-family: 'Source Sans 3', sans-serif; font-size: 22px;">+</span></summary>
+        <p style="margin: 14px 0 0; font-size: 16px; line-height: 1.65; color: #5A5A5A;">Una receta o platillo insignia transmitido entre generaciones y relacionado con la identidad de su familia, comunidad o municipio.</p>
+      </details>
+      <details style="border-bottom: 1px solid rgba(182,138,56,0.35); padding: 20px 0;">
+        <summary style="display: flex; align-items: center; justify-content: space-between; gap: 20px; font-family: 'Playfair Display', serif; font-size: 20px; color: #4A0012;">¿La receta debe ser originaria de mi municipio?<span style="color: #B68A38; font-family: 'Source Sans 3', sans-serif; font-size: 22px;">+</span></summary>
+        <p style="margin: 14px 0 0; font-size: 16px; line-height: 1.65; color: #5A5A5A;">Deberá tener una relación clara con la identidad cultural, familiar o comunitaria del municipio que representa.</p>
+      </details>
+      <details style="border-bottom: 1px solid rgba(182,138,56,0.35); padding: 20px 0;">
+        <summary style="display: flex; align-items: center; justify-content: space-between; gap: 20px; font-family: 'Playfair Display', serif; font-size: 20px; color: #4A0012;">¿Debo indicar cuántas generaciones han preparado la receta?<span style="color: #B68A38; font-family: 'Source Sans 3', sans-serif; font-size: 22px;">+</span></summary>
+        <p style="margin: 14px 0 0; font-size: 16px; line-height: 1.65; color: #5A5A5A;">Sí. La ficha de registro solicita indicar desde cuántas generaciones se prepara en la familia.</p>
+      </details>
+      <details style="border-bottom: 1px solid rgba(182,138,56,0.35); padding: 20px 0;">
+        <summary style="display: flex; align-items: center; justify-content: space-between; gap: 20px; font-family: 'Playfair Display', serif; font-size: 20px; color: #4A0012;">¿Qué duración debe tener el video?<span style="color: #B68A38; font-family: 'Source Sans 3', sans-serif; font-size: 22px;">+</span></summary>
+        <p style="margin: 14px 0 0; font-size: 16px; line-height: 1.65; color: #5A5A5A;">Máximo tres minutos.</p>
+      </details>
+      <details style="border-bottom: 1px solid rgba(182,138,56,0.35); padding: 20px 0;">
+        <summary style="display: flex; align-items: center; justify-content: space-between; gap: 20px; font-family: 'Playfair Display', serif; font-size: 20px; color: #4A0012;">¿Qué debo explicar en el video?<span style="color: #B68A38; font-family: 'Source Sans 3', sans-serif; font-size: 22px;">+</span></summary>
+        <p style="margin: 14px 0 0; font-size: 16px; line-height: 1.65; color: #5A5A5A;">Su presentación personal, el municipio, la historia de su receta insignia y la descripción de los ingredientes tradicionales con su importancia cultural.</p>
+      </details>
+      <details style="border-bottom: 1px solid rgba(182,138,56,0.35); padding: 20px 0;">
+        <summary style="display: flex; align-items: center; justify-content: space-between; gap: 20px; font-family: 'Playfair Display', serif; font-size: 20px; color: #4A0012;">¿La carta de motivos tiene una extensión máxima?<span style="color: #B68A38; font-family: 'Source Sans 3', sans-serif; font-size: 22px;">+</span></summary>
+        <p style="margin: 14px 0 0; font-size: 16px; line-height: 1.65; color: #5A5A5A;">Sí. Deberá tener una extensión máxima de una cuartilla.</p>
+      </details>
+      <details style="border-bottom: 1px solid rgba(182,138,56,0.35); padding: 20px 0;">
+        <summary style="display: flex; align-items: center; justify-content: space-between; gap: 20px; font-family: 'Playfair Display', serif; font-size: 20px; color: #4A0012;">¿Puedo registrar más de una receta?<span style="color: #B68A38; font-family: 'Source Sans 3', sans-serif; font-size: 22px;">+</span></summary>
+        <p style="margin: 14px 0 0; font-size: 16px; line-height: 1.65; color: #5A5A5A;">Este punto está pendiente de confirmación.</p>
+      </details>
+      <details style="border-bottom: 1px solid rgba(182,138,56,0.35); padding: 20px 0;">
+        <summary style="display: flex; align-items: center; justify-content: space-between; gap: 20px; font-family: 'Playfair Display', serif; font-size: 20px; color: #4A0012;">¿Habrá una preparación o degustación presencial?<span style="color: #B68A38; font-family: 'Source Sans 3', sans-serif; font-size: 22px;">+</span></summary>
+        <p style="margin: 14px 0 0; font-size: 16px; line-height: 1.65; color: #5A5A5A;">La documentación disponible no establece una etapa presencial; deberá confirmarse.</p>
+      </details>
+      <details style="border-bottom: 1px solid rgba(182,138,56,0.35); padding: 20px 0;">
+        <summary style="display: flex; align-items: center; justify-content: space-between; gap: 20px; font-family: 'Playfair Display', serif; font-size: 20px; color: #4A0012;">¿Cuántas personas serán seleccionadas?<span style="color: #B68A38; font-family: 'Source Sans 3', sans-serif; font-size: 22px;">+</span></summary>
+        <p style="margin: 14px 0 0; font-size: 16px; line-height: 1.65; color: #5A5A5A;">Todavía no se ha definido.</p>
+      </details>
+      <details style="border-bottom: 1px solid rgba(182,138,56,0.35); padding: 20px 0;">
+        <summary style="display: flex; align-items: center; justify-content: space-between; gap: 20px; font-family: 'Playfair Display', serif; font-size: 20px; color: #4A0012;">¿Cómo conoceré el estado de mi solicitud?<span style="color: #B68A38; font-family: 'Source Sans 3', sans-serif; font-size: 22px;">+</span></summary>
+        <p style="margin: 14px 0 0; font-size: 16px; line-height: 1.65; color: #5A5A5A;">El sistema generará un folio de registro y enviará correos de seguimiento a los medios de contacto registrados.</p>
+      </details>
+      <details style="border-bottom: 1px solid rgba(182,138,56,0.35); padding: 20px 0;">
+        <summary style="display: flex; align-items: center; justify-content: space-between; gap: 20px; font-family: 'Playfair Display', serif; font-size: 20px; color: #4A0012;">¿Cuándo será el festival?<span style="color: #B68A38; font-family: 'Source Sans 3', sans-serif; font-size: 22px;">+</span></summary>
+        <p style="margin: 14px 0 0; font-size: 16px; line-height: 1.65; color: #5A5A5A;">En noviembre de 2026, en París, Francia.</p>
+      </details>
+      <details style="border-bottom: 1px solid rgba(182,138,56,0.35); padding: 20px 0;">
+        <summary style="display: flex; align-items: center; justify-content: space-between; gap: 20px; font-family: 'Playfair Display', serif; font-size: 20px; color: #4A0012;">¿Qué gastos cubrirá la organización?<span style="color: #B68A38; font-family: 'Source Sans 3', sans-serif; font-size: 22px;">+</span></summary>
+        <p style="margin: 14px 0 0; font-size: 16px; line-height: 1.65; color: #5A5A5A;">Los documentos disponibles no especifican los gastos de viaje que serán cubiertos.</p>
+      </details>
+    </div>
+  </section>
+
+  <section style="padding: 70px 72px 74px; background: #4A0012; color: #F7F1E7; position: relative; overflow: hidden;">
+    <div style="position: absolute; inset: 0; background-image: repeating-linear-gradient(45deg, rgba(214,182,106,0.09) 0 1px, transparent 1px 22px), repeating-linear-gradient(-45deg, rgba(214,182,106,0.09) 0 1px, transparent 1px 22px); pointer-events: none;"></div>
+    <div style="position: relative; display: flex; align-items: center; justify-content: space-between; gap: 60px;">
+      <div style="display: flex; flex-direction: column; gap: 14px; max-width: 720px;">
+        <h2 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 500; font-size: 40px; line-height: 1.14; color: #FFFDF9;">Porque nuestras cocinas cuentan la historia de quienes somos</h2>
+        <p style="margin: 0; font-size: 18px; line-height: 1.65; color: rgba(247,241,231,0.85);">¡Llevemos el sabor del Estado de México al mundo!</p>
+      </div>
+      <a href="#registro" style="display: inline-flex; align-items: center; height: 58px; padding: 0 34px; border-radius: 2px; background: #B68A38; color: #2A1305; font-size: 16px; font-weight: 700; letter-spacing: 0.03em; flex: none;" style-hover="background: #D6B66A;">Iniciar registro</a>
+    </div>
+  </section>
+
+  <section id="registro" style="padding: 78px 72px 90px; background: #F7F1E7; border-top: 1px solid rgba(182,138,56,0.35);">
+    <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 48px; margin-bottom: 40px;">
+      <div style="display: flex; flex-direction: column; gap: 14px; max-width: 760px;">
+        <span style="font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: #B68A38;">Formulario de registro</span>
+        <h2 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 500; font-size: 40px; line-height: 1.14; color: #4A0012;">Registra tu participación</h2>
+        <p style="margin: 0; font-size: 17px; line-height: 1.65; color: #5A5A5A;">Completa los seis pasos y carga tu expediente en formato digital. Podrás guardar un borrador y continuar más tarde.</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 6px; padding: 20px 26px; background: #FFFDF9; border: 1px solid rgba(182,138,56,0.4); text-align: right;">
+        <span style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #8A7654;">Cierre de registro</span>
+        <span style="font-family: 'Playfair Display', serif; font-size: 24px; color: #75001C;">4 de septiembre 2026</span>
+      </div>
+    </div>
+
+    <form style="display: flex; flex-direction: column; gap: 24px;">
+
+      <div style="display: flex; flex-direction: column; gap: 22px; padding: 34px 34px 36px; background: #FFFDF9; border: 1px solid rgba(182,138,56,0.35);">
+        <div style="display: flex; align-items: baseline; gap: 16px; padding-bottom: 16px; border-bottom: 1px solid rgba(182,138,56,0.3);">
+          <span style="font-family: 'Playfair Display', serif; font-size: 26px; color: #D6B66A; line-height: 1;">01</span>
+          <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 600; font-size: 24px; color: #4A0012;">Datos generales</h3>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px;">
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Nombre completo<input type="text" placeholder="Nombre y apellidos" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Fecha de nacimiento<input type="date" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Edad<input type="text" placeholder="Se calcula automáticamente" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">CURP<input type="text" placeholder="18 caracteres" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Municipio de origen<input type="text" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Municipio de residencia<input type="text" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Comunidad<input type="text" placeholder="Localidad, barrio o pueblo" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Teléfono<input type="tel" placeholder="10 dígitos" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Correo electrónico<input type="email" placeholder="nombre@correo.com" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Medio de contacto preferido<select style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"><option>Teléfono</option><option>WhatsApp</option><option>Correo electrónico</option></select></label>
+        </div>
+        <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Domicilio completo<input type="text" placeholder="Calle, número, colonia, código postal" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 22px; padding: 34px 34px 36px; background: #FFFDF9; border: 1px solid rgba(182,138,56,0.35);">
+        <div style="display: flex; align-items: baseline; gap: 16px; padding-bottom: 16px; border-bottom: 1px solid rgba(182,138,56,0.3);">
+          <span style="font-family: 'Playfair Display', serif; font-size: 26px; color: #D6B66A; line-height: 1;">02</span>
+          <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 600; font-size: 24px; color: #4A0012;">Perfil como cocinera o cocinero tradicional</h3>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px;">
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">¿Quién le transmitió sus conocimientos?<input type="text" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Años de experiencia<input type="text" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Comunidad o municipio que representa<input type="text" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">¿Cómo aprendió a cocinar?<textarea style="width: 100%; min-height: 96px; padding: 12px 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929; resize: vertical;"></textarea></label>
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Descripción breve de su trayectoria<textarea style="width: 100%; min-height: 96px; padding: 12px 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929; resize: vertical;"></textarea></label>
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Actividades para conservar o difundir la cocina tradicional<textarea style="width: 100%; min-height: 96px; padding: 12px 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929; resize: vertical;"></textarea></label>
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Ferias, festivales o encuentros y reconocimientos, si aplica<textarea style="width: 100%; min-height: 96px; padding: 12px 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929; resize: vertical;"></textarea></label>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 22px; padding: 34px 34px 36px; background: #FFFDF9; border: 1px solid rgba(182,138,56,0.35);">
+        <div style="display: flex; align-items: baseline; gap: 16px; padding-bottom: 16px; border-bottom: 1px solid rgba(182,138,56,0.3);">
+          <span style="font-family: 'Playfair Display', serif; font-size: 26px; color: #D6B66A; line-height: 1;">03</span>
+          <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 600; font-size: 24px; color: #4A0012;">Receta o platillo insignia</h3>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px;">
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Nombre de la receta<input type="text" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Municipio o comunidad que representa<input type="text" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">¿Desde hace cuántas generaciones se prepara?<input type="text" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">¿Quién le transmitió la receta?<input type="text" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Técnicas tradicionales utilizadas<input type="text" placeholder="Ej. molcajete, comal, cocción en horno de tierra" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Utensilios tradicionales empleados<input type="text" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Ingredientes principales<textarea style="width: 100%; min-height: 96px; padding: 12px 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929; resize: vertical;"></textarea></label>
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Ingredientes originarios o producidos en el Estado de México<textarea style="width: 100%; min-height: 96px; padding: 12px 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929; resize: vertical;"></textarea></label>
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Breve historia de la receta<textarea style="width: 100%; min-height: 96px; padding: 12px 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929; resize: vertical;"></textarea></label>
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Significado cultural<textarea style="width: 100%; min-height: 96px; padding: 12px 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929; resize: vertical;"></textarea></label>
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Relación con celebraciones o costumbres<textarea style="width: 100%; min-height: 96px; padding: 12px 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929; resize: vertical;"></textarea></label>
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Motivo por el que representa a su municipio<textarea style="width: 100%; min-height: 96px; padding: 12px 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929; resize: vertical;"></textarea></label>
+        </div>
+        <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Fotografía del platillo<input type="file" style="width: 100%; padding: 12px 14px; border: 1px dashed rgba(182,138,56,0.6); border-radius: 2px; background: #F7F1E7; font-family: inherit; font-size: 14px; color: #5A5A5A;"><span style="font-size: 12px; color: #8A7654;">JPG o PNG · opcional</span></label>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 22px; padding: 34px 34px 36px; background: #FFFDF9; border: 1px solid rgba(182,138,56,0.35);">
+        <div style="display: flex; align-items: baseline; gap: 16px; padding-bottom: 16px; border-bottom: 1px solid rgba(182,138,56,0.3);">
+          <span style="font-family: 'Playfair Display', serif; font-size: 26px; color: #D6B66A; line-height: 1;">04</span>
+          <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 600; font-size: 24px; color: #4A0012;">Carta de motivos y video</h3>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 26px;">
+          <div style="display: flex; flex-direction: column; gap: 16px;">
+            <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Carta de motivos<input type="file" style="width: 100%; padding: 12px 14px; border: 1px dashed rgba(182,138,56,0.6); border-radius: 2px; background: #F7F1E7; font-family: inherit; font-size: 14px; color: #5A5A5A;"><span style="font-size: 12px; color: #8A7654;">PDF · máx. 10 MB</span></label>
+            <label style="display: flex; align-items: flex-start; gap: 12px; font-size: 15px; line-height: 1.55; color: #5A5A5A;"><input type="checkbox" style="width: 18px; height: 18px; margin: 2px 0 0; accent-color: #75001C; flex: none;"><span>Confirmo que la carta no excede una cuartilla.</span></label>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 16px;">
+            <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Video de presentación<input type="file" style="width: 100%; padding: 12px 14px; border: 1px dashed rgba(182,138,56,0.6); border-radius: 2px; background: #F7F1E7; font-family: inherit; font-size: 14px; color: #5A5A5A;"><span style="font-size: 12px; color: #8A7654;">MP4 · carga directa</span></label>
+            <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">O enlace del video<input type="url" placeholder="https://" style="width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(41,41,41,0.22); border-radius: 2px; background: #FFFDF9; font-family: inherit; font-size: 15px; color: #292929;"></label>
+            <label style="display: flex; align-items: flex-start; gap: 12px; font-size: 15px; line-height: 1.55; color: #5A5A5A;"><input type="checkbox" style="width: 18px; height: 18px; margin: 2px 0 0; accent-color: #75001C; flex: none;"><span>Confirmo que el video dura tres minutos o menos e incluye presentación personal, municipio, historia de la receta, ingredientes e importancia cultural.</span></label>
+          </div>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 22px; padding: 34px 34px 36px; background: #FFFDF9; border: 1px solid rgba(182,138,56,0.35);">
+        <div style="display: flex; align-items: baseline; gap: 16px; padding-bottom: 16px; border-bottom: 1px solid rgba(182,138,56,0.3);">
+          <span style="font-family: 'Playfair Display', serif; font-size: 26px; color: #D6B66A; line-height: 1;">05</span>
+          <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 600; font-size: 24px; color: #4A0012;">Documentación</h3>
+          <span style="margin-left: auto; font-size: 13px; color: #8A7654;">PDF, JPG o PNG · máx. 10 MB por archivo</span>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px;">
+          
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Identificación oficial vigente<input type="file" style="width: 100%; padding: 12px 14px; border: 1px dashed rgba(182,138,56,0.6); border-radius: 2px; background: #F7F1E7; font-family: inherit; font-size: 14px; color: #5A5A5A;"><span style="font-size: 12px; color: #8A7654;">INE, pasaporte o cédula</span></label>
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Comprobante de domicilio<input type="file" style="width: 100%; padding: 12px 14px; border: 1px dashed rgba(182,138,56,0.6); border-radius: 2px; background: #F7F1E7; font-family: inherit; font-size: 14px; color: #5A5A5A;"><span style="font-size: 12px; color: #8A7654;">No mayor a tres meses</span></label>
+          <label style="display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: #5A5A5A;">Fotografía reciente<input type="file" style="width: 100%; padding: 12px 14px; border: 1px dashed rgba(182,138,56,0.6); border-radius: 2px; background: #F7F1E7; font-family: inherit; font-size: 14px; color: #5A5A5A;"><span style="font-size: 12px; color: #8A7654;">JPG o PNG</span></label>
+          
+          
+        </div>
+        <p style="margin: 0; padding: 18px 20px; background: #F7F1E7; border-left: 3px solid #75001C; font-size: 15px; line-height: 1.6; color: #4A0012;">Verifica que cada documento sea correcto, legible y corresponda al requisito indicado antes de confirmar su carga.</p>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 22px; padding: 34px 34px 36px; background: #FFFDF9; border: 1px solid rgba(182,138,56,0.35);">
+        <div style="display: flex; align-items: baseline; gap: 16px; padding-bottom: 16px; border-bottom: 1px solid rgba(182,138,56,0.3);">
+          <span style="font-family: 'Playfair Display', serif; font-size: 26px; color: #D6B66A; line-height: 1;">06</span>
+          <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 600; font-size: 24px; color: #4A0012;">Revisión y envío</h3>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px;">
+          <div style="display: flex; flex-direction: column; gap: 14px;">
+            <span style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #B68A38;">El sistema mostrará</span>
+            <ul style="margin: 0; padding-left: 20px; font-size: 15px; line-height: 1.75; color: #5A5A5A;">
+              <li>Resumen de datos personales.</li>
+              <li>Perfil gastronómico.</li>
+              <li>Información de la receta.</li>
+              <li>Documentos cargados.</li>
+              <li>Carta de motivos.</li>
+              <li>Video enviado.</li>
+            </ul>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 14px;">
+            <span style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #B68A38;">Declaración</span>
+            <label style="display: flex; align-items: flex-start; gap: 12px; font-size: 15px; line-height: 1.55; color: #5A5A5A;"><input type="checkbox" style="width: 18px; height: 18px; margin: 2px 0 0; accent-color: #75001C; flex: none;"><span>Acepto las bases de la convocatoria.</span></label>
+            <label style="display: flex; align-items: flex-start; gap: 12px; font-size: 15px; line-height: 1.55; color: #5A5A5A;"><input type="checkbox" style="width: 18px; height: 18px; margin: 2px 0 0; accent-color: #75001C; flex: none;"><span>Acepto el aviso de privacidad.</span></label>
+            <label style="display: flex; align-items: flex-start; gap: 12px; font-size: 15px; line-height: 1.55; color: #5A5A5A;"><input type="checkbox" style="width: 18px; height: 18px; margin: 2px 0 0; accent-color: #75001C; flex: none;"><span>Declaro que la información proporcionada es verdadera y autorizo el uso de mi material fotográfico y audiovisual únicamente para fines relacionados con el proceso de selección y promoción del Festival Gastronómico en París, Francia 2026.</span></label>
+            <label style="display: flex; align-items: flex-start; gap: 12px; font-size: 15px; line-height: 1.55; color: #5A5A5A;"><input type="checkbox" style="width: 18px; height: 18px; margin: 2px 0 0; accent-color: #75001C; flex: none;"><span>Acepto las condiciones del proceso de selección.</span></label>
+          </div>
+        </div>
+        
+        <div style="display: flex; align-items: center; justify-content: space-between; gap: 32px; padding-top: 24px; border-top: 1px solid rgba(182,138,56,0.3);">
+          <p style="margin: 0; max-width: 640px; font-size: 15px; line-height: 1.6; color: #8A7654;">Revisa cuidadosamente tu información y documentos. Al enviar la solicitud declaras que los datos proporcionados son verdaderos y que la receta registrada forma parte de tu trayectoria familiar, comunitaria o gastronómica.</p>
+          <div style="display: flex; align-items: center; gap: 14px; flex: none;">
+            
+            <button type="submit" style="height: 56px; padding: 0 32px; border: none; border-radius: 2px; background: #75001C; color: #FFFDF9; font-family: inherit; font-size: 16px; font-weight: 700; letter-spacing: 0.02em; cursor: pointer;" style-hover="background: #4A0012; color: #D6B66A;">Enviar solicitud de participación</button>
+          </div>
+        </div>
+      </div>
+
+    </form>
+
+    
+  </section>
+
+  <section style="background: #FFFDF9; border-top: 1px solid rgba(182,138,56,0.35); padding: 38px 72px 42px;">
+    <div style="display: flex; align-items: center; gap: 18px; margin-bottom: 28px;">
+      <span style="flex: 1; height: 1px; background: rgba(182,138,56,0.35); display: block;"></span>
+    </div>
+    <div style="display: flex; align-items: center; justify-content: center; gap: 40px;">
+      <img src="uploads/SRE_FRANCIA%20-%20Edited.png" alt="Secretaría de Relaciones Exteriores · Embajada de México en Francia" style="width: 100%; max-height: 52px; object-fit: contain;">
+      <img src="uploads/b6edfa05-a916-402c-9901-afc0968eee32.png" alt="México–Francia 2026 · 200 años de amistad" style="width: 100%; max-height: 74px; object-fit: contain;">
+      <img src="./logo-nezahualcoyotl-ms6enfs3-col6.png" alt="Gobierno del Estado de México" style="width: 124px; height: 61px; max-height: 74px; object-fit: contain;">
+      <img src="uploads/Logo%20Camara%20Economica.pdf.png" alt="Chambre Économique du Mexique en France" style="width: 100%; max-height: 78px; object-fit: contain;">
+      <img src="uploads/Logo%20Festival%20Sabor%20a%20M%C3%A9xico.pdf.png" alt="Festival Gastronomique Sabor a México Paris" style="width: 100%; max-height: 82px; object-fit: contain;">
+      <img src="uploads/Logo-redondo-PM-2025.pdf.png" alt="Paris México Association depuis 1990" style="width: 100%; max-height: 82px; object-fit: contain;">
+    </div>
+  </section>
+
+  <footer style="position: relative; background: #4A0012; color: rgba(247,241,231,0.78); padding: 56px 72px 40px; overflow: hidden;">
+    <div style="position: absolute; inset: 0; background-image: repeating-linear-gradient(45deg, rgba(214,182,106,0.09) 0 1px, transparent 1px 22px), repeating-linear-gradient(-45deg, rgba(214,182,106,0.09) 0 1px, transparent 1px 22px); pointer-events: none;"></div>
+    <div style="position: relative; display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 48px;">
+      <div style="display: flex; flex-direction: column; gap: 14px;">
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <span style="width: 62px; height: 62px; border-radius: 50%; background: #FFFDF9; display: flex; align-items: center; justify-content: center; overflow: hidden; flex: none;"><img src="uploads/pasted-1785349357556-0.png" alt="Tesoro Gastronómico del Estado de México" style="width: 74px; height: 66px; object-fit: cover; object-position: 52% 45%; mix-blend-mode: multiply;"></span>
+          <span style="font-family: 'Playfair Display', serif; font-size: 17px; color: #F7F1E7;">Tesoros Gastronómicos</span>
+        </div>
+        <p style="margin: 0; font-size: 14px; line-height: 1.65; max-width: 320px;">Programa de convocatorias gastronómicas del Estado de México rumbo a París 2026.</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 10px; font-size: 14px;">
+        <span style="font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: #D6B66A; margin-bottom: 4px;">Convocatorias</span>
+        <a href="#c1" style="color: rgba(247,241,231,0.78);">Cocineras tradicionales</a>
+        <a href="#c2" style="color: rgba(247,241,231,0.78);">Restaurantes</a>
+        <a href="#c3" style="color: rgba(247,241,231,0.78);">Joven talento</a>
+        <a href="#c4" style="color: rgba(247,241,231,0.78);">Bebidas ancestrales</a>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 10px; font-size: 14px;">
+        <span style="font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: #D6B66A; margin-bottom: 4px;">Participantes</span>
+        <a href="#registro" style="color: rgba(247,241,231,0.78);">Registro</a>
+        <a href="#folio" style="color: rgba(247,241,231,0.78);">Consulta tu folio</a>
+        <a href="#requisitos" style="color: rgba(247,241,231,0.78);">Requisitos</a>
+        <a href="#preguntas" style="color: rgba(247,241,231,0.78);">Preguntas frecuentes</a>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 10px; font-size: 14px;">
+        <span style="font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: #D6B66A; margin-bottom: 4px;">Contacto</span>
+        <span>tesoros@edomex.gob.mx</span>
+        <span>722 000 0000 ext. 1826</span>
+        <span>Toluca de Lerdo, Estado de México</span>
+      </div>
+    </div>
+    <div style="position: relative; margin-top: 40px; padding-top: 22px; border-top: 1px solid rgba(214,182,106,0.3); display: flex; align-items: center; justify-content: space-between; font-size: 13px;">
+      <span>© 2026 Gobierno del Estado de México · Todos los derechos reservados</span>
+      <span style="color: #D6B66A; letter-spacing: 0.06em;">México–Francia · 200 años de historia y amistad</span>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+</body>
+</html>

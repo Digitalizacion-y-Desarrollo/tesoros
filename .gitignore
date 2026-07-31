@@ -1,0 +1,39 @@
+# Entorno y secretos
+.env
+.env.*
+!.env.example
+
+# Dependencias instaladas
+/vendor/
+/node_modules/
+
+# Archivos generados por CodeIgniter
+/writable/cache/*
+!/writable/cache/index.html
+/writable/debugbar/*
+!/writable/debugbar/index.html
+/writable/logs/*
+!/writable/logs/index.html
+/writable/session/*
+!/writable/session/index.html
+/writable/uploads/*
+!/writable/uploads/index.html
+
+# Documentos privados de participantes
+/writable/private/*
+!/writable/private/.gitignore
+!/writable/private/index.html
+!/writable/private/uploads/
+/writable/private/uploads/*
+!/writable/private/uploads/.gitignore
+!/writable/private/uploads/index.html
+
+# IDE, sistema operativo y herramientas
+/.claude/
+/.thumbnail
+/build/
+/.idea/
+/.vscode/
+*.log
+.DS_Store
+Thumbs.db

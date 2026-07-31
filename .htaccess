@@ -1,0 +1,21 @@
+# Protección de respaldo para instalaciones donde Apache todavía apunta
+# al directorio del repositorio. En producción, DocumentRoot debe ser public/.
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Nunca servir configuración, dependencias ni código fuente.
+    RewriteRule ^(?:\.env(?:\..*)?|env|composer\.(?:json|lock)|spark|preload\.php|AGENTS\.md)$ - [F,L,NC]
+    RewriteRule ^(?:app|system|tests|vendor|writable)(?:/|$) - [F,L,NC]
+
+    # Evitar un ciclo cuando la petición ya fue enviada a public/.
+    RewriteRule ^public(?:/|$) - [L]
+
+    # Exponer la aplicación como si public/ fuera la raíz.
+    RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
+
+<IfModule !mod_rewrite.c>
+    Require all denied
+</IfModule>
