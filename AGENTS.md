@@ -86,7 +86,7 @@ Las cuatro categorías definitivas son:
 
 Las categorías y su contenido no necesitan administración CRUD.
 
-La categoría Restaurantes todavía no tiene información final. Debe construirse con la misma estructura completa que las demás categorías, usando contenido provisional claramente identificado. No inventar requisitos oficiales ni presentar contenido provisional como definitivo. El propietario proporcionará posteriormente la información aprobada.
+La categoría Restaurantes utiliza las bases y la ficha de inscripción proporcionadas por el propietario el 31 de julio de 2026. La fecha límite de inscripción y el correo electrónico oficial permanecen pendientes y deben mostrarse como tales.
 
 También existen datos aún pendientes en otros mockups. Todo texto como “por confirmar”, “próximamente” o “pendiente de definir” debe conservarse como pendiente hasta recibir información del propietario.
 
@@ -104,10 +104,10 @@ La CURP es el identificador para impedir duplicados:
 
 En Joven Talento:
 
-- Una persona integrante será responsable de la solicitud.
-- La persona responsable administra los datos y documentos de todos los integrantes.
-- Todos los integrantes pertenecen a una sola solicitud y comparten un solo folio.
-- Las CURP de todas las personas integrantes deben comprobarse contra la restricción de participación única.
+- La participación es individual.
+- Cada alumna o alumno administra sus propios datos, documentos y propuesta bajo un folio individual.
+- La CURP de la persona participante debe comprobarse contra la restricción de participación única.
+- El video dura máximo tres minutos y presenta a la persona participante elaborando la quiché con la que competirá.
 
 En Restaurantes, la persona responsable o representante debe identificarse mediante CURP y queda sujeta a la misma restricción.
 
@@ -519,7 +519,7 @@ El modelo final debe normalizarse y documentarse. Como mínimo considerar:
 - `applications`
   - Folio, categoría, correo, CURP responsable, estado, fechas y control de versión.
 - `participants`
-  - Personas relacionadas con la solicitud, incluido el equipo estudiantil.
+  - Personas relacionadas con la solicitud; Joven Talento registra una sola persona participante.
 - `application_personal_data`
   - Datos personales editables por administración.
 - Tablas o estructuras específicas por categoría
@@ -719,7 +719,6 @@ No implementar sin una nueva autorización:
 
 Requieren información posterior del propietario:
 
-- Contenido definitivo de Restaurantes.
 - Fechas y requisitos todavía marcados como pendientes.
 - Beneficios y apoyos de viaje.
 - Reglas definitivas de muestras o degustaciones.

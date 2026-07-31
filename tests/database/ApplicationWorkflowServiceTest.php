@@ -88,10 +88,7 @@ final class ApplicationWorkflowServiceTest extends CIUnitTestCase
             [
                 'joven-talento-gastronomia',
                 'jtg@example.test',
-                [
-                    $this->participant('LOPE900202HMCDFR07', 'Carlos'),
-                    $this->participant('CARA880303MMCPLN06', 'Andrea'),
-                ],
+                [$this->participant('LOPE900202HMCDFR07', 'Carlos')],
             ],
             ['bebidas-tradicionales-ancestrales', 'bta@example.test', [$this->participant('BETA910404MMCNRL05')]],
         ];
@@ -106,6 +103,51 @@ final class ApplicationWorkflowServiceTest extends CIUnitTestCase
             ], null, $this->requiredDocumentFiles($category));
             $service->assertReadyForSubmission($draft['id']);
             $this->assertSame('borrador', $service->get($draft['id'])['application']['status']);
+        }
+    }
+
+    public function testRestaurantRequiresInstitutionalVideoBeforeSubmission(): void
+    {
+        $category = 'restaurantes';
+        $email = 'restaurante-video@example.test';
+        $participants = [$this->participant('MARA850101MMCBCR08')];
+        $draft = $this->createDraft($category, $email, $participants);
+        $form = $this->validForm($category);
+        $form['video_url'] = '';
+        $service = new ApplicationWorkflowService($this->db);
+
+        $service->saveDraft($draft['id'], [
+            'email' => $email,
+            'participants' => $participants,
+            'form' => $form,
+        ], null, $this->requiredDocumentFiles($category));
+
+        try {
+            $service->assertReadyForSubmission($draft['id']);
+            $this->fail('La solicitud debía requerir un video institucional.');
+        } catch (ApplicationValidationException $exception) {
+            $this->assertArrayHasKey('form.video_file', $exception->errors());
+        }
+    }
+
+    public function testStudentVideoDurationCannotExceedThreeMinutes(): void
+    {
+        $category = 'joven-talento-gastronomia';
+        $email = 'estudiante-video@example.test';
+        $participants = [$this->participant('LOPE900202HMCDFR07', 'Carlos')];
+        $draft = $this->createDraft($category, $email, $participants);
+        $form = $this->validForm($category);
+        $form['video_duration_seconds'] = '181';
+
+        try {
+            (new ApplicationWorkflowService($this->db))->saveDraft($draft['id'], [
+                'email' => $email,
+                'participants' => $participants,
+                'form' => $form,
+            ]);
+            $this->fail('La solicitud debía rechazar videos mayores de tres minutos.');
+        } catch (ApplicationValidationException $exception) {
+            $this->assertArrayHasKey('form.video_duration_seconds', $exception->errors());
         }
     }
 
@@ -445,7 +487,9 @@ final class ApplicationWorkflowServiceTest extends CIUnitTestCase
         foreach (config('ApplicationForms')->categories[$category]['fields'] as $field) {
             $form[$field['name']] = match (true) {
                 $field['name'] === 'municipality' => 'Toluca',
-                $field['type'] === 'number' => '5',
+                $field['type'] === 'number' => (string) ($field['min'] ?? 5),
+                $field['type'] === 'email' => 'campo@example.test',
+                $field['type'] === 'select' => (string) ($field['options'][0] ?? ''),
                 in_array($field['type'], ['url', 'video'], true) => 'https://example.test/video',
                 default => 'Dato válido',
             };

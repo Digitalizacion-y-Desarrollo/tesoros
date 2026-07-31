@@ -65,6 +65,11 @@ final class ApplicationWorkflowService
             'participants' => $context['participants'],
             'form'         => $context['form'],
         ], true, $applicationId);
+        if (($context['definition']['video_required'] ?? false) && $context['video'] === null) {
+            throw new ApplicationValidationException([
+                'form.video_file' => 'Debes cargar un video MP4 o registrar un enlace HTTPS antes de continuar.',
+            ]);
+        }
         $this->documentService->assertRequiredPresent(
             $applicationId,
             $context['definition']['documents'] ?? [],
@@ -363,14 +368,11 @@ final class ApplicationWorkflowService
         $participantsInput = is_array($payload['participants'] ?? null)
             ? array_values($payload['participants'])
             : [];
-        $requiredCount = $categoryCode === 'joven-talento-gastronomia' ? 2 : 1;
         $participants = [];
         $seenCurps = [];
 
-        if (count($participantsInput) !== $requiredCount) {
-            $errors['participants'] = $requiredCount === 2
-                ? 'La categoría Joven Talento requiere exactamente dos integrantes.'
-                : 'La solicitud requiere una persona responsable.';
+        if (count($participantsInput) !== 1) {
+            $errors['participants'] = 'La solicitud requiere exactamente una persona participante.';
         }
 
         foreach ($participantsInput as $index => $participant) {
@@ -453,6 +455,12 @@ final class ApplicationWorkflowService
                 ) {
                     $errors["form.{$name}"] = 'Captura un número dentro del rango permitido.';
                 }
+            }
+            if (($field['type'] ?? '') === 'email' && filter_var($value, FILTER_VALIDATE_EMAIL) === false) {
+                $errors["form.{$name}"] = 'Captura un correo electrónico válido.';
+            }
+            if (isset($field['options']) && is_array($field['options']) && ! in_array($value, $field['options'], true)) {
+                $errors["form.{$name}"] = 'Selecciona una opción válida.';
             }
             if (in_array(($field['type'] ?? ''), ['url', 'video'], true)) {
                 $scheme = parse_url($value, PHP_URL_SCHEME);

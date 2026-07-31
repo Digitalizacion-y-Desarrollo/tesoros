@@ -5,7 +5,8 @@
 $errors = session('validation_errors') ?? [];
 $oldParticipants = old('participants');
 $oldParticipants = is_array($oldParticipants) ? array_values($oldParticipants) : [];
-$participantCount = $slug === 'joven-talento-gastronomia' ? 2 : 1;
+$participantCount = 1;
+$participantLabel = $slug === 'joven-talento-gastronomia' ? 'Persona participante' : 'Persona responsable';
 ?>
 <section class="application-shell py-5">
     <div class="container-xxl">
@@ -67,7 +68,7 @@ $participantCount = $slug === 'joven-talento-gastronomia' ? 2 : 1;
                             <?php $person = $oldParticipants[$index] ?? []; ?>
                             <fieldset class="border-top pt-4 mt-4">
                                 <legend class="h4 font-display text-wine-dark">
-                                    <?= $index === 0 ? 'Persona responsable' : 'Integrante 2' ?>
+                                    <?= $index === 0 ? esc($participantLabel) : 'Integrante adicional' ?>
                                 </legend>
                                 <div class="row g-3">
                                     <div class="col-md-6">

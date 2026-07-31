@@ -166,14 +166,8 @@ final class DraftApplicationService
      */
     private function normalizeParticipants(string $categoryCode, array $participants): array
     {
-        $requiredCount = $categoryCode === 'joven-talento-gastronomia' ? 2 : 1;
-
-        if (count($participants) !== $requiredCount) {
-            throw new DomainException(
-                $requiredCount === 2
-                    ? 'Joven Talento requiere exactamente dos integrantes.'
-                    : 'La categoría requiere exactamente una persona responsable.',
-            );
+        if (count($participants) !== 1) {
+            throw new DomainException('La categoría requiere exactamente una persona participante.');
         }
 
         $normalized = [];

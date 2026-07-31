@@ -58,7 +58,13 @@ $video = $context['video'];
 
                         <?php foreach ($participants as $index => $person): ?>
                             <fieldset class="border-top pt-4 mt-4">
-                                <legend class="h4 font-display text-wine-dark"><?= $index === 0 ? 'Persona responsable' : 'Integrante 2' ?></legend>
+                                <legend class="h4 font-display text-wine-dark">
+                                    <?php if ($category['code'] === 'joven-talento-gastronomia' && $index === 0): ?>
+                                        Persona participante
+                                    <?php else: ?>
+                                        <?= $index === 0 ? 'Persona responsable' : 'Integrante adicional' ?>
+                                    <?php endif ?>
+                                </legend>
                                 <div class="row g-3">
                                     <?php
                                     $participantFields = [
@@ -100,7 +106,9 @@ $video = $context['video'];
                                     <div class="<?= $column ?>">
                                         <?php if ($field['type'] === 'video'): ?>
                                             <fieldset class="video-choice border rounded-3 p-3">
-                                                <legend class="form-label fw-semibold px-2"><?= esc($field['label']) ?></legend>
+                                                <legend class="form-label fw-semibold px-2">
+                                                    <?= esc($field['label']) ?><?= ($context['definition']['video_required'] ?? false) ? ' *' : '' ?>
+                                                </legend>
                                                 <?php if ($video !== null): ?>
                                                     <div class="alert alert-info py-2" role="status">
                                                         <?php if ($video['source_type'] === 'file'): ?>
@@ -138,7 +146,10 @@ $video = $context['video'];
                                                         <?php if (isset($errors['form.video_file'])): ?><div class="invalid-feedback"><?= esc($errors['form.video_file']) ?></div><?php endif ?>
                                                     </div>
                                                 </div>
-                                                <p class="form-hint mt-2 mb-0">Utiliza solamente una opción. El archivo MP4 puede pesar hasta 500 MB y se almacenará de forma privada.</p>
+                                                <p class="form-hint mt-2 mb-0">
+                                                    <?= esc($context['definition']['video_help'] ?? 'Utiliza solamente una opción: archivo MP4 o enlace HTTPS.') ?>
+                                                    El archivo MP4 puede pesar hasta 500 MB y se almacenará de forma privada.
+                                                </p>
                                                 <?php if ($video !== null): ?>
                                                     <div class="form-check mt-3">
                                                         <input class="form-check-input" id="remove-video" name="remove_video" type="checkbox" value="1">
@@ -159,6 +170,18 @@ $video = $context['video'];
                                                 maxlength="<?= (int) ($field['max'] ?? 5000) ?>"
                                                 <?= ($field['required'] ?? false) ? 'required' : '' ?>
                                             ><?= esc($value) ?></textarea>
+                                        <?php elseif ($field['type'] === 'select'): ?>
+                                            <select
+                                                class="form-select <?= isset($errors[$errorKey]) ? 'is-invalid' : '' ?>"
+                                                id="form-<?= esc($name) ?>"
+                                                name="form[<?= esc($name) ?>]"
+                                                <?= ($field['required'] ?? false) ? 'required' : '' ?>
+                                            >
+                                                <option value="">Selecciona una opción</option>
+                                                <?php foreach ($field['options'] ?? [] as $option): ?>
+                                                    <option value="<?= esc($option, 'attr') ?>" <?= $value === $option ? 'selected' : '' ?>><?= esc($option) ?></option>
+                                                <?php endforeach ?>
+                                            </select>
                                         <?php else: ?>
                                             <input
                                                 class="form-control <?= isset($errors[$errorKey]) ? 'is-invalid' : '' ?>"

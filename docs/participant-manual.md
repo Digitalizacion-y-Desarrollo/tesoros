@@ -3,14 +3,14 @@
 ## 1. Elegir una categoría
 
 En la portada selecciona una de las cuatro categorías. Lee las bases, requisitos
-y avisos provisionales antes de iniciar. Restaurantes y cualquier texto marcado
-como pendiente no constituyen información oficial definitiva.
+y avisos antes de iniciar. Las fechas, datos de contacto y cualquier texto
+marcado como pendiente todavía requieren confirmación institucional.
 
 ## 2. Crear el registro
 
 Captura el correo, la CURP y los datos de la persona responsable. En Joven
-Talento se registran exactamente dos integrantes bajo un mismo folio. Acepta el
-aviso de privacidad vigente.
+Talento se registra una sola persona participante con un folio individual.
+Acepta el aviso de privacidad vigente.
 
 Al crear el registro:
 

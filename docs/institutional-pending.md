@@ -2,7 +2,7 @@
 
 Estos elementos impiden declarar lista la publicación en producción:
 
-- Contenido definitivo de Restaurantes.
+- Fecha límite de inscripción y correo electrónico oficial de Restaurantes.
 - Fechas oficiales y requisitos aún marcados como pendientes.
 - Beneficios y apoyos de viaje.
 - Reglas definitivas de muestras o degustaciones.

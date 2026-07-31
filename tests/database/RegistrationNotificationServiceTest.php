@@ -24,10 +24,7 @@ final class RegistrationNotificationServiceTest extends CIUnitTestCase
         $draft = (new DraftApplicationService($this->db))->create(
             'joven-talento-gastronomia',
             'registro@example.test',
-            [
-                $this->participant('LOPE900202HMCDFR07', 'Carlos'),
-                $this->participant('CARA880303MMCPLN06', 'Andrea'),
-            ],
+            [$this->participant('LOPE900202HMCDFR07', 'Carlos')],
         );
         $mailer = new CapturingRegistrationMailer();
 

@@ -36,7 +36,7 @@ $category = $context['category'];
                         <h2 class="h4">Participantes</h2>
                         <?php foreach ($context['participants'] as $index => $person): ?>
                             <dl class="summary-grid">
-                                <div><dt>Rol</dt><dd><?= $index === 0 ? 'Responsable' : 'Integrante' ?></dd></div>
+                                <div><dt>Rol</dt><dd><?= $category['code'] === 'joven-talento-gastronomia' ? 'Participante' : ($index === 0 ? 'Responsable' : 'Integrante') ?></dd></div>
                                 <div><dt>Nombre</dt><dd><?= esc(trim($person['first_name'] . ' ' . $person['last_name'] . ' ' . ($person['second_last_name'] ?? ''))) ?></dd></div>
                                 <div><dt>CURP</dt><dd><?= esc($person['curp']) ?></dd></div>
                             </dl>

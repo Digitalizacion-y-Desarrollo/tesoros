@@ -12,7 +12,7 @@ $accentClass = 'theme-' . $category['accent'];
             <div class="row g-0 align-items-stretch">
                 <div class="col-lg-6 category-hero-content page-gutter">
                     <p class="eyebrow text-gold mb-3"><?= esc($category['eyebrow']) ?></p>
-                    <h1><?= esc($category['name']) ?></h1>
+                    <h1><?= esc($category['title'] ?? $category['name']) ?></h1>
                     <p class="category-kicker"><?= esc($category['subtitle']) ?></p>
                     <p class="category-description"><?= esc($category['description']) ?></p>
                     <div class="d-flex flex-wrap gap-3">
@@ -126,10 +126,31 @@ $accentClass = 'theme-' . $category['accent'];
         </div>
     </section>
 
+    <?php foreach ($category['additionalSections'] ?? [] as $sectionIndex => $additionalSection): ?>
+        <section id="detalle-<?= (int) $sectionIndex + 1 ?>" class="requirements-section">
+            <div class="container-fluid page-gutter">
+                <div class="row g-5">
+                    <div class="col-lg-4">
+                        <p class="eyebrow mb-3"><?= esc($additionalSection['eyebrow']) ?></p>
+                        <h2 class="section-title"><?= esc($additionalSection['title']) ?></h2>
+                        <p class="section-intro mt-3"><?= esc($additionalSection['intro']) ?></p>
+                    </div>
+                    <div class="col-lg-8">
+                        <ol class="requirement-list">
+                            <?php foreach ($additionalSection['items'] as $item): ?>
+                                <li><span aria-hidden="true">✓</span><?= esc($item) ?></li>
+                            <?php endforeach ?>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <?php endforeach ?>
+
     <section id="evaluacion" class="criteria-section">
         <div class="ornament-pattern" aria-hidden="true"></div>
         <div class="container-fluid page-gutter position-relative">
-            <p class="eyebrow text-gold mb-3">Evaluación</p>
+            <p class="eyebrow text-gold mb-3"><?= esc($category['criteriaEyebrow'] ?? 'Evaluación') ?></p>
             <h2 class="section-title text-white"><?= esc($category['criteriaTitle']) ?></h2>
             <div class="row g-4 mt-3">
                 <?php foreach ($category['criteria'] as $index => $criterion): ?>
@@ -196,6 +217,17 @@ $accentClass = 'theme-' . $category['accent'];
             </div>
         </div>
     </section>
+
+    <?php if (isset($category['officialLegend'])): ?>
+        <section class="story-section">
+            <div class="container-fluid page-gutter">
+                <div class="application-card mx-auto text-center">
+                    <p class="eyebrow mb-3">Leyenda oficial de la convocatoria</p>
+                    <blockquote class="section-intro mb-0">“<?= esc($category['officialLegend']) ?>”</blockquote>
+                </div>
+            </div>
+        </section>
+    <?php endif ?>
 
     <section class="category-cta">
         <div class="ornament-pattern" aria-hidden="true"></div>

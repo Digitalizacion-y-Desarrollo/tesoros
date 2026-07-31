@@ -117,15 +117,12 @@ final class DraftApplicationServiceTest extends CIUnitTestCase
         );
     }
 
-    public function testStudentTeamCreatesTwoMembersUnderOneFolio(): void
+    public function testStudentApplicationCreatesOneParticipantUnderOneFolio(): void
     {
         $result = (new DraftApplicationService($this->db))->create(
             'joven-talento-gastronomia',
-            'equipo@example.com',
-            [
-                $this->participant('GODE561231HDFBCD09', 'Ana'),
-                $this->participant('MARA850101MMCBCR08', 'Luis'),
-            ],
+            'estudiante@example.com',
+            [$this->participant('GODE561231HDFBCD09', 'Ana')],
         );
 
         $members = $this->db->table('participants')
@@ -134,22 +131,24 @@ final class DraftApplicationServiceTest extends CIUnitTestCase
             ->get()
             ->getResultArray();
 
-        $this->assertCount(2, $members);
+        $this->assertCount(1, $members);
         $this->assertSame('responsable', $members[0]['role']);
-        $this->assertSame('integrante', $members[1]['role']);
         $this->assertSame('TG-2026-JTG-000001', $result['folio']);
         $this->seeInDatabase('student_team_profiles', ['application_id' => $result['id']]);
     }
 
-    public function testStudentTeamRequiresExactlyTwoMembers(): void
+    public function testStudentApplicationRejectsMoreThanOneParticipant(): void
     {
         $this->expectException(\DomainException::class);
-        $this->expectExceptionMessage('exactamente dos integrantes');
+        $this->expectExceptionMessage('exactamente una persona participante');
 
         (new DraftApplicationService($this->db))->create(
             'joven-talento-gastronomia',
-            'equipo@example.com',
-            [$this->participant('GODE561231HDFBCD09')],
+            'estudiante@example.com',
+            [
+                $this->participant('GODE561231HDFBCD09'),
+                $this->participant('MARA850101MMCBCR08'),
+            ],
         );
     }
 

@@ -23,9 +23,8 @@ applications 1 ── 0..1 beverage_profiles
 ```
 
 Cada solicitud pertenece a una categoría fija y tiene exactamente un perfil del
-tipo correspondiente. Joven Talento almacena dos participantes bajo la misma
-solicitud y el mismo folio. Las demás categorías comienzan con una persona
-responsable.
+tipo correspondiente. Joven Talento almacena una persona participante bajo un
+folio individual. Las demás categorías comienzan con una persona responsable.
 
 ## Integridad
 
@@ -102,7 +101,7 @@ para usar la base de la aplicación.
 C:\wamp64\bin\php\php8.2.29\php.exe vendor/phpunit/phpunit/phpunit --no-coverage
 ```
 
-La suite comprueba normalización, perfiles, integrantes estudiantiles,
+La suite comprueba normalización, perfiles, participación estudiantil individual,
 unicidad global, rollback del contador y creación concurrente desde cuatro
 procesos independientes.
 

@@ -204,7 +204,7 @@ por IP y sesión.
 ## Flujo de formularios (E04)
 
 1. La persona selecciona una de las cuatro categorías.
-2. Captura correo y datos de la persona responsable; Joven Talento requiere dos integrantes.
+2. Captura correo y datos de la persona responsable; en Joven Talento la participación es individual.
 3. Acepta el aviso provisional.
 4. El servidor crea transaccionalmente el borrador, folio, participantes, perfil y aceptación.
 5. Se envía un correo de registro exitoso con el folio; este mensaje no contiene un código temporal.
@@ -219,8 +219,8 @@ La reanudación desde otro navegador o después de perder la sesión utiliza el
 código temporal del E05. No existe un acceso alternativo que permita consultar
 una solicitud sin verificar el control del correo.
 
-Los campos de Restaurantes y los textos legales se muestran como provisionales.
-La carga de PDF, JPG, JPEG y MP4 se integra en E06; el E04 valida enlaces
+Los textos legales se muestran como provisionales. La fecha límite y el correo
+oficial de Restaurantes permanecen pendientes. La carga de PDF, JPG, JPEG y MP4 se integra en E06; el E04 valida enlaces
 externos HTTPS sin incrustar contenido proporcionado por usuarios.
 
 ### Catálogo de municipios
@@ -385,9 +385,9 @@ dimensiones lo permiten. En producción, `uploads.antivirusCommand` debe contene
 el marcador `{file}` y devolver código 0 para aceptar el archivo. El bypass
 `uploads.allowDevelopmentAntivirusBypass` solo funciona fuera de producción.
 
-Restaurantes no solicita documentos mientras sus bases sigan pendientes. Los
-requisitos no confirmados de Bebidas permanecen opcionales y se muestran como
-provisionales.
+Restaurantes solicita el expediente operativo, trayectoria, fotografías, carta
+de intención y video institucional indicados en sus bases. Los requisitos no
+confirmados de Bebidas permanecen opcionales y se muestran como provisionales.
 
 ## Comandos útiles
 
@@ -437,7 +437,7 @@ borre solicitudes o catálogos de la instalación local.
 - No existen secretos dentro de archivos versionables.
 - Las cuatro rutas de registro muestran formulario, token CSRF y viewport responsive.
 - Un borrador admite guardados parciales y conserva el folio.
-- Joven Talento conserva exactamente dos integrantes bajo un folio.
+- Joven Talento registra una sola persona participante bajo un folio individual.
 - Los cuatro campos de municipio ofrecen los 125 valores oficiales mediante `datalist`.
 - El servidor rechaza municipios inexistentes y evita duplicados en el catálogo.
 - El resumen rechaza campos obligatorios incompletos y enlaces de video sin HTTPS.
@@ -458,6 +458,6 @@ borre solicitudes o catálogos de la instalación local.
 
 - Configuración del correo institucional de producción; el SMTP local de pruebas ya está verificado.
 - Textos legales definitivos.
-- Contenido definitivo de Restaurantes y otras decisiones institucionales marcadas como pendientes.
+- Fecha límite y correo oficial de Restaurantes, además de otras decisiones institucionales marcadas como pendientes.
 
 La lista completa y vigente está en [docs/institutional-pending.md](docs/institutional-pending.md).

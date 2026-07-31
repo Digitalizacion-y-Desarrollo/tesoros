@@ -81,5 +81,11 @@ aplicación.
 - CSP, `nosniff`, `SAMEORIGIN`, cookies seguras y CSRF activos.
 - Prueba de correo, autenticación institucional y antivirus.
 
+Antes de desplegar el cambio de Joven Talento a participación individual,
+revisa las solicitudes existentes de esa categoría que tengan más de una
+persona. La actualización no elimina integrantes ni documentos históricos de
+forma automática; su tratamiento debe definirse con el propietario para
+conservar la auditoría.
+
 La publicación está bloqueada mientras existan textos legales, fechas,
 contenido o configuraciones institucionales pendientes.

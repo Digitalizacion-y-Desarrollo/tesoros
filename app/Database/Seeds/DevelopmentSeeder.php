@@ -24,10 +24,9 @@ class DevelopmentSeeder extends Seeder
             ],
             [
                 'category' => 'joven-talento-gastronomia',
-                'email' => 'equipo.demo@example.test',
+                'email' => 'estudiante.demo@example.test',
                 'participants' => [
                     $this->participant('LOPE900202HMCDFR07', 'Carlos', 'López'),
-                    $this->participant('CARA880303MMCPLN06', 'Andrea', 'Castro'),
                 ],
             ],
             [

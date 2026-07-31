@@ -1,6 +1,12 @@
 <?= $this->extend('layouts/admin') ?>
 <?= $this->section('content') ?>
-<?php $application = $detail['application']; ?>
+<?php
+$application = $detail['application'];
+$formLabels = [];
+foreach (config('ApplicationForms')->categories[$application['category_code']]['fields'] ?? [] as $fieldDefinition) {
+    $formLabels[$fieldDefinition['name']] = $fieldDefinition['label'];
+}
+?>
 <a class="admin-back" href="<?= url_to('admin.applications') ?>">
     <span aria-hidden="true">←</span> Volver a solicitudes
 </a>
@@ -26,7 +32,11 @@
 
                 <?php foreach ($detail['participants'] as $index => $person): ?>
                     <fieldset class="mt-4">
-                        <legend><?= $index === 0 ? 'Persona responsable' : 'Integrante ' . ($index + 1) ?></legend>
+                        <legend>
+                            <?= $application['category_code'] === 'joven-talento-gastronomia'
+                                ? 'Persona participante'
+                                : ($index === 0 ? 'Persona responsable' : 'Integrante ' . ($index + 1)) ?>
+                        </legend>
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <label class="form-label" for="first-<?= $index ?>">Nombre(s)</label>
@@ -57,7 +67,7 @@
             <dl class="summary-grid mt-0">
                 <?php foreach ($detail['form'] as $name => $value): ?>
                     <div>
-                        <dt><?= esc(admin_field_label((string) $name)) ?></dt>
+                        <dt><?= esc($formLabels[$name] ?? admin_field_label((string) $name)) ?></dt>
                         <dd><?= nl2br(esc((string) ($value !== '' ? $value : 'No capturado'))) ?></dd>
                     </div>
                 <?php endforeach ?>
