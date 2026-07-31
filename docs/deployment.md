@@ -33,6 +33,12 @@ de directorio y no publiques `app/`, `vendor/`, `.env` ni `writable/`.
 - Credenciales de MySQL con privilegios mínimos.
 - `adminAuth.systemKey` y URL institucional.
 - Credenciales SMTP institucionales.
+
+En el `php.ini` del servidor se deben conservar `display_errors = Off`,
+`log_errors = On` y `zend.exception_ignore_args = On`. La configuración de
+arranque de producción refuerza estos valores en tiempo de ejecución. Después
+de un despliegue se debe reiniciar Apache o PHP-FPM y limpiar OPcache.
+
 - `uploads.antivirusCommand` y `videoUploads.antivirusCommand`.
 - `convocation.closeAt` únicamente cuando exista fecha oficial.
 
