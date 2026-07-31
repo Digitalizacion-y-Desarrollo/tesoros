@@ -45,7 +45,7 @@ deniega acceso si la integración no está configurada o disponible.
 
 ## Integraciones
 
-Correo, reCAPTCHA, antivirus y autenticación administrativa están encapsulados
+Correo, antivirus y autenticación administrativa están encapsulados
 en servicios. La cola `email_queue` desacopla notificaciones; los archivos pasan
 por almacenamiento privado y análisis antivirus; el cliente HTTP institucional
 centraliza TLS, tiempos de espera y errores.

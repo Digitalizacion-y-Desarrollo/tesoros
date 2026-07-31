@@ -140,7 +140,7 @@ El participante:
 
 1. Selecciona una categoría.
 2. Captura como mínimo los datos necesarios para identificar la solicitud, incluida CURP y correo.
-3. Acepta los textos legales provisionales vigentes y completa Google reCAPTCHA.
+3. Acepta los textos legales provisionales vigentes.
 4. Obtiene un folio.
 5. Recibe el folio por correo.
 6. Continúa llenando y guardando la solicitud como borrador.
@@ -177,10 +177,9 @@ No habrá contraseña permanente para participantes.
 Flujo obligatorio:
 
 1. El participante captura correo y folio.
-2. Resuelve Google reCAPTCHA.
-3. Si la combinación es válida, se envía un código temporal al correo registrado.
-4. El participante captura el código.
-5. Si es válido, obtiene una sesión temporal para consultar su solicitud.
+2. Si la combinación es válida, se envía un código temporal al correo registrado.
+3. El participante captura el código.
+4. Si es válido, obtiene una sesión temporal para consultar su solicitud.
 
 Reglas del código:
 
@@ -412,15 +411,11 @@ Reglas:
 
 No se requieren SMS ni WhatsApp.
 
-## 15. CAPTCHA
+## 15. Protección contra abuso en formularios públicos
 
-Utilizar Google reCAPTCHA en:
-
-- Creación inicial de solicitud.
-- Solicitud de código temporal.
-- Otros puntos públicos sensibles si el análisis de abuso lo justifica.
-
-Las claves deben almacenarse en `.env`. La validación debe realizarse en el servidor. No considerar válida una respuesta únicamente porque el widget del navegador se completó.
+Por instrucción expresa del propietario del 31 de julio de 2026, Google
+reCAPTCHA fue retirado de todos los formularios. Conservar protección CSRF,
+respuestas genéricas, auditoría y límites de solicitudes por IP y sesión.
 
 ## 16. Accesibilidad
 
@@ -488,7 +483,7 @@ Fijar versiones mediante `composer.lock`. No actualizar dependencias mayores sin
 - Usar entidades o DTO cuando ayuden a evitar arreglos ambiguos.
 - Usar Models de CodeIgniter con campos permitidos explícitos.
 - Utilizar migrations y seeders.
-- Usar filtros para sesiones, acceso administrativo, CAPTCHA y controles aplicables.
+- Usar filtros para sesiones, acceso administrativo y controles aplicables.
 - Configurar secretos exclusivamente mediante `.env`.
 - No confirmar `.env`, credenciales, claves o datos reales.
 - Habilitar protección CSRF.
@@ -692,7 +687,6 @@ El proyecto final debe incluir:
 - Variables de entorno documentadas en `.env.example`.
 - Ejecución de migrations y seeders.
 - Configuración de correo.
-- Configuración de Google reCAPTCHA.
 - Configuración de almacenamiento y límites de 500 MB.
 - Configuración de tareas programadas o colas.
 - Despliegue con `public/` como raíz.
@@ -733,7 +727,6 @@ Requieren información posterior del propietario:
 - Política de retención y eliminación.
 - Credenciales y configuración del correo institucional.
 - Documentación de la API institucional de accesos.
-- Claves de Google reCAPTCHA.
 - Criterios definitivos de aceptación de la primera versión.
 
 Estos pendientes deben mostrarse en documentación y configuración. No resolverlos mediante supuestos silenciosos.

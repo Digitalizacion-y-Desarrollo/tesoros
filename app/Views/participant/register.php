@@ -108,16 +108,6 @@ $participantCount = $slug === 'joven-talento-gastronomia' ? 2 : 1;
                                 <?php endif ?>
                             </div>
 
-                            <?php if ($recaptchaSiteKey !== ''): ?>
-                                <div class="g-recaptcha mt-4" data-sitekey="<?= esc($recaptchaSiteKey) ?>"></div>
-                            <?php else: ?>
-                                <div class="alert alert-warning mt-4 mb-0" role="status">
-                                    reCAPTCHA no está configurado. El bypass funciona únicamente fuera de producción.
-                                </div>
-                            <?php endif ?>
-                            <?php if (isset($errors['recaptcha'])): ?>
-                                <p class="text-danger mt-2 mb-0"><?= esc($errors['recaptcha']) ?></p>
-                            <?php endif ?>
                         </fieldset>
 
                         <div class="d-flex flex-wrap justify-content-between gap-3 border-top pt-4 mt-4">
@@ -132,9 +122,3 @@ $participantCount = $slug === 'joven-talento-gastronomia' ? 2 : 1;
     </div>
 </section>
 <?= $this->endSection() ?>
-
-<?php if ($recaptchaSiteKey !== ''): ?>
-    <?= $this->section('scripts') ?>
-    <script src="https://www.google.com/recaptcha/api.js?hl=es" async defer></script>
-    <?= $this->endSection() ?>
-<?php endif ?>

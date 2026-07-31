@@ -42,7 +42,6 @@ Debe repetirse antes de producción en Chrome, Edge, Firefox, Safari y móviles:
 - Formularios completos por teclado y pantalla táctil.
 - Ausencia de desplazamiento horizontal.
 - Progreso de archivos cercanos a 500 MB.
-- reCAPTCHA con claves productivas.
 - Consola sin errores.
 
 El navegador integrado no estuvo disponible durante esta ejecución. Se

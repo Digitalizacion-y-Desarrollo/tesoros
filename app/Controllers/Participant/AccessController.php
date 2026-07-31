@@ -6,7 +6,6 @@ use App\Controllers\ParticipantController;
 use App\Exceptions\AccessRateLimitException;
 use App\Services\DraftApplicationService;
 use App\Services\ParticipantAccessService;
-use App\Services\RecaptchaVerifier;
 use App\Services\RegistrationNotificationService;
 use App\Services\ConvocationSchedule;
 use App\Services\AuditLogService;
@@ -24,23 +23,11 @@ class AccessController extends ParticipantController
 
         return view('participant/access', [
             'title' => 'Consulta tu participación',
-            'recaptchaSiteKey' => (new RecaptchaVerifier())->siteKey(),
-            'errors' => session('validation_errors') ?? [],
         ]);
     }
 
     public function requestCode()
     {
-        $recaptcha = new RecaptchaVerifier();
-        if (! $recaptcha->verify(
-            (string) $this->request->getPost('g-recaptcha-response'),
-            $this->request->getIPAddress(),
-        )) {
-            return redirect()->back()
-                ->withInput()
-                ->with('validation_errors', ['recaptcha' => 'No fue posible validar reCAPTCHA. Inténtalo nuevamente.']);
-        }
-
         $email = (string) $this->request->getPost('email');
         $folio = (string) $this->request->getPost('folio');
 
@@ -212,7 +199,6 @@ class AccessController extends ParticipantController
             'category' => $categories[$slug],
             'slug' => $slug,
             'title' => 'Registro · ' . $categories[$slug]['name'],
-            'recaptchaSiteKey' => (new RecaptchaVerifier())->siteKey(),
             'privacyVersion' => config('ApplicationForms')->privacyVersion,
             'convocationClosed' => $schedule->isClosed(),
             'convocationCloseAt' => $schedule->closeAt(),
@@ -246,14 +232,6 @@ class AccessController extends ParticipantController
         $errors = [];
         if ((string) $this->request->getPost('accept_privacy') !== '1') {
             $errors['accept_privacy'] = 'Debes aceptar el aviso de privacidad provisional para crear el borrador.';
-        }
-
-        $recaptcha = new RecaptchaVerifier();
-        if (! $recaptcha->verify(
-            (string) $this->request->getPost('g-recaptcha-response'),
-            $this->request->getIPAddress(),
-        )) {
-            $errors['recaptcha'] = 'No fue posible validar reCAPTCHA. Inténtalo nuevamente.';
         }
 
         if ($errors !== []) {

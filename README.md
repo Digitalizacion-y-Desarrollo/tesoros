@@ -126,7 +126,6 @@ Variables principales:
 - `app.CSPEnabled`: debe permanecer `true`.
 - `database.default.*`: conexión MySQL.
 - `cookie.secure`: debe ser `true` en producción con HTTPS.
-- `recaptcha.*`: pendientes de claves institucionales.
 - `MAIL_*`: servidor SMTP. El entorno local puede usar un buzón de pruebas; producción sigue pendiente del correo institucional.
 - `videoUploads.antivirusCommand`: comando antivirus con el marcador `{file}`; es obligatorio en producción.
 - `videoUploads.allowDevelopmentAntivirusBypass`: permite omitir antivirus únicamente fuera de producción.
@@ -138,7 +137,7 @@ Nunca confirmar `.env`, tokens, contraseñas o datos personales.
 - `/`: portada pública de la convocatoria.
 - `/convocatorias/{categoria}`: bases y contenido público por categoría.
 - `/participante/registro/{categoria}`: inicio de registro para la categoría seleccionada.
-- `/participante/acceso`: solicita el código con correo, folio y reCAPTCHA.
+- `/participante/acceso`: solicita el código con correo y folio.
 - `/participante/acceso/codigo`: verifica o reenvía el código temporal.
 - `/participante/salir`: revoca la sesión temporal.
 - `/participante/solicitud`: área protegida del participante.
@@ -188,7 +187,7 @@ análisis antivirus.
 
 - CSRF global activado.
 - Cabeceras seguras activadas.
-- CSP restrictiva compatible con Bootstrap local, Google Fonts y reCAPTCHA.
+- CSP restrictiva compatible con Bootstrap local y Google Fonts.
 - Cookies `HttpOnly` y `SameSite=Lax`.
 - Regeneración destructiva de sesión.
 - Rutas administrativas bloqueadas si la API institucional no está configurada o no responde.
@@ -196,19 +195,17 @@ análisis antivirus.
 
 Los logs no deben incluir CURP, códigos OTP, tokens, contraseñas ni contenido de documentos. En producción se debe reducir `logger.threshold` y desactivar la barra de depuración mediante `CI_ENVIRONMENT=production`.
 
-### reCAPTCHA en desarrollo
+### Protección contra abuso
 
-La creación pública utiliza reCAPTCHA v2 cuando `recaptcha.siteKey` y
-`recaptcha.secretKey` están configuradas. Fuera de producción puede utilizarse
-`recaptcha.allowDevelopmentBypass = true` para pruebas locales claramente
-identificadas. En producción la ausencia de la clave secreta bloquea la
-creación; el bypass nunca se acepta.
+Los formularios públicos no utilizan reCAPTCHA por decisión expresa del
+propietario. Se conservan CSRF, respuestas genéricas y límites de solicitudes
+por IP y sesión.
 
 ## Flujo de formularios (E04)
 
 1. La persona selecciona una de las cuatro categorías.
 2. Captura correo y datos de la persona responsable; Joven Talento requiere dos integrantes.
-3. Acepta el aviso provisional y supera reCAPTCHA.
+3. Acepta el aviso provisional.
 4. El servidor crea transaccionalmente el borrador, folio, participantes, perfil y aceptación.
 5. Se envía un correo de registro exitoso con el folio; este mensaje no contiene un código temporal.
 6. La sesión queda asociada exclusivamente a esa solicitud.
@@ -237,7 +234,7 @@ el Consejo Estatal de Población del Estado de México.
 
 ## Acceso temporal (E05)
 
-1. La persona captura correo y folio y supera reCAPTCHA.
+1. La persona captura correo y folio.
 2. La respuesta pública es genérica, exista o no la combinación.
 3. Si los datos corresponden, se envía un código de seis dígitos por SMTP.
 4. El código vence en 10 minutos, permite 5 intentos y se guarda únicamente como hash.
@@ -302,9 +299,8 @@ proveedor no responde, el acceso se deniega. El cierre central se intenta
 siempre y la sesión local se elimina aun si ese intento falla.
 
 Si PHP no tiene configurados `curl.cainfo` u `openssl.cafile`, establece
-`http.caBundle` con la ruta absoluta a un paquete CA vigente. Esta ruta también
-se utiliza para validar la conexión de reCAPTCHA. No desactives la verificación
-TLS para resolver errores de certificados.
+`http.caBundle` con la ruta absoluta a un paquete CA vigente. No desactives la
+verificación TLS para resolver errores de certificados.
 
 No se exige un nombre de rol remoto específico porque el contrato no define uno
 para Tesoros; toda cuenta activa asignada a la clave de este sistema representa
@@ -460,7 +456,6 @@ borre solicitudes o catálogos de la instalación local.
 
 ## Pendientes externos
 
-- Claves de Google reCAPTCHA.
 - Configuración del correo institucional de producción; el SMTP local de pruebas ya está verificado.
 - Textos legales definitivos.
 - Contenido definitivo de Restaurantes y otras decisiones institucionales marcadas como pendientes.

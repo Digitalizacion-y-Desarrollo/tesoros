@@ -59,22 +59,14 @@ class ContentSecurityPolicy extends BaseConfig
      *
      * @var list<string>|string
      */
-    public $scriptSrc = [
-        'self',
-        'https://www.google.com',
-        'https://www.gstatic.com',
-    ];
+    public $scriptSrc = ['self'];
 
     /**
      * Specifies valid sources for JavaScript <script> elements.
      *
      * @var list<string>|string
      */
-    public array|string $scriptSrcElem = [
-        'self',
-        'https://www.google.com',
-        'https://www.gstatic.com',
-    ];
+    public array|string $scriptSrcElem = ['self'];
 
     /**
      * Specifies valid sources for JavaScript inline event
@@ -141,11 +133,7 @@ class ContentSecurityPolicy extends BaseConfig
      *
      * @var list<string>|string
      */
-    public $connectSrc = [
-        'self',
-        'https://www.google.com',
-        'https://www.gstatic.com',
-    ];
+    public $connectSrc = ['self'];
 
     /**
      * Specifies the origins that can serve web fonts.
@@ -179,7 +167,6 @@ class ContentSecurityPolicy extends BaseConfig
      */
     public $frameSrc = [
         'self',
-        'https://www.google.com',
         'https://www.youtube-nocookie.com',
         'https://player.vimeo.com',
     ];

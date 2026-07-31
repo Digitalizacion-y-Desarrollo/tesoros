@@ -31,7 +31,6 @@ de directorio y no publiques `app/`, `vendor/`, `.env` ni `writable/`.
 - `app.forceGlobalSecureRequests = true`
 - `cookie.secure = true`
 - Credenciales de MySQL con privilegios mínimos.
-- Claves reales de reCAPTCHA; el bypass debe ser `false`.
 - `adminAuth.systemKey` y URL institucional.
 - Credenciales SMTP institucionales.
 - `uploads.antivirusCommand` y `videoUploads.antivirusCommand`.
@@ -74,7 +73,7 @@ aplicación.
 - Rutas privadas redirigen sin sesión.
 - `.env`, `writable/` y archivos privados no son accesibles por HTTP.
 - CSP, `nosniff`, `SAMEORIGIN`, cookies seguras y CSRF activos.
-- Prueba de correo, reCAPTCHA, autenticación institucional y antivirus.
+- Prueba de correo, autenticación institucional y antivirus.
 
 La publicación está bloqueada mientras existan textos legales, fechas,
 contenido o configuraciones institucionales pendientes.

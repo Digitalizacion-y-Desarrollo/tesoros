@@ -43,17 +43,6 @@
                     </div>
                 </div>
 
-                <?php if ($recaptchaSiteKey !== ''): ?>
-                    <div class="g-recaptcha mt-4" data-sitekey="<?= esc($recaptchaSiteKey) ?>"></div>
-                <?php else: ?>
-                    <div class="alert alert-warning mt-4 mb-0" role="status">
-                        reCAPTCHA no está configurado. El bypass funciona únicamente fuera de producción.
-                    </div>
-                <?php endif ?>
-                <?php if (isset($errors['recaptcha'])): ?>
-                    <p class="text-danger mt-2 mb-0"><?= esc($errors['recaptcha']) ?></p>
-                <?php endif ?>
-
                 <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mt-4">
                     <p class="form-hint mb-0">La respuesta será la misma exista o no la combinación indicada.</p>
                     <button class="btn btn-wine" type="submit">Enviar código temporal</button>
@@ -63,9 +52,3 @@
     </div>
 </section>
 <?= $this->endSection() ?>
-
-<?php if ($recaptchaSiteKey !== ''): ?>
-    <?= $this->section('scripts') ?>
-    <script src="https://www.google.com/recaptcha/api.js?hl=es" async defer></script>
-    <?= $this->endSection() ?>
-<?php endif ?>

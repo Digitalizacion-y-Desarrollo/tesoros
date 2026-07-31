@@ -10,7 +10,6 @@ Estos elementos impiden declarar lista la publicación en producción:
   conservación aprobados.
 - Política definitiva de retención y eliminación.
 - Cuenta y credenciales SMTP institucionales.
-- Claves productivas de Google reCAPTCHA.
 - Comando y política del antivirus del servidor.
 - Fecha oficial para `convocation.closeAt`.
 - Confirmación institucional de expiración, renovación, MFA y soporte de la API

@@ -10,7 +10,7 @@ como pendiente no constituyen información oficial definitiva.
 
 Captura el correo, la CURP y los datos de la persona responsable. En Joven
 Talento se registran exactamente dos integrantes bajo un mismo folio. Acepta el
-aviso de privacidad vigente y completa reCAPTCHA.
+aviso de privacidad vigente.
 
 Al crear el registro:
 
@@ -44,8 +44,8 @@ Después del envío:
 
 ## 5. Consultar la solicitud
 
-En “Consulta tu folio” captura correo y folio, completa reCAPTCHA y solicita el
-código. La respuesta es deliberadamente genérica.
+En “Consulta tu folio” captura correo y folio y solicita el código. La respuesta
+es deliberadamente genérica.
 
 El código:
 
