@@ -95,9 +95,6 @@ $category = $context['category'];
 
                     <form method="post" action="<?= url_to('participant.draft.submit') ?>" class="border-top pt-4 mt-4">
                         <?= csrf_field() ?>
-                        <div class="alert provisional-notice">
-                            Las declaraciones y textos legales son provisionales de desarrollo. La publicación en producción permanece bloqueada hasta recibir los documentos aprobados.
-                        </div>
                         <div class="form-check mt-3">
                             <input class="form-check-input <?= isset($errors['accept_declarations']) ? 'is-invalid' : '' ?>" id="accept-declarations" name="accept_declarations" type="checkbox" value="1" required>
                             <label class="form-check-label" for="accept-declarations">Acepto los <a href="<?= url_to('legal.show', 'terminos-condiciones') ?>" target="_blank" rel="noopener">términos y declaraciones provisionales vigentes</a> y confirmo que la información es correcta.</label>

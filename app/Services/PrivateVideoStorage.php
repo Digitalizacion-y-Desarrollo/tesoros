@@ -11,11 +11,17 @@ final class PrivateVideoStorage
 {
     private VideoUploads $config;
     private VideoAntivirusScanner $scanner;
+    private UploadFilenameValidator $filenameValidator;
 
-    public function __construct(?VideoUploads $config = null, ?VideoAntivirusScanner $scanner = null)
+    public function __construct(
+        ?VideoUploads $config = null,
+        ?VideoAntivirusScanner $scanner = null,
+        ?UploadFilenameValidator $filenameValidator = null,
+    )
     {
         $this->config = $config ?? config('VideoUploads');
         $this->scanner = $scanner ?? new VideoAntivirusScanner($this->config);
+        $this->filenameValidator = $filenameValidator ?? new UploadFilenameValidator();
     }
 
     public function hasUpload(?UploadedFile $file): bool
@@ -105,11 +111,7 @@ final class PrivateVideoStorage
         }
 
         $originalName = basename($file->getClientName());
-        $extension = strtolower(pathinfo($originalName, PATHINFO_EXTENSION));
-        $stem = pathinfo($originalName, PATHINFO_FILENAME);
-        if ($extension !== 'mp4' || str_contains($stem, '.')) {
-            throw new DomainException('El video debe ser un archivo MP4 sin extensiones dobles.');
-        }
+        $this->filenameValidator->assertSafe($originalName, ['mp4']);
         if ($file->getSize() <= 0 || $file->getSize() > $this->config->maxBytes) {
             throw new DomainException('El video no puede exceder 500 MB.');
         }

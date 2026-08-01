@@ -11,11 +11,17 @@ final class PrivateDocumentStorage
 {
     private DocumentUploads $config;
     private DocumentAntivirusScanner $scanner;
+    private UploadFilenameValidator $filenameValidator;
 
-    public function __construct(?DocumentUploads $config = null, ?DocumentAntivirusScanner $scanner = null)
+    public function __construct(
+        ?DocumentUploads $config = null,
+        ?DocumentAntivirusScanner $scanner = null,
+        ?UploadFilenameValidator $filenameValidator = null,
+    )
     {
         $this->config = $config ?? config('DocumentUploads');
         $this->scanner = $scanner ?? new DocumentAntivirusScanner($this->config);
+        $this->filenameValidator = $filenameValidator ?? new UploadFilenameValidator();
     }
 
     public function hasUpload(?UploadedFile $file): bool
@@ -106,10 +112,7 @@ final class PrivateDocumentStorage
             throw new DomainException($message);
         }
         $name = basename($file->getClientName());
-        $extension = strtolower(pathinfo($name, PATHINFO_EXTENSION));
-        if (! in_array($extension, ['pdf', 'jpg', 'jpeg'], true) || str_contains(pathinfo($name, PATHINFO_FILENAME), '.')) {
-            throw new DomainException('Solo se permiten PDF, JPG o JPEG sin extensiones dobles.');
-        }
+        $extension = $this->filenameValidator->assertSafe($name, ['pdf', 'jpg', 'jpeg']);
         if ($file->getSize() <= 0 || $file->getSize() > $this->config->maxBytes) {
             throw new DomainException('El archivo no puede exceder 500 MB.');
         }

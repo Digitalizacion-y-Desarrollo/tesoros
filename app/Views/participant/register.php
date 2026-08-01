@@ -28,10 +28,6 @@ $participantLabel = $slug === 'joven-talento-gastronomia' ? 'Persona participant
 
             <div class="col-lg-8">
                 <div class="application-card">
-                    <?php if (isset($category['notice'])): ?>
-                        <div class="alert provisional-notice" role="status"><?= esc($category['notice']) ?></div>
-                    <?php endif ?>
-
                     <?php if (isset($errors['registration'])): ?>
                         <div class="alert alert-danger" role="alert"><?= esc($errors['registration']) ?></div>
                     <?php endif ?>
@@ -97,10 +93,6 @@ $participantLabel = $slug === 'joven-talento-gastronomia' ? 'Persona participant
 
                         <fieldset class="border-top pt-4 mt-4">
                             <legend class="h4 font-display text-wine-dark">Privacidad y seguridad</legend>
-                            <div class="alert provisional-notice small">
-                                <a href="<?= url_to('legal.show', 'aviso-privacidad') ?>" target="_blank" rel="noopener">Aviso de privacidad provisional de desarrollo</a>, versión <?= esc($privacyVersion) ?>.
-                                No sustituye el texto institucional definitivo y no debe publicarse en producción.
-                            </div>
                             <div class="form-check mt-3">
                                 <input class="form-check-input <?= isset($errors['accept_privacy']) ? 'is-invalid' : '' ?>" id="accept-privacy" name="accept_privacy" type="checkbox" value="1" <?= old('accept_privacy') === '1' ? 'checked' : '' ?> required>
                                 <label class="form-check-label" for="accept-privacy">He leído y acepto el aviso provisional vigente.</label>

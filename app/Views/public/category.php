@@ -29,14 +29,6 @@ $accentClass = 'theme-' . $category['accent'];
     </section>
     <div class="color-ribbon" aria-hidden="true"></div>
 
-    <?php if (isset($category['notice'])): ?>
-        <div class="container-fluid page-gutter pt-5">
-            <div class="alert provisional-notice mb-0" role="status">
-                <strong>Información provisional:</strong> <?= esc($category['notice']) ?>
-            </div>
-        </div>
-    <?php endif ?>
-
     <section class="facts-section">
         <div class="container-fluid page-gutter">
             <div class="row g-3">

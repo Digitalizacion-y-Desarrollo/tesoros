@@ -447,7 +447,10 @@ borre solicitudes o catálogos de la instalación local.
 - Una solicitud enviada rechaza cambios posteriores en el servidor.
 - El alta inicial envía la confirmación de registro y no crea ningún código temporal.
 - Las cuatro categorías muestran archivo MP4 y enlace HTTPS como alternativas de video.
-- El servidor rechaza ambos medios simultáneos, archivos mayores de 500 MB, MIME incorrecto y extensiones dobles.
+- El servidor rechaza ambos medios simultáneos, archivos mayores de 500 MB,
+  MIME incorrecto, extensiones finales no permitidas y extensiones intermedias
+  peligrosas. Los nombres descriptivos con varios puntos son aceptados porque
+  cada archivo se almacena de forma privada con un nombre aleatorio.
 - Los MP4 se guardan fuera de `public/` y solo su solicitud puede consultarlos.
 - Una combinación válida envía el código al buzón SMTP de pruebas.
 - Una combinación desconocida muestra exactamente la misma confirmación pública.

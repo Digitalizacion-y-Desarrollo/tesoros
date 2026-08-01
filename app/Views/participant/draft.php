@@ -37,9 +37,6 @@ $video = $context['video'];
                             La convocatoria está cerrada. Ya no es posible guardar ni enviar borradores; la consulta y las correcciones expresamente habilitadas continúan disponibles.
                         </div>
                     <?php endif ?>
-                    <?php if (isset($context['definition']['notice'])): ?>
-                        <div class="alert provisional-notice mt-3" role="status"><?= esc($context['definition']['notice']) ?></div>
-                    <?php endif ?>
                     <?php if ($errors !== []): ?>
                         <div class="alert alert-danger mt-3" role="alert">
                             Revisa los campos señalados. El borrador no se modificó.
@@ -120,6 +117,10 @@ $video = $context['video'];
                                                     </div>
                                                 <?php endif ?>
 
+                                                <p class="form-hint fw-semibold mb-3">
+                                                    Elige solamente una opción: pega una URL HTTPS o sube un archivo MP4. Si utilizas la URL, no selecciones un archivo; si subes un archivo, deja vacía la URL.
+                                                </p>
+
                                                 <div class="row g-3">
                                                     <div class="col-md-6">
                                                         <label class="form-label" for="form-video-url">Enlace HTTPS del video</label>
@@ -147,7 +148,7 @@ $video = $context['video'];
                                                     </div>
                                                 </div>
                                                 <p class="form-hint mt-2 mb-0">
-                                                    <?= esc($context['definition']['video_help'] ?? 'Utiliza solamente una opción: archivo MP4 o enlace HTTPS.') ?>
+                                                    <?= esc($context['definition']['video_help'] ?? 'Puedes proporcionar el video como archivo MP4 o mediante un enlace HTTPS.') ?>
                                                     El archivo MP4 puede pesar hasta 500 MB y se almacenará de forma privada.
                                                 </p>
                                                 <?php if ($video !== null): ?>

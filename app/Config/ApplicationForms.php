@@ -104,7 +104,6 @@ class ApplicationForms extends BaseConfig
             ],
         ],
         'bebidas-tradicionales-ancestrales' => [
-            'documents_notice' => 'La evidencia específica para acreditar producción continua y el documento fiscal definitivo siguen pendientes de confirmación institucional.',
             'documents' => [
                 ['type' => 'official_id', 'label' => 'Identificación oficial vigente', 'required' => true, 'accept' => 'pdf,image'],
                 ['type' => 'proof_of_address', 'label' => 'Comprobante de domicilio', 'required' => true, 'accept' => 'pdf,image'],
