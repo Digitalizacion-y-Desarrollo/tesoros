@@ -466,3 +466,7 @@ borre solicitudes o catálogos de la instalación local.
 - Fecha límite y correo oficial de Restaurantes, además de otras decisiones institucionales marcadas como pendientes.
 
 La lista completa y vigente está en [docs/institutional-pending.md](docs/institutional-pending.md).
+
+El inventario técnico de información solicitada para preparar el aviso de
+privacidad está en
+[docs/privacy-data-inventory.md](docs/privacy-data-inventory.md).
