@@ -107,7 +107,7 @@ class Portal extends BaseConfig
             ],
             'documents' => [
                 ['title' => 'Documentación operativa', 'text' => 'Licencia de funcionamiento, permisos vigentes y evidencia de operación mínima de cinco años.'],
-                ['title' => 'Trayectoria', 'text' => 'Semblanza del restaurante y currículum del chef ejecutivo.'],
+                ['title' => 'Trayectoria', 'text' => 'Captura la semblanza del restaurante en el formulario y adjunta el currículum del chef ejecutivo.'],
                 ['title' => 'Identificación de la representación', 'text' => 'Copia del pasaporte vigente del chef ejecutivo o de la brigada representante.'],
                 ['title' => 'Evidencia audiovisual', 'text' => 'Fotografías del establecimiento y de los platillos insignia, además de un video institucional.'],
                 ['title' => 'Carta de intención', 'text' => 'Máximo dos cuartillas, en hoja membretada y firmada por propietario, representante legal o chef ejecutivo, con los ocho puntos indicados en la convocatoria.'],

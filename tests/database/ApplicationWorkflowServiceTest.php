@@ -130,6 +130,17 @@ final class ApplicationWorkflowServiceTest extends CIUnitTestCase
         }
     }
 
+    public function testRestaurantFormUsesTextNationalityAndTextareaProfile(): void
+    {
+        $definition = config('ApplicationForms')->categories['restaurantes'];
+        $fields = array_column($definition['fields'], null, 'name');
+        $documentTypes = array_column($definition['documents'], 'type');
+
+        $this->assertSame('text', $fields['chef_nationality']['type']);
+        $this->assertSame('textarea', $fields['restaurant_profile']['type']);
+        $this->assertNotContains('restaurant_profile', $documentTypes);
+    }
+
     public function testStudentVideoDurationCannotExceedThreeMinutes(): void
     {
         $category = 'joven-talento-gastronomia';
